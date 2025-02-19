@@ -3,8 +3,8 @@ Contributors: artisan-workshop-1, ssec4dev, shohei.tanaka
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=info@artws.info&item_name=Donation+for+Artisan&currency_code=JPY
 Tags: woocommerce, ecommerce, e-commerce, Japanese
 Requires at least: 5.0.0
-Tested up to: 6.6.1
-Stable tag: 2.6.17
+Tested up to: 6.7.2
+Stable tag: 2.6.21
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -24,9 +24,8 @@ This plugin is an additional feature plugin that makes WooCommerce easier to use
 6. Addition of payment methods (bank transfer, postal transfer, over-the-counter payment, cash on delivery subscription)
 7. Addition of official postpaid payment Paidy for Japanized for WooCommerce
 8. Addition of PayPal Checkout (compatible with Japan)
-9. Addition of LINE Pay payment
-10. Creation of Specified Commercial Transactions Law and setting of short code
-* 7-9 payments are also distributed as individual payment plug-ins.
+9. Creation of Specified Commercial Transactions Law and setting of short code
+* 7-8 payments are also distributed as individual payment plug-ins.
 
 [youtube https://www.youtube.com/watch?v=mPYlDDuGzis]
 
@@ -58,6 +57,12 @@ The manual installation method involves downloading and uploading our plugin to 
 5. Admin Panel WooCommerce for Japan Setting Screen for Payment.
 
 == Changelog ==
+
+= 2.6.21 - 2025-02-19 =
+* Add - Credit Card Security list notice.
+* Fixed - JP4WC_Usage_Tracking bugs.
+* Fixed - Some code has been adapted to the official WordPress coding standards.
+* Change - Delete LINE PAY functions.
 
 = 2.6.17 - 2024-08-06 =
 * Change - Add LINE PAY End notice.
