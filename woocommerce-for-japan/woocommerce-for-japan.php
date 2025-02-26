@@ -5,12 +5,12 @@
  * Description: Woocommerce toolkit for Japanese use.
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
- * Version: 2.6.23
+ * Version: 2.6.24
  * Requires Plugins: woocommerce
  * Requires at least: 5.0
  * Tested up to: 6.7.2
  * WC requires at least: 6.0
- * WC tested up to: 9.6.2
+ * WC tested up to: 9.7.0
  *
  * Text Domain: woocommerce-for-japan
  * Domain Path: /i18n/
@@ -39,7 +39,7 @@ if ( ! class_exists( 'JP4WC' ) ) :
 		 *
 		 * @var string
 		 */
-		public $version = '2.6.23';
+		public $version = '2.6.24';
 
 		/**
 		 * Japanized for WooCommerce Framework version.
@@ -174,6 +174,10 @@ if ( ! class_exists( 'JP4WC' ) ) :
 			// Payment Gateway For COD subscriptions.
 			require_once JP4WC_INCLUDES_PATH . 'gateways/cod/class-wc-gateway-cod-4sub.php';
 			require_once JP4WC_INCLUDES_PATH . 'gateways/cod/class-wc-addons-gateway-cod.php';
+
+			// common functions.
+			require_once JP4WC_INCLUDES_PATH . 'jp4wc-common-functions.php';
+
 			// Address Setting.
 			require_once JP4WC_INCLUDES_PATH . 'class-jp4wc-address-fields.php';
 			// Automatic address entry from zip code using Yahoo API.
@@ -182,6 +186,7 @@ if ( ! class_exists( 'JP4WC' ) ) :
 			require_once JP4WC_INCLUDES_PATH . 'class-jp4wc-delivery.php';
 			// ADD COD Fee.
 			require_once JP4WC_INCLUDES_PATH . 'class-jp4wc-cod-fee.php';
+			require_once JP4WC_INCLUDES_PATH . 'class-jp4wc-cod-fee-handler.php';
 
 			// ADD Shortcodes.
 			require_once JP4WC_INCLUDES_PATH . 'class-jp4wc-shortcodes.php';
