@@ -5,12 +5,12 @@
  * Description: Woocommerce toolkit for Japanese use.
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
- * Version: 2.6.27
+ * Version: 2.6.32
  * Requires Plugins: woocommerce
  * Requires at least: 5.0
  * Tested up to: 6.7.2
  * WC requires at least: 6.0
- * WC tested up to: 9.7.0
+ * WC tested up to: 9.7.1
  *
  * Text Domain: woocommerce-for-japan
  * Domain Path: /i18n/
@@ -39,7 +39,7 @@ if ( ! class_exists( 'JP4WC' ) ) :
 		 *
 		 * @var string
 		 */
-		public $version = '2.6.27';
+		public $version = '2.6.32';
 
 		/**
 		 * Japanized for WooCommerce Framework version.
@@ -157,6 +157,11 @@ if ( ! class_exists( 'JP4WC' ) ) :
 			require_once JP4WC_INCLUDES_PATH . 'class-jp4wc-install.php';
 			// Admin Setting Screen.
 			require_once JP4WC_INCLUDES_PATH . 'admin/class-jp4wc-admin.php';
+			// Admin Security Screen.
+			require_once JP4WC_INCLUDES_PATH . 'admin/class-jp4wc-check-security.php';
+			require_once JP4WC_INCLUDES_PATH . 'admin/class-jp4wc-malware-check.php';
+			new JP4WC_Check_Security();
+
 			// Admin PR notice.
 			require_once JP4WC_INCLUDES_PATH . 'admin/class-jp4wc-admin-notices.php';
 			// Usage tracking.
