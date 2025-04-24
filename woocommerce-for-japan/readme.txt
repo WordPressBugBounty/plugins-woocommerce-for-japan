@@ -1,10 +1,10 @@
-=== Japanized For WooCommerce  ===
+=== Japanized for WooCommerce  ===
 Contributors: artisan-workshop-1, ssec4dev, shohei.tanaka
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=info@artws.info&item_name=Donation+for+Artisan&currency_code=JPY
 Tags: woocommerce, ecommerce, e-commerce, Japanese
 Requires at least: 5.0.0
-Tested up to: 6.7.2
-Stable tag: 2.6.36
+Tested up to: 6.8
+Stable tag: 2.6.39
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -57,6 +57,12 @@ The manual installation method involves downloading and uploading our plugin to 
 5. Admin Panel WooCommerce for Japan Setting Screen for Payment.
 
 == Changelog ==
+
+= 2.6.39 - 2025-04-24 =
+* Fixed - Company input bug.
+* Fixed - Class JP4WC_Usage_Tracking Bugs
+* Updated - PHP Version check.
+* Updated - Security Notice.
 
 = 2.6.36 - 2025-04-15 =
 * Fixed - Delivery date culcuration.
