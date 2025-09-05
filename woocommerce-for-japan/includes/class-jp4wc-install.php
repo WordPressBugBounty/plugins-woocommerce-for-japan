@@ -3,7 +3,7 @@
  * Installation related functions and actions.
  *
  * @package JP4WC\Classes
- * @version 2.6.25
+ * @version 2.7.1
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -34,9 +34,9 @@ class JP4WC_Install {
 			 *
 			 * @since 2.6.0
 			 */
-			do_action( 'jp4wc_updated' );
-
+			do_action( 'jp4wc_updated', $wc_version );
 		}
+		do_action( 'jp4wc_install', $wc_version );
 	}
 
 	/**
@@ -88,7 +88,17 @@ class JP4WC_Install {
 	 * Update WC version to current.
 	 */
 	private static function update_jp4wc_version() {
+		$current_version = get_option( 'jp4wc_version', '' );
+		if ( ! $current_version ) {
+			add_option( 'jp4wc-first-installing', 'yes' );
+		} else {
+			delete_option( 'jp4wc-first-installing' );
+		}
 		update_option( 'jp4wc_version', JP4WC_VERSION );
+		$paidy_do_activation_redirect = get_option( 'paidy_do_activation_redirect', false );
+		if ( ! $paidy_do_activation_redirect ) {
+			update_option( 'paidy_do_activation_redirect', true );
+		}
 		if ( class_exists( 'JP4WC_Usage_Tracking' ) || ! get_option( 'wc4jp-tracking' ) ) {
 			if ( ! wp_next_scheduled( 'jp4wc_tracker_send_event' ) ) {
 				JP4WC_Usage_Tracking::jp4wc_send_tracking_data( true );
