@@ -1,7 +1,7 @@
 <?php
 /**
  * Framework Name: Artisan Workshop FrameWork for WooCommerce
- * Framework Version : 2.0.13
+ * Framework Version : 2.0.14
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
  *
@@ -10,7 +10,7 @@
  * @author Artisan Workshop
  */
 
-namespace ArtisanWorkshop\PluginFramework\v2_0_13;
+namespace ArtisanWorkshop\PluginFramework\v2_0_14;
 
 use WP_Error;
 
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( '\\ArtisanWorkshop\\PluginFramework\\v2_0_13\\JP4WC_Framework' ) ) :
+if ( ! class_exists( '\\ArtisanWorkshop\\PluginFramework\\v2_0_14\\JP4WC_Framework' ) ) :
 	/**
 	 * Class JP4WC_Framework
 	 *
@@ -51,15 +51,6 @@ if ( ! class_exists( '\\ArtisanWorkshop\\PluginFramework\\v2_0_13\\JP4WC_Framewo
 		 * Constructor for the config class.
 		 */
 		public function __construct() {
-			add_action( 'init', array( $this, 'init_framework' ), 5 );
-		}
-
-		/**
-		 * Initialize the framework.
-		 *
-		 * Loads the text array from config file and sanitizes the values.
-		 */
-		public function init_framework() {
 			// Initialize the framework.
 			$this->text_array = require 'config-jp4wc-framework.php';
 			foreach ( $this->text_array as $key => $value ) {
@@ -788,6 +779,34 @@ if ( ! class_exists( '\\ArtisanWorkshop\\PluginFramework\\v2_0_13\\JP4WC_Framewo
 			} else {
 				return new WP_Error( 'round_type_error', 'Round Type Error' );
 			}
+		}
+
+		/**
+		 * Create a URL with GET parameters from an array.
+		 *
+		 * @param string $url Base URL.
+		 * @param array  $params Parameters to add as GET variables.
+		 * @return string The URL with added GET parameters.
+		 */
+		public function jp4wc_make_add_get_url( $url, $params ) {
+			if ( substr( $url, -1 ) === '/' ) {
+				$add_url = '?' . http_build_query( $params );
+			} else {
+				$add_url = '&' . http_build_query( $params );
+			}
+			return $url . $add_url;
+		}
+
+		/**
+		 * Get post data if set
+		 *
+		 * @param string $name The name of the POST field.
+		 * @return string|null The sanitized POST field value or null if not set.
+		 */
+		public function get_post( $name ) {
+			// Get the WC_Checkout object.
+			$checkout = WC()->checkout();
+			return $checkout->get_value( $name );
 		}
 	}
 endif;
