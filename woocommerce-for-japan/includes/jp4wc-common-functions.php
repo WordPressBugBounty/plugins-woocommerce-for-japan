@@ -35,7 +35,7 @@ if ( ! function_exists( 'jp4wc_get_fee_tax_classes' ) ) {
 		/**
 		 * This hook is used to alter the tax classes.
 		 *
-		 * @since 5.3.0
+		 * @since 2.6.0
 		 * @param array $tax_class Tax classes.
 		 */
 		return apply_filters( 'jp4wc_tax_classes', $tax_class );
@@ -50,9 +50,19 @@ if ( ! function_exists( 'jp4wc_is_using_checkout_blocks' ) ) {
 	 * @return bool true if you are using Checkout Block, false if not.
 	 */
 	function jp4wc_is_using_checkout_blocks() {
+		// Check if WooCommerce Blocks is active.
+		if ( ! class_exists( 'Automattic\WooCommerce\Blocks\Package' ) ) {
+			return false;
+		}
+
 		// Block-based checkout only available on WooCommerce 6.9.0 and above.
 		if ( version_compare( WC()->version, '6.9.0', '<' ) ) {
 			return false;
+		}
+
+		// Check if we're in a REST API request (Checkout Block uses Store API).
+		if ( defined( 'REST_REQUEST' ) && REST_REQUEST ) {
+			return true;
 		}
 
 		// Get the checkout page ID from your WooCommerce settings.
@@ -69,19 +79,38 @@ if ( ! function_exists( 'jp4wc_is_using_checkout_blocks' ) ) {
 			return false;
 		}
 
-		// Check if you are using a checkout block.
-		// Check the block checkout identifier.
-		$has_checkout_block = false;
-
-		// Check if woocommerce/checkout block exists.
-		if ( has_block( 'woocommerce/checkout', $checkout_post->post_content ) ) {
-			$has_checkout_block = true;
+		// Check if the checkout page contains the checkout block.
+		if ( function_exists( 'has_block' ) ) {
+			if ( has_block( 'woocommerce/checkout', $checkout_post ) ) {
+				return true;
+			}
 		}
 
+		// Fallback: Check for block comment in content.
 		if ( strpos( $checkout_post->post_content, '<!-- wp:woocommerce/checkout' ) !== false ) {
-			$has_checkout_block = true;
+			return true;
 		}
 
-		return $has_checkout_block;
+		return false;
+	}
+}
+
+if ( ! function_exists( 'jp4wc_has_orders_in_last_5_days' ) ) {
+	/**
+	 * Check if there are any orders in the last 5 days.
+	 *
+	 * @since 2.7.15
+	 * @return bool True if orders exist, false otherwise.
+	 */
+	function jp4wc_has_orders_in_last_5_days() {
+		$args = array(
+			'limit'        => 1,
+			'status'       => array( 'wc-processing', 'wc-completed', 'wc-on-hold', 'wc-pending', 'wc-refunded' ),
+			'date_created' => '>' . ( time() - ( 5 * DAY_IN_SECONDS ) ),
+		);
+
+		$orders = wc_get_orders( $args );
+
+		return ! empty( $orders );
 	}
 }

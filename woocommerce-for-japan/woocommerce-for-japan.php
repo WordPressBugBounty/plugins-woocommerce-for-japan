@@ -5,13 +5,13 @@
  * Description: Woocommerce toolkit for Japanese use.
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
- * Version: 2.7.6
+ * Version: 2.8.2
  * Requires PHP: 8.1
  * Requires Plugins: woocommerce
  * Requires at least: 6.7
- * Tested up to: 6.8.2
+ * Tested up to: 6.9.0
  * WC requires at least: 8.0
- * WC tested up to: 10.1.2
+ * WC tested up to: 10.4.3
  *
  * Text Domain: woocommerce-for-japan
  * Domain Path: /i18n/
@@ -24,6 +24,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
+define( 'JP4WC_VERSION', '2.8.2' );
 
 require_once __DIR__ . '/class-jp4wc.php';
 
@@ -52,11 +54,26 @@ function jp4wc_on_deactivation() {
 	do_action( 'woocommerce_paypal_payments_gateway_deactivate' );
 }
 
+/**
+ * Load the plugin textdomain for translations.
+ * Loaded early in plugins_loaded to ensure translations are available when payment gateways
+ * and other classes are initialized.
+ *
+ * Note: WordPress 6.7+ recommends loading translations at init or later, but this plugin
+ * requires early loading for WooCommerce payment gateway classes. The doing_it_wrong
+ * notice is suppressed as this is an intentional architectural decision.
+ *
+ * @return void
+ */
+function jp4wc_load_textdomain() {
+	load_plugin_textdomain( 'woocommerce-for-japan', false, dirname( plugin_basename( __FILE__ ) ) . '/i18n/' );
+}
+add_action( 'plugins_loaded', 'jp4wc_load_textdomain', 0 );
 
 /**
  * Load plugin functions.
  */
-add_action( 'plugins_loaded', 'jp4wc_plugin' );
+add_action( 'plugins_loaded', 'jp4wc_plugin', 10 );
 
 /**
  * Initialize JP4WC plugin when plugins are loaded.
@@ -130,7 +147,7 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 	/**
 	 * Load plugin functions.
 	 */
-	add_action( 'init', 'wc_paidy_plugin', 0 );
+	add_action( 'plugins_loaded', 'wc_paidy_plugin', 20 );
 
 	/**
 	 * Initialize the Paidy plugin.
@@ -138,6 +155,15 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 	function wc_paidy_plugin() {
 		if ( is_woocommerce_active() && class_exists( 'WooCommerce' ) ) {
 			WC_Paidy::get_instance();
+		}
+		if ( class_exists( 'Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType' ) ) {
+			add_action(
+				'woocommerce_blocks_payment_method_type_registration',
+				function ( Automattic\WooCommerce\Blocks\Payments\PaymentMethodRegistry $payment_method_registry ) {
+					require_once 'includes/gateways/paidy/class-wc-payments-paidy-blocks-support.php';
+					$payment_method_registry->register( new WC_Payments_Paidy_Blocks_Support() );
+				}
+			);
 		}
 	}
 
@@ -174,12 +200,10 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 	 * Redirects to the Paidy wizard after plugin activation.
 	 */
 	function paidy_redirect_to_wizard() {
-		$paidy_payment_method      = new WC_Gateway_Paidy();
-		$jp4wc_admin_notices_class = new JP4WC_Admin_Notices();
+		$paidy_payment_method = new WC_Gateway_Paidy();
 		if ( get_option( 'paidy_do_activation_redirect', false ) ) {
 			$first_installing = get_option( 'jp4wc-first-installing', 'no' );
-			if ( 'yes' !== $paidy_payment_method->enabled && ( $jp4wc_admin_notices_class->has_orders_in_last_5_days() || 'yes' === $first_installing ) ) {
-				$paidy_payment_method->update_option( 'enabled', 'yes' );
+			if ( 'yes' !== $paidy_payment_method->enabled && ( jp4wc_has_orders_in_last_5_days() || 'yes' === $first_installing ) ) {
 				// Check if the user is an admin and has the capability to manage options.
 				delete_option( 'paidy_do_activation_redirect' );
 				wp_safe_redirect( admin_url( 'admin.php?page=wc-admin&path=%2Fpaidy-on-boarding' ) );
@@ -240,3 +264,17 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 		add_filter( 'woocommerce_available_payment_gateways', 'wc4jp_paidy_available_gateways' );
 	}
 endif;
+
+/**
+ * Declare plugin compatibility with WooCommerce HPOS.
+ *
+ * @since 2.6.0
+ */
+add_action(
+	'before_woocommerce_init',
+	function () {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
+	}
+);

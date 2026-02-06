@@ -8,7 +8,7 @@
  * @package    Woocommerce_For_Japan
  * @subpackage Woocommerce_For_Japan/includes
  * @author     Artisan Workshop
- * @since      1.0.0
+ * @since      2.6.0
  * @license    GPL-2.0+
  */
 
@@ -24,7 +24,8 @@ if ( ! class_exists( 'JP4WC_COD_Fee_Handler' ) ) {
 	 * for orders using Cash on Delivery payment method in the Japanese market.
 	 *
 	 * @package WooCommerce for Japan
-	 * @since 1.0.0
+	 * @version 2.7.15
+	 * @since 2.6.0
 	 */
 	class JP4WC_COD_Fee_Handler {
 		/**
@@ -83,7 +84,7 @@ if ( ! class_exists( 'JP4WC_COD_Fee_Handler' ) ) {
 		 * @return void
 		 */
 		public static function jp4wc_block_external_js_files() {
-			if ( ! is_checkout() ) {
+			if ( ! is_checkout() || ! jp4wc_is_using_checkout_blocks() ) {
 				return;
 			}
 			$enqueue_array = array(

@@ -1,15 +1,15 @@
-# Copyright (C) 2025 Artisan Workshop
+# Copyright (C) 2026 Artisan Workshop
 # This file is distributed under the same license as the Japanized for WooCommerce plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Japanized for WooCommerce 2.7.0\n"
+"Project-Id-Version: Japanized for WooCommerce 2.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/Japanized-for-WooCommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-06T06:41:51+00:00\n"
+"POT-Creation-Date: 2026-01-03T07:31:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -40,86 +40,102 @@ msgid "https://wc.artws.info/"
 msgstr ""
 
 #. translators: %1$s and %2$s are HTML tags for a link that wraps around the five-star rating. %1$s opens the link and %2$s closes it. The &#9733; characters represent star symbols that will be displayed in the rating.
-#: class-jp4wc.php:270
+#: class-jp4wc.php:251
 #, php-format
 msgid "If you like <strong>Japanized for WooCommerce</strong> please leave us a %1$s&#9733;&#9733;&#9733;&#9733;&#9733;%2$s rating. A huge thanks in advance!"
 msgstr ""
 
 #. translators: %1$s and %2$s are HTML tags for a link that wraps around the five-star rating. %1$s opens the link and %2$s closes it. The &#9733; characters represent star symbols that will be displayed in the rating.
-#: class-jp4wc.php:270
+#: class-jp4wc.php:251
 msgid "Thanks :)"
 msgstr ""
 
-#: class-jp4wc.php:280
+#: class-jp4wc.php:261
 msgid "Thank you for installing with Japanized for WooCommerce."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:133
+#: includes/admin/class-jp4wc-admin-notices.php:175
 msgid "Credit Card Security Guidelines Quick Check"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:137
+#: includes/admin/class-jp4wc-admin-notices.php:179
 msgid "Please check the PHP version. The PHP currently used on this site is not supported for security reasons."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:142
+#: includes/admin/class-jp4wc-admin-notices.php:184
 msgid "Please check the WordPress version. The version of WordPress is outdated."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:147
+#: includes/admin/class-jp4wc-admin-notices.php:189
 msgid "Please check the WooCommerce version. The version of WooCommerce is outdated."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:153
+#: includes/admin/class-jp4wc-admin-notices.php:195
 msgid "This site is currently in violation of the security guidelines due to the above content. Immediate action is required."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:159
+#: includes/admin/class-jp4wc-admin-notices.php:201
 msgid "Get 2,200 yen/month and cashback now! Click here for your chance to switch to a secure server."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:163
+#: includes/admin/class-jp4wc-admin-notices.php:205
 msgid "30-day money back guarantee! Click here for details on the security-enabled server migration campaign."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:167
+#: includes/admin/class-jp4wc-admin-notices.php:209
 msgid "Get a cashback on all your current server costs! Click here for a safe and economical migration."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:171
+#: includes/admin/class-jp4wc-admin-notices.php:213
 msgid "Fully secure! Migration + cashback for just 2,200 yen per month [Click here for details]."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:175
+#: includes/admin/class-jp4wc-admin-notices.php:217
 msgid "Migration is also safe. 30-day money back guarantee! Click here for security-enabled servers."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:179
+#: includes/admin/class-jp4wc-admin-notices.php:221
 msgid "If you're worried about server migration, check out SoftStepsEC for Pressable!"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:183
+#: includes/admin/class-jp4wc-admin-notices.php:225
 msgid "Now is your chance to switch! Check out the ¥2,200/month + cashback campaign."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:187
+#: includes/admin/class-jp4wc-admin-notices.php:229
 msgid "[Hurry] Check out the details of this safe and affordable server migration campaign now!"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:193
+#: includes/admin/class-jp4wc-admin-notices.php:235
 msgid "We recommend you do a quick check on the following page."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:195
+#: includes/admin/class-jp4wc-admin-notices.php:237
 msgid "The above warning will no longer be displayed, and once you have checked the page problems, addressed them, checked and saved, this message will disappear."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:197
+#: includes/admin/class-jp4wc-admin-notices.php:239
 msgid "Check the security checklist"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-notices.php:200
+#: includes/admin/class-jp4wc-admin-notices.php:242
 msgid "[Introducing servers that comply with credit card guidelines]"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-notices.php:372
+msgid "【Important Notice】PayPal Integration Removal"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-notices.php:374
+msgid "Starting with updates from February 2026, PayPal payment gateway will be removed from the Japanized for WooCommerce plugin."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-notices.php:375
+msgid "If you are currently using PayPal, please consider installing the official PayPal plugin or using an alternative payment method."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-notices.php:376
+msgid "Please prepare for this change before the update."
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-php-notice.php:34
@@ -147,6 +163,8 @@ msgid "For Japanese"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:126
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:54
 msgid "Address Display Setting"
 msgstr ""
 
@@ -155,48 +173,68 @@ msgid "Notice"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:139
-#: includes/admin/class-jp4wc-admin-screen.php:778
+#: includes/admin/class-jp4wc-admin-screen.php:887
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:64
 msgid "Name Yomigana"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:146
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:79
 msgid "Required Name Yomigana"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:153
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:100
 msgid "Honorific suffix(Sama)"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:160
-#: includes/admin/class-jp4wc-admin-screen.php:804
-#: includes/class-jp4wc-address-fields.php:132
-#: includes/class-jp4wc-address-fields.php:167
+#: includes/admin/class-jp4wc-admin-screen.php:913
+#: includes/class-jp4wc-address-fields.php:142
+#: includes/class-jp4wc-address-fields.php:177
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:122
 msgid "Company Name"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:167
-#: includes/admin/class-jp4wc-admin-screen.php:873
+#: includes/admin/class-jp4wc-admin-screen.php:982
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:147
 msgid "Automatic zip code entry"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:174
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:172
 msgid "Yahoo APP ID"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:181
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:187
 msgid "No Japanese Address"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:188
-#: includes/admin/class-jp4wc-admin-screen.php:813
+#: includes/admin/class-jp4wc-admin-screen.php:922
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:206
 msgid "Free Shipping Display"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:195
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:230
 msgid "Custamize Email template at customer name"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:204
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:252
 msgid "Virtual order Setting"
 msgstr ""
 
@@ -205,116 +243,177 @@ msgid "Hide address input"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:219
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:358
 msgid "Usage tracking"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:226
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:365
 msgid "Tracking"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:235
-#: includes/admin/class-jp4wc-admin-screen.php:900
+#: includes/admin/class-jp4wc-admin-screen.php:1009
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:77
 msgid "Delivery date designation"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:241
-#: includes/class-jp4wc-delivery.php:129
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:139
+#: includes/class-jp4wc-delivery.php:150
+#: assets/js/build/admin/settings.js:1
+#: assets/js/build/blocks/delivery-block-editor.js:1
+#: assets/js/build/blocks/delivery-block-frontend.js:1
+#: src/js/blocks/delivery-block-editor.js:35
+#: src/js/blocks/delivery-block-frontend.js:117
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:87
 msgid "Preferred delivery date"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:248
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:105
 msgid "Preferred delivery date required"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:255
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:128
 msgid "Start Date"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:262
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:144
 msgid "Delivery Term"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:269
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:161
 msgid "Unspecified date description"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:276
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:180
 msgid "Date format"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:283
-#: includes/admin/class-jp4wc-admin-screen.php:950
+#: includes/admin/class-jp4wc-admin-screen.php:1059
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:197
 msgid "Display day of week"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:290
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:212
 msgid "Delivery deadline"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:297
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:230
 msgid "No delivery weekday"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:304
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:305
 msgid "Holiday term"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:313
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:354
 msgid "Delivery Time designation"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:319
-#: includes/admin/class-jp4wc-admin-screen.php:1049
+#: includes/admin/class-jp4wc-admin-screen.php:1158
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:364
 msgid "Delivery time zone"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:326
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:385
 msgid "Delivery time zone required"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:333
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:409
 msgid "Unspecified Time description"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:340
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:427
 msgid "Delivery time zone management"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:349
-msgid "Payment Method"
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:506
+msgid "Notification of missing required fields"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:355
-#: includes/admin/class-jp4wc-admin-screen.php:1111
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:517
+msgid "Notification email address"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:364
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:53
+msgid "Payment Method"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:370
+#: includes/admin/class-jp4wc-admin-screen.php:1234
 #: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:95
-#: assets/js/build/frontend/blocks/bank-jp.js:1504
-#: src/js/jp4wc/frontend/blocks/bank-jp/index.js:9
-#: assets/js/build/frontend/blocks/bank-jp.js:1405
+#: assets/js/build/admin/settings.js:1
+#: assets/js/build/frontend/blocks/bank-jp.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:60
+#: src/js/jp4wc/frontend/blocks/bank-jp/index.js:8
 msgid "BANK PAYMENT IN JAPAN"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:362
-#: includes/admin/class-jp4wc-admin-screen.php:1119
+#: includes/admin/class-jp4wc-admin-screen.php:377
+#: includes/admin/class-jp4wc-admin-screen.php:1242
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:86
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:139
-#: assets/js/build/frontend/blocks/postofficebank.js:1504
-#: src/js/jp4wc/frontend/blocks/postofficebank/index.js:9
-#: assets/js/build/frontend/blocks/postofficebank.js:1405
+#: assets/js/build/admin/settings.js:1
+#: assets/js/build/frontend/blocks/postofficebank.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:78
+#: src/js/jp4wc/frontend/blocks/postofficebank/index.js:8
 msgid "Postal transfer"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:369
-#: includes/admin/class-jp4wc-admin-screen.php:1127
+#: includes/admin/class-jp4wc-admin-screen.php:384
+#: includes/admin/class-jp4wc-admin-screen.php:1250
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:96
 msgid "Pay at store"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:376
-#: includes/admin/class-jp4wc-admin-screen.php:1136
+#: includes/admin/class-jp4wc-admin-screen.php:391
+#: includes/admin/class-jp4wc-admin-screen.php:1259
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:111
 msgid "COD for Subscriptions"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:383
-#: includes/admin/class-jp4wc-admin-screen.php:1145
+#: includes/admin/class-jp4wc-admin-screen.php:398
+#: includes/admin/class-jp4wc-admin-screen.php:1268
 #: includes/gateways/paypal/modules/ppcp-compat/services.php:20
 #: includes/gateways/paypal/modules/ppcp-session/src/Cancellation/CancelView.php:61
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/services.php:418
@@ -326,459 +425,645 @@ msgstr ""
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/src/Settings/Fields/paypal-smart-button-fields.php:564
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/src/Settings/Fields/paypal-smart-button-fields.php:704
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/src/Settings/Settings.php:107
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:129
 msgid "PayPal"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:392
-#: includes/admin/views/html-admin-screen.php:15
-msgid "Specified Commercial Transaction Law"
-msgstr ""
-
-#: includes/admin/class-jp4wc-admin-screen.php:398
-#: includes/class-jp4wc-shortcodes.php:64
-msgid "Shop Name"
-msgstr ""
-
-#: includes/admin/class-jp4wc-admin-screen.php:405
-#: includes/class-jp4wc-shortcodes.php:65
-msgid "Sales company name (company name)"
+#: includes/admin/class-jp4wc-admin-screen.php:406
+#: includes/class-jp4wc-cod-fee.php:104
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:143
+msgid "Extra charge for COD method"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:412
-#: includes/class-jp4wc-shortcodes.php:66
-msgid "Owner Name"
+#: includes/class-jp4wc-cod-fee.php:108
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:154
+msgid "Fee name"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:419
-#: includes/class-jp4wc-shortcodes.php:67
-#: includes/class-jp4wc-shortcodes.php:90
-msgid "Manager Name"
+#: includes/class-jp4wc-cod-fee.php:114
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:170
+msgid "Extra charge amount"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:426
-#: includes/class-jp4wc-shortcodes.php:68
-msgid "Location"
+#: includes/class-jp4wc-cod-fee.php:119
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:190
+msgid "Maximum cart value to which adding fee"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:433
-#: includes/class-jp4wc-shortcodes.php:69
-msgid "Contact"
+#: includes/class-jp4wc-cod-fee.php:125
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:213
+msgid "Includes taxes"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:440
-#: includes/class-jp4wc-shortcodes.php:70
-#: includes/class-jp4wc-shortcodes.php:90
-msgid "Telephone"
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:238
+msgid "Tax Class"
 msgstr ""
 
 #: includes/admin/class-jp4wc-admin-screen.php:447
+msgid "Charge amount of details"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:456
+#: includes/admin/views/html-admin-screen.php:15
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:46
+msgid "Specified Commercial Transaction Law"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:462
+#: includes/class-jp4wc-shortcodes.php:64
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:57
+msgid "Shop Name"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:469
+#: includes/class-jp4wc-shortcodes.php:65
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:69
+msgid "Sales company name (company name)"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:476
+#: includes/class-jp4wc-shortcodes.php:66
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:84
+msgid "Owner Name"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:483
+#: includes/class-jp4wc-shortcodes.php:67
+#: includes/class-jp4wc-shortcodes.php:90
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:96
+msgid "Manager Name"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:490
+#: includes/class-jp4wc-shortcodes.php:68
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:107
+msgid "Location"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:497
+#: includes/class-jp4wc-shortcodes.php:69
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:120
+msgid "Contact"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:504
+#: includes/class-jp4wc-shortcodes.php:70
+#: includes/class-jp4wc-shortcodes.php:90
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:132
+msgid "Telephone"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:511
 #: includes/class-jp4wc-shortcodes.php:71
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:143
 msgid "Selling price"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:454
+#: includes/admin/class-jp4wc-admin-screen.php:518
 #: includes/class-jp4wc-shortcodes.php:72
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:155
 msgid "Payment method"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:461
+#: includes/admin/class-jp4wc-admin-screen.php:525
 #: includes/class-jp4wc-shortcodes.php:73
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:170
 msgid "Product purchase method"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:468
+#: includes/admin/class-jp4wc-admin-screen.php:532
 #: includes/class-jp4wc-shortcodes.php:74
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:185
 msgid "Product delivery time"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:475
+#: includes/admin/class-jp4wc-admin-screen.php:539
 #: includes/class-jp4wc-shortcodes.php:75
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:200
 msgid "Costs other than product charges"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:482
+#: includes/admin/class-jp4wc-admin-screen.php:546
 #: includes/class-jp4wc-shortcodes.php:76
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:215
 msgid "Returns / Cancellations"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:489
+#: includes/admin/class-jp4wc-admin-screen.php:553
 #: includes/class-jp4wc-shortcodes.php:77
 #: includes/class-jp4wc-shortcodes.php:90
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:230
 msgid "Special conditions"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:496
+#: includes/admin/class-jp4wc-admin-screen.php:560
 msgid "Setting method"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:505
+#: includes/admin/class-jp4wc-admin-screen.php:569
 #: includes/admin/views/html-admin-screen.php:16
 #: includes/admin/views/html-admin-setting-screen.php:21
 msgid "Affiliate Setting"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:512
+#: includes/admin/class-jp4wc-admin-screen.php:576
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:52
 msgid "A8.net Setting"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:520
+#: includes/admin/class-jp4wc-admin-screen.php:584
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:107
 msgid "felmat Setting"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:534
+#: includes/admin/class-jp4wc-admin-screen.php:598
 msgid "Plugins Information"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:540
+#: includes/admin/class-jp4wc-admin-screen.php:604
 msgid "Featured Plugins"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:549
+#: includes/admin/class-jp4wc-admin-screen.php:613
 msgid "Professional services Information"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:555
+#: includes/admin/class-jp4wc-admin-screen.php:619
 msgid "Featured Services"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:582
-#: includes/admin/class-jp4wc-admin-screen.php:612
-#: includes/admin/class-jp4wc-admin-screen.php:657
-#: includes/admin/class-jp4wc-admin-screen.php:678
-#: includes/admin/class-jp4wc-admin-screen.php:690
+#: includes/admin/class-jp4wc-admin-screen.php:646
+#: includes/admin/class-jp4wc-admin-screen.php:720
+#: includes/admin/class-jp4wc-admin-screen.php:766
+#: includes/admin/class-jp4wc-admin-screen.php:787
+#: includes/admin/class-jp4wc-admin-screen.php:799
 msgid "Your settings have been saved."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:771
+#: includes/admin/class-jp4wc-admin-screen.php:880
 msgid "Regarding this setting, etc., we do not yet support block shopping carts or purchase procedures. Please use the shortcode to use this feature."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:787
+#: includes/admin/class-jp4wc-admin-screen.php:896
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:83
 msgid "Check if you want to require yomigana."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:795
+#: includes/admin/class-jp4wc-admin-screen.php:904
 msgid "Honorific Suffix(Sama)"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:822
+#: includes/admin/class-jp4wc-admin-screen.php:931
 msgid "This process has no hooks, so it overwrites the template files in /emails/. If you have customized the email template, please refer to the 12 files in the folder below and add them to your customization.<br/>woocommerce-for-japan/templates/emails/"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:823
+#: includes/admin/class-jp4wc-admin-screen.php:932
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:234
 msgid "Please check it if you want to change customer name display.( from first name to full name )"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:832
+#: includes/admin/class-jp4wc-admin-screen.php:941
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:273
 msgid "Postcode / ZIP"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:833
+#: includes/admin/class-jp4wc-admin-screen.php:942
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:287
 msgid "Prefecture"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:834
+#: includes/admin/class-jp4wc-admin-screen.php:943
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:301
 msgid "Town / City"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:835
+#: includes/admin/class-jp4wc-admin-screen.php:944
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:315
 msgid "Street address"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:836
+#: includes/admin/class-jp4wc-admin-screen.php:945
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:329
 msgid "Apartment, suite, unit, etc. (optional)"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:837
-#: includes/class-jp4wc-address-fields.php:474
-#: includes/class-jp4wc-address-fields.php:543
+#: includes/admin/class-jp4wc-admin-screen.php:946
+#: includes/class-jp4wc-address-fields.php:512
+#: includes/class-jp4wc-address-fields.php:581
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/src/Gateway/PayUponInvoice/PayUponInvoice.php:339
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:343
 msgid "Phone"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:849
+#: includes/admin/class-jp4wc-admin-screen.php:958
 msgid "Check the address input field to hide in the virtual order."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:865
+#: includes/admin/class-jp4wc-admin-screen.php:974
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:366
 msgid "Enable usage tracking"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:882
+#: includes/admin/class-jp4wc-admin-screen.php:991
 msgid "Yahoo! APP ID"
 msgstr ""
 
 #. translators: %s: Setting title
-#: includes/admin/class-jp4wc-admin-screen.php:884
+#: includes/admin/class-jp4wc-admin-screen.php:993
 #, php-format
 msgid "If you use it a bit for testing, you do not need to enter it here. But if you want to use Automatic zip code entry, you must get and input %s here. Please get it from <a href=\"https://e.developer.yahoo.co.jp/dashboard/\" target=\"_blank\">here</a>."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:892
+#: includes/admin/class-jp4wc-admin-screen.php:1001
 msgid "Eliminate the order of addresses for Japan."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:909
+#: includes/admin/class-jp4wc-admin-screen.php:1018
 msgid "Check here if you want to specify the delivery date as a required."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:917
+#: includes/admin/class-jp4wc-admin-screen.php:1026
 msgid "Please enter the number of days until the first day you can receive the delivery date / time. If you enter 0 you can specify delivery from today."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:925
+#: includes/admin/class-jp4wc-admin-screen.php:1034
 msgid "Please enter the number of days for which you can accept the delivery reservation. Please enter 1 or more."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:933
+#: includes/admin/class-jp4wc-admin-screen.php:1042
 msgid "Please enter the sentence when you do not need to specify the delivery date."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:934
+#: includes/admin/class-jp4wc-admin-screen.php:1043
 msgid "No specified date"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:941
+#: includes/admin/class-jp4wc-admin-screen.php:1050
 msgid "Please enter the format when you want to save the data by format. Use PHP format type."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:942
+#: includes/admin/class-jp4wc-admin-screen.php:1051
 msgid "Check from here."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:959
+#: includes/admin/class-jp4wc-admin-screen.php:1068
 msgid "Please enter the time delivery deadline of your store."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:969
+#: includes/admin/class-jp4wc-admin-screen.php:1078
 msgid "Sunday"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:974
+#: includes/admin/class-jp4wc-admin-screen.php:1083
 msgid "Moday"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:978
+#: includes/admin/class-jp4wc-admin-screen.php:1087
 msgid "Tuesday"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:982
+#: includes/admin/class-jp4wc-admin-screen.php:1091
 msgid "Wednesday"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:986
+#: includes/admin/class-jp4wc-admin-screen.php:1095
 msgid "Thursday"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:990
+#: includes/admin/class-jp4wc-admin-screen.php:1099
 msgid "Friday"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:994
+#: includes/admin/class-jp4wc-admin-screen.php:1103
 msgid "Saturday"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1022
+#: includes/admin/class-jp4wc-admin-screen.php:1131
 msgid "Please check the days of the week that you do not ship. In case of continuous, we will correspond up to three days."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1030
+#: includes/admin/class-jp4wc-admin-screen.php:1139
 msgid "Holiday Start Date"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1036
+#: includes/admin/class-jp4wc-admin-screen.php:1145
 msgid "Holiday End Date"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1041
+#: includes/admin/class-jp4wc-admin-screen.php:1150
 msgid "Please enter the date term long holiday of your store."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1058
+#: includes/admin/class-jp4wc-admin-screen.php:1167
 msgid "Check here if you want to specify the delivery time zone as a required item."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1066
+#: includes/admin/class-jp4wc-admin-screen.php:1175
 msgid "Please enter the sentence when you do not need to specify the delivery time."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1067
+#: includes/admin/class-jp4wc-admin-screen.php:1176
 msgid "No designated time zone"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1154
+#: includes/admin/class-jp4wc-admin-screen.php:1226
+msgid "Please enter the email address where you would like to receive notifications when a customer fails to enter the required delivery date and time."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1277
+msgid "Please enter the COD fee name."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1278
+msgid "COD Fee"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1285
+msgid "Please enter the COD charge amount."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1293
+msgid "Please enter the maximum COD charge amount."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1301
+msgid "Please select the tax status for COD fee."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1303
+#: includes/class-jp4wc-cod-fee.php:128
+msgid "Do not calculate taxes"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1304
+#: includes/class-jp4wc-cod-fee.php:129
+msgid "The fee is taxes included"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1305
+#: includes/class-jp4wc-cod-fee.php:130
+msgid "The fee is taxes excluded"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1314
+msgid "Please select the tax class for COD fee."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1316
+#: includes/jp4wc-common-functions.php:26
+msgid "Not Required"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1317
+#: includes/jp4wc-common-functions.php:27
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:242
+msgid "Standard"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1318
+msgid "Reduced Rate"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1333
+#: includes/class-jp4wc-cod-fee.php:169
+msgid "Charge amount of COD"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1334
+#: includes/class-jp4wc-cod-fee.php:170
+msgid "Max"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1356
+#: includes/class-jp4wc-cod-fee.php:191
+msgid "+ Add Charge amount"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1356
+#: includes/class-jp4wc-cod-fee.php:191
+msgid "Remove selected Charge amount(s)"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1376
+#: includes/class-jp4wc-cod-fee.php:212
+msgid "Note : This function is only available to PRO purchasers."
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-screen.php:1384
 msgid "Please enter the shop name."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1162
+#: includes/admin/class-jp4wc-admin-screen.php:1392
 msgid "Please enter the company name."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1170
+#: includes/admin/class-jp4wc-admin-screen.php:1400
 msgid "Please enter the owner name."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1178
+#: includes/admin/class-jp4wc-admin-screen.php:1408
 msgid "Please enter the Manager name."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1186
+#: includes/admin/class-jp4wc-admin-screen.php:1416
 msgid "Please enter the location."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1200
+#: includes/admin/class-jp4wc-admin-screen.php:1430
 msgid "Please enter the contact rule."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1201
+#: includes/admin/class-jp4wc-admin-screen.php:1431
 msgid "Please contact us from the inquiry form."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1218
+#: includes/admin/class-jp4wc-admin-screen.php:1448
 msgid "Please enter the telephone number."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1226
+#: includes/admin/class-jp4wc-admin-screen.php:1456
 msgid "Please enter the Selling price rules."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1227
+#: includes/admin/class-jp4wc-admin-screen.php:1457
 msgid "The product price is displayed on each product screen."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1235
+#: includes/admin/class-jp4wc-admin-screen.php:1465
 msgid "Please enter the Payment methods rules."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1236
+#: includes/admin/class-jp4wc-admin-screen.php:1466
 msgid "Payment methods are limited to various credit cards."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1244
+#: includes/admin/class-jp4wc-admin-screen.php:1474
 msgid "Please enter the purchase rules."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1245
+#: includes/admin/class-jp4wc-admin-screen.php:1475
 msgid "Put the product you want to purchase in the cart, proceed to purchase, pay with credit card and purchase."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1253
+#: includes/admin/class-jp4wc-admin-screen.php:1483
 msgid "Please enter the product delivery time rules."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1254
+#: includes/admin/class-jp4wc-admin-screen.php:1484
 msgid "The shipping date of the product is listed on each product page."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1262
+#: includes/admin/class-jp4wc-admin-screen.php:1492
 msgid "Please enter the cost rules."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1263
+#: includes/admin/class-jp4wc-admin-screen.php:1493
 msgid "A separate shipping fee will be added to the purchase price."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1271
+#: includes/admin/class-jp4wc-admin-screen.php:1501
 msgid "Please enter the return and cancellation rules."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1272
+#: includes/admin/class-jp4wc-admin-screen.php:1502
 msgid "We will not accept returns or exchanges other than mistakes at the time of delivery on our company side."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1280
+#: includes/admin/class-jp4wc-admin-screen.php:1510
 msgid "Please enter the Special rules."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1288
+#: includes/admin/class-jp4wc-admin-screen.php:1518
 msgid "It will be displayed if you put [jp4wc_law] shortcode on a page or post."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1295
+#: includes/admin/class-jp4wc-admin-screen.php:1525
 msgid "A8.net tracking settings"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1299
+#: includes/admin/class-jp4wc-admin-screen.php:1529
 msgid "Please enter your A8.net Advertising ID."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1302
+#: includes/admin/class-jp4wc-admin-screen.php:1532
 msgid "A8.net test mode"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1311
+#: includes/admin/class-jp4wc-admin-screen.php:1541
 msgid "felmat tracking settings"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1315
+#: includes/admin/class-jp4wc-admin-screen.php:1545
 msgid "Please enter your felmat Advertising ID."
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1344
+#: includes/admin/class-jp4wc-admin-screen.php:1574
 msgid "Delivery time zone start time"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1346
+#: includes/admin/class-jp4wc-admin-screen.php:1576
 msgid "Delivery time zone end time"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1351
+#: includes/admin/class-jp4wc-admin-screen.php:1581
 msgid "+ Add Time Zone"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1351
+#: includes/admin/class-jp4wc-admin-screen.php:1581
 msgid "Remove selected Time Zone"
 msgstr ""
 
 #. translators: %s: Setting title
-#: includes/admin/class-jp4wc-admin-screen.php:1399
+#: includes/admin/class-jp4wc-admin-screen.php:1629
 #, php-format
 msgid "Please check it if you want to use input field for %s"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1410
-#: assets/js/build/admin/security.js:1844
-#: assets/js/build/paidy/admin/paidy.js:1787
-#: assets/js/build/paidy/admin/paidy.js:2102
-#: assets/js/build/paidy/wizard/paidy.js:1598
-#: assets/js/build/paidy/wizard/paidy.js:1913
-#: src/js/jp4wc/admin/security/hooks/use-settings.js:36
-#: src/js/paidy/main-hooks/form-info.jsx:193
-#: src/js/paidy/main-hooks/on-boarding-settings.js:172
-#: assets/js/build/admin/security.js:1751
-#: assets/js/build/paidy/admin/paidy.js:1686
-#: assets/js/build/paidy/admin/paidy.js:1974
-#: assets/js/build/paidy/wizard/paidy.js:1535
-#: assets/js/build/paidy/wizard/paidy.js:1823
+#: includes/admin/class-jp4wc-admin-screen.php:1640
+#: assets/js/build/admin/security.js:1
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/admin/paidy.js:3
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/jp4wc/admin/security/hooks/use-settings.js:38
+#: src/js/paidy/main-hooks/form-info.jsx:319
+#: src/js/paidy/main-hooks/on-boarding-settings.js:308
 msgid "Settings saved."
 msgstr ""
 
 #. translators: %s: Plugin URL
-#: includes/admin/class-jp4wc-admin-screen.php:1421
+#: includes/admin/class-jp4wc-admin-screen.php:1651
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\" title=\"Paygent Payment\">Paygent Payment</a> :  You can handle Credit Card payment and Convini payment, etc<br >"
 msgstr ""
 
 #. translators: %s: Plugin URL
-#: includes/admin/class-jp4wc-admin-screen.php:1426
+#: includes/admin/class-jp4wc-admin-screen.php:1656
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\" title=\"WooCommerce Subscriptions\">WooCommerce Subscriptions</a> : You can handle Subscriptions.<br >"
 msgstr ""
 
 #. translators: %s: Setting URL
-#: includes/admin/class-jp4wc-admin-screen.php:1437
+#: includes/admin/class-jp4wc-admin-screen.php:1667
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\" title=\"Payment Setting Support\">Payment Setting Support</a> :  We support Payment Plugins Setting.<br >"
 msgstr ""
 
 #. translators: %s: Setting URL
-#: includes/admin/class-jp4wc-admin-screen.php:1442
+#: includes/admin/class-jp4wc-admin-screen.php:1672
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\" title=\"Maintenance Support\">Maintenance Support</a> : We support your WordPress and WooCommmerce site, update or somethings.<br >"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-screen.php:1527
+#: includes/admin/class-jp4wc-admin-screen.php:1757
 msgid "Japanized for WooCommerce Information"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-settings.php:37
+msgid "JP4WC Settings"
+msgstr ""
+
+#: includes/admin/class-jp4wc-admin-settings.php:40
+msgid "JP4WC Settings (Block)"
 msgstr ""
 
 #: includes/admin/class-jp4wc-check-security.php:47
@@ -803,43 +1088,51 @@ msgid "Error: "
 msgstr ""
 
 #. translators: %s: PHP version number
-#: includes/admin/class-jp4wc-check-security.php:448
+#: includes/admin/class-jp4wc-check-security.php:453
 #, php-format
 msgid "Support information for PHP %s is unknown."
 msgstr ""
 
 #. translators: %s: PHP version number
-#: includes/admin/class-jp4wc-check-security.php:458
+#: includes/admin/class-jp4wc-check-security.php:463
 #, php-format
 msgid "PHP %s is **Active Support** (new features and bug fixes available)"
 msgstr ""
 
 #. translators: %s: PHP version number
-#: includes/admin/class-jp4wc-check-security.php:464
+#: includes/admin/class-jp4wc-check-security.php:469
 #, php-format
 msgid "PHP %s is in **Security Support** (security fixes only)"
 msgstr ""
 
 #. translators: 1: PHP version number, 2: Last supported date
-#: includes/admin/class-jp4wc-check-security.php:470
+#: includes/admin/class-jp4wc-check-security.php:475
 #, php-format
 msgid "PHP %1$s has **End of Life (EOL)**!\\nLast supported date: %2$s \\nWe recommend you upgrade immediately."
 msgstr ""
 
-#: includes/admin/class-jp4wc-check-security.php:616
+#: includes/admin/class-jp4wc-check-security.php:621
 msgid "No scan session found. Please start a new scan."
 msgstr ""
 
 #. translators: %s: Site URL
-#: includes/admin/class-jp4wc-check-security.php:643
+#: includes/admin/class-jp4wc-check-security.php:648
 #, php-format
 msgid "Malware Alert on %s"
 msgstr ""
 
 #. translators: %s: Site URL
-#: includes/admin/class-jp4wc-check-security.php:645
+#: includes/admin/class-jp4wc-check-security.php:650
 #, php-format
 msgid "The following suspicious files were detected on your site (%s):"
+msgstr ""
+
+#: includes/admin/class-jp4wc-settings-api.php:72
+msgid "Sorry, you are not allowed to view settings."
+msgstr ""
+
+#: includes/admin/class-jp4wc-settings-api.php:89
+msgid "Sorry, you are not allowed to update settings."
 msgstr ""
 
 #: includes/admin/views/html-admin-dashboard-php-notice.php:12
@@ -937,255 +1230,311 @@ msgid "The URL for this page is incorrect."
 msgstr ""
 
 #: includes/admin/views/html-admin-setting-screen.php:40
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:250
 msgid "For those who are having trouble with WooCommerce"
 msgstr ""
 
 #: includes/admin/views/html-admin-setting-screen.php:41
-msgid "We are currently offering a 15-minute free Zoom consultation. A professional will check your current situation and propose the best course of action."
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:256
+msgid "We are currently offering 30-minute paid Zoom consultations. A professional from Woo Agency will assess your current situation and suggest the best course of action."
 msgstr ""
 
-#: includes/admin/views/html-admin-setting-screen.php:63
-#: assets/js/build/admin/security.js:1636
-#: assets/js/build/admin/security.js:1645
-#: src/js/jp4wc/admin/security/components/controls.jsx:257
-#: src/js/jp4wc/admin/security/components/controls.jsx:267
-#: assets/js/build/admin/security.js:1599
-#: assets/js/build/admin/security.js:1609
+#: includes/admin/views/html-admin-setting-screen.php:62
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:472
+#: src/js/jp4wc/admin/security/components/controls.jsx:508
 msgid "Security measures for WooCommerce"
 msgstr ""
 
 #. translators: %s: URL
-#: includes/admin/views/html-admin-setting-screen.php:68
+#: includes/admin/views/html-admin-setting-screen.php:67
 #, php-format
 msgid "One the security, latest update is the most important thing. The credit card security guidelines that will be established from April 2025 are also important. If you need site maintenance support, please consider about <a href=\"%s\" target=\"_blank\" title=\"Security measures for WooCommerce\">Security measures for WooCommerce</a>"
 msgstr ""
 
-#: includes/admin/views/html-admin-setting-screen.php:76
+#: includes/admin/views/html-admin-setting-screen.php:75
 msgid "Do you like this plugin?"
 msgstr ""
 
-#: includes/admin/views/html-admin-setting-screen.php:77
+#: includes/admin/views/html-admin-setting-screen.php:76
 msgid "Rate it 5"
 msgstr ""
 
-#: includes/admin/views/html-admin-setting-screen.php:77
+#: includes/admin/views/html-admin-setting-screen.php:76
 msgid "on WordPress.org"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:102
-msgid "Last Name ( Yomigana )"
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:163
+#: includes/class-jp4wc-delivery.php:288
+#: assets/js/build/blocks/delivery-block-editor.js:1
+#: assets/js/build/blocks/delivery-block-frontend.js:1
+#: src/js/blocks/delivery-block-editor.js:56
+#: src/js/blocks/delivery-block-frontend.js:133
+msgid "Delivery Time Zone"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:108
-msgid "First Name ( Yomigana )"
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:230
+msgid "Please select a delivery date."
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:158
-#: includes/class-jp4wc-address-fields.php:346
-msgid "Shipping Phone"
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:245
+msgid "Please select a delivery time zone."
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:415
-#: includes/class-jp4wc-address-fields.php:459
-#: includes/class-jp4wc-address-fields.php:505
-#: includes/class-jp4wc-address-fields.php:528
-msgid "Last Name Yomigana"
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:263
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:339
+msgid "Not specified"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:419
-#: includes/class-jp4wc-address-fields.php:463
-#: includes/class-jp4wc-address-fields.php:509
-#: includes/class-jp4wc-address-fields.php:532
-msgid "First Name Yomigana"
-msgstr ""
-
-#: includes/class-jp4wc-address-fields.php:602
-msgid "Taro"
-msgstr ""
-
-#: includes/class-jp4wc-address-fields.php:603
-msgid "Yamada"
-msgstr ""
-
-#: includes/class-jp4wc-address-fields.php:604
-msgid "Company"
-msgstr ""
-
-#: includes/class-jp4wc-address-fields.php:607
-msgid "2-1 Dougenzaka"
-msgstr ""
-
-#: includes/class-jp4wc-address-fields.php:608
-msgid "Shibuya Ku"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:100
-msgid "Extra charge for COD method"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:104
-msgid "Fee name"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:107
-msgid "COD Payment method fee"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:110
-msgid "Extra charge amount"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:115
-msgid "Maximum cart value to which adding fee"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:118
-msgid "If you dont need this setting, please set empty, 0."
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:121
-msgid "Includes taxes"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:124
-msgid "Do not calculate taxes"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:125
-msgid "The fee is taxes included"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:126
-msgid "The fee is taxes excluded"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:148
-msgid "Tax Class:"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:158
-msgid "Charge amount of details:"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:165
-msgid "Charge amount of COD"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:166
-msgid "Max"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:187
-msgid "+ Add Charge amount"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:187
-msgid "Remove selected Charge amount(s)"
-msgstr ""
-
-#: includes/class-jp4wc-cod-fee.php:208
-msgid "Note : This function is only available to PRO purchasers."
-msgstr ""
-
-#: includes/class-jp4wc-delivery.php:94
-msgid "Delivery request date and time"
-msgstr ""
-
-#: includes/class-jp4wc-delivery.php:119
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:290
+#: includes/class-jp4wc-delivery.php:140
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:292
 msgid "Sun"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:120
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:291
+#: includes/class-jp4wc-delivery.php:141
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:244
 msgid "Mon"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:121
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:292
+#: includes/class-jp4wc-delivery.php:142
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:252
 msgid "Tue"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:122
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:293
+#: includes/class-jp4wc-delivery.php:143
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:260
 msgid "Wed"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:123
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:294
+#: includes/class-jp4wc-delivery.php:144
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:268
 msgid "Thr"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:124
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:295
+#: includes/class-jp4wc-delivery.php:145
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:276
 msgid "Fri"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:125
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:296
+#: includes/class-jp4wc-delivery.php:146
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:284
 msgid "Sat"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:138
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:303
+#: includes/class-jp4wc-delivery.php:159
 msgid "Y/m/d"
 msgstr ""
 
-#. translators: %s: Week name
-#: includes/class-jp4wc-delivery.php:142
+#. translators: %s: The day of the week (e.g., Mon, Tue, Wed).
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:308
+#: includes/class-jp4wc-delivery.php:163
 #, php-format
 msgid "(%s)"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:267
-msgid "Delivery Time Zone"
-msgstr ""
-
-#: includes/class-jp4wc-delivery.php:274
+#: includes/blocks/class-jp4wc-delivery-blocks-integration.php:354
+#: includes/class-jp4wc-delivery.php:295
 msgid "-"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:350
-msgid "\"Desired delivery date\" is a required field. Please enter it."
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:140
+#: includes/class-jp4wc-address-fields.php:112
+msgid "Last Name ( Yomigana )"
+msgstr ""
+
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:163
+#: includes/class-jp4wc-address-fields.php:118
+msgid "First Name ( Yomigana )"
+msgstr ""
+
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:259
+msgid "Please enter the name reading."
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:168
+#: includes/class-jp4wc-address-fields.php:384
+msgid "Shipping Phone"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:251
+msgid "(Please click \"Edit\" to check the pronunciation.)"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:453
+#: includes/class-jp4wc-address-fields.php:497
+#: includes/class-jp4wc-address-fields.php:543
+#: includes/class-jp4wc-address-fields.php:566
+msgid "Last Name Yomigana"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:457
+#: includes/class-jp4wc-address-fields.php:501
+#: includes/class-jp4wc-address-fields.php:547
+#: includes/class-jp4wc-address-fields.php:570
+msgid "First Name Yomigana"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:640
+msgid "Taro"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:641
+msgid "Yamada"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:642
+msgid "Company"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:645
+msgid "2-1 Dougenzaka"
+msgstr ""
+
+#: includes/class-jp4wc-address-fields.php:646
+msgid "Shibuya Ku"
+msgstr ""
+
+#: includes/class-jp4wc-cod-fee.php:111
+msgid "COD Payment method fee"
+msgstr ""
+
+#: includes/class-jp4wc-cod-fee.php:122
+msgid "If you dont need this setting, please set empty, 0."
+msgstr ""
+
+#: includes/class-jp4wc-cod-fee.php:152
+msgid "Tax Class:"
+msgstr ""
+
+#: includes/class-jp4wc-cod-fee.php:162
+msgid "Charge amount of details:"
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:113
+#: assets/js/build/blocks/delivery-block-editor.js:1
+#: assets/js/build/blocks/delivery-block-frontend.js:1
+#: src/js/blocks/delivery-block-editor.js:26
+#: src/js/blocks/delivery-block-frontend.js:108
+msgid "Delivery request date and time"
 msgstr ""
 
 #: includes/class-jp4wc-delivery.php:399
-#: includes/class-jp4wc-delivery.php:415
+msgid "\"Desired delivery date\" is a required field. Please enter it."
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:405
+msgid "\"Desired delivery time zone\" is a required field. Please enter it."
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:488
+#: includes/class-jp4wc-delivery.php:504
 msgid "Scheduled Delivery date and time"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:403
-#: includes/class-jp4wc-delivery.php:419
+#: includes/class-jp4wc-delivery.php:492
+#: includes/class-jp4wc-delivery.php:508
 msgid "Scheduled Delivery Date"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:407
-#: includes/class-jp4wc-delivery.php:423
+#: includes/class-jp4wc-delivery.php:496
+#: includes/class-jp4wc-delivery.php:512
 msgid "Scheduled Time Zone"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:490
+#: includes/class-jp4wc-delivery.php:602
 msgid "Delivery"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:534
+#: includes/class-jp4wc-delivery.php:660
 msgid "Shipping Detail"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:608
+#: includes/class-jp4wc-delivery.php:768
 msgid "Delivery Date"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:609
+#: includes/class-jp4wc-delivery.php:769
 msgid "Date on which the customer wished delivery."
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:616
+#: includes/class-jp4wc-delivery.php:776
 msgid "Time Zone"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:617
+#: includes/class-jp4wc-delivery.php:777
 msgid "Time Zone on which the customer wished delivery."
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:624
+#: includes/class-jp4wc-delivery.php:784
 msgid "Tracking Ship Date"
 msgstr ""
 
-#: includes/class-jp4wc-delivery.php:625
+#: includes/class-jp4wc-delivery.php:785
 msgid "Actually shipped to date"
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:822
+msgid "Order failed: Required delivery date was not provided."
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:833
+msgid "Order failed: Required delivery time zone was not provided."
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:842
+msgid "Required delivery information is missing. Please contact the store for assistance."
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:872
+msgid "delivery time zone"
+msgstr ""
+
+#: includes/class-jp4wc-delivery.php:874
+msgid "delivery date"
+msgstr ""
+
+#. translators: %1$s: Blog name, %2$s: require type , %3$s: Order number
+#: includes/class-jp4wc-delivery.php:883
+#, php-format
+msgid "[%1$s] There are orders with no requested %2$s specified (Order number: #%3$s)"
+msgstr ""
+
+#. translators: %1$s: Order number, %2$s: Order date, %3$s: Customer name, %4$s: Customer email, %5$s: Order detail URL
+#: includes/class-jp4wc-delivery.php:903
+#, php-format
+msgid ""
+"Order Number: #%1$s\n"
+"Order Date: %2$s\n"
+"Customer Name: %3$s\n"
+"Customer Email: %4$s\n"
+"\n"
+"The requested delivery date is a required field but has not been entered.\n"
+"Please review the order details and contact the customer.\n"
+"\n"
+"Order Details Page: %5$s"
+msgstr ""
+
+#. translators: %1$s: require type , %2$s: Order ID
+#: includes/class-jp4wc-delivery.php:937
+#, php-format
+msgid "%1$sAn empty notification email has been sent. Order ID: %2$d"
 msgstr ""
 
 #: includes/class-jp4wc-security.php:57
@@ -1209,7 +1558,7 @@ msgid "Allows At Store payments."
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:78
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:142
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:145
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:191
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/services.php:428
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/src/Gateway/CardButtonGateway.php:231
@@ -1227,8 +1576,8 @@ msgid "Enable At Store Payment"
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:84
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:148
-#: includes/gateways/cod/class-wc-gateway-cod2.php:115
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:151
+#: includes/gateways/cod/class-wc-gateway-cod2.php:107
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:197
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/services.php:412
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/services.php:443
@@ -1240,7 +1589,7 @@ msgid "Title"
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:86
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:150
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:153
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:199
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/services.php:414
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/services.php:445
@@ -1252,15 +1601,14 @@ msgid "This controls the title which the user sees during checkout."
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:87
-#: assets/js/build/frontend/blocks/atstore.js:1504
-#: src/js/jp4wc/frontend/blocks/atstore/index.js:9
-#: assets/js/build/frontend/blocks/atstore.js:1405
+#: assets/js/build/frontend/blocks/atstore.js:1
+#: src/js/jp4wc/frontend/blocks/atstore/index.js:8
 msgid "At Store Payment"
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:91
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:155
-#: includes/gateways/cod/class-wc-gateway-cod2.php:122
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:158
+#: includes/gateways/cod/class-wc-gateway-cod2.php:114
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:204
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/services.php:460
 #: includes/gateways/paypal/modules/ppcp-wc-gateway/src/Gateway/CardButtonGateway.php:246
@@ -1271,8 +1619,8 @@ msgid "Description"
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:93
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:157
-#: includes/gateways/cod/class-wc-gateway-cod2.php:117
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:160
+#: includes/gateways/cod/class-wc-gateway-cod2.php:109
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:206
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:145
 msgid "Payment method description that the customer will see on your checkout."
@@ -1283,14 +1631,14 @@ msgid "Please pay the fee at Store."
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:98
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:162
-#: includes/gateways/cod/class-wc-gateway-cod2.php:129
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:165
+#: includes/gateways/cod/class-wc-gateway-cod2.php:121
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:150
 msgid "Instructions"
 msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:100
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:164
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:167
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:152
 msgid "Instructions that will be added to the thank you page and emails."
 msgstr ""
@@ -1304,158 +1652,183 @@ msgstr ""
 msgid "Allows payments by bank transfer in Japan."
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:144
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:147
 msgid "Enable Bank Transfer"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:151
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:154
 msgid "Bank Transfer in Japan"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:158
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:161
 msgid "Make your payment directly into our bank account."
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:169
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:172
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:157
 msgid "Transfer account display Location"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:171
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:174
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:159
 msgid "The location of the transfer account information on the e-mail."
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:172
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:175
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:160
 msgid "Unless customized by an extension plugin, 9 will be before the order and 15 will be after the order."
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:177
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:180
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:165
 msgid "Display order of instructions and transfer account"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:179
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:182
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:167
 msgid "Check this box if you want to reverse the order in which instructions and transfer accounts are displayed."
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:196
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:201
 msgid "Account Details"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:202
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:209
 msgid "Bank Name"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:203
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:210
 msgid "Bank Branch"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:204
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:211
 msgid "Bank Type"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:205
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:356
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:399
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:212
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:368
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:415
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:191
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:340
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:376
 msgid "Account Number"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:206
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:357
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:400
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:213
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:369
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:416
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:192
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:338
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:374
 msgid "Account Name"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:211
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:218
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:197
 msgid "+ Add Account"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:211
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:218
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:197
 msgid "Remove selected account(s)"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:355
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:398
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:367
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:414
 msgid "Bank Account Details"
 msgstr ""
 
-#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:434
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:454
 msgid "Awaiting BANK payment"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-addons-gateway-cod2.php:108
-#: includes/gateways/cod/class-wc-gateway-cod2.php:248
+#: includes/gateways/cod/class-wc-addons-gateway-cod2.php:119
+#: includes/gateways/cod/class-wc-gateway-cod2.php:310
 msgid "Payment to be made upon delivery."
 msgstr ""
 
 #. translators: %s: Error message from payment processing
-#: includes/gateways/cod/class-wc-addons-gateway-cod2.php:127
+#: includes/gateways/cod/class-wc-addons-gateway-cod2.php:138
 #, php-format
 msgid "COD Failed (%s)"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:65
+#: includes/gateways/cod/class-wc-gateway-cod2.php:69
 msgid "Cash on Delivery for Subscriptions"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:66
+#: includes/gateways/cod/class-wc-gateway-cod2.php:70
 msgid "Have your customers pay with cash (or by other means) upon delivery."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:108
+#: includes/gateways/cod/class-wc-gateway-cod2.php:100
 msgid "Enable COD"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:109
+#: includes/gateways/cod/class-wc-gateway-cod2.php:101
 msgid "Enable Cash on Delivery"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:118
+#: includes/gateways/cod/class-wc-gateway-cod2.php:110
+#: assets/js/build/frontend/blocks/cod2.js:1
+#: src/js/jp4wc/frontend/blocks/cod2/index.js:8
 msgid "Cash on Delivery"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:124
+#: includes/gateways/cod/class-wc-gateway-cod2.php:116
 msgid "Payment method description that the customer will see on your website."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:125
-#: includes/gateways/cod/class-wc-gateway-cod2.php:132
+#: includes/gateways/cod/class-wc-gateway-cod2.php:117
+#: includes/gateways/cod/class-wc-gateway-cod2.php:124
 msgid "Pay with cash upon delivery."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:131
+#: includes/gateways/cod/class-wc-gateway-cod2.php:123
 msgid "Instructions that will be added to the thank you page."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:136
+#: includes/gateways/cod/class-wc-gateway-cod2.php:128
 msgid "Enable for shipping methods"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:141
+#: includes/gateways/cod/class-wc-gateway-cod2.php:133
 msgid "If COD is only available for certain methods, set it up here. Leave blank to enable for all methods."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:145
+#: includes/gateways/cod/class-wc-gateway-cod2.php:137
 msgid "Select shipping methods"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:149
+#: includes/gateways/cod/class-wc-gateway-cod2.php:141
 msgid "Accept for virtual orders"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:150
+#: includes/gateways/cod/class-wc-gateway-cod2.php:142
 msgid "Accept COD if the order is virtual"
+msgstr ""
+
+#. Translators: %1$s shipping method name.
+#: includes/gateways/cod/class-wc-gateway-cod2.php:259
+#, php-format
+msgid "Any &quot;%1$s&quot; method"
+msgstr ""
+
+#. Translators: %1$s shipping method title, %2$s shipping method id.
+#: includes/gateways/cod/class-wc-gateway-cod2.php:274
+#, php-format
+msgid "%1$s (#%2$s)"
+msgstr ""
+
+#. Translators: %1$s zone name, %2$s shipping method instance name.
+#: includes/gateways/cod/class-wc-gateway-cod2.php:277
+#, php-format
+msgid "%1$s &ndash; %2$s"
+msgstr ""
+
+#. Translators: %1$s zone name, %2$s shipping method instance name.
+#: includes/gateways/cod/class-wc-gateway-cod2.php:277
+msgid "Other locations"
 msgstr ""
 
 #. translators: %s: Payment method name.
@@ -1469,10 +1842,9 @@ msgstr ""
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:141
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:223
 #: includes/gateways/paidy/class-wc-payments-paidy-blocks-support.php:105
-#: assets/js/build/paidy/frontend/paidy.js:1540
-#: includes/gateways/paidy/assets/js/frontend/paidy.js:1
+#: assets/js/build/paidy/frontend/paidy.js:1
+#: includes/gateways/paidy/assets/js/frontend/paidy.js:10
 #: src/js/paidy/paidy/index.js:16
-#: assets/js/build/paidy/frontend/paidy.js:1415
 msgid "Paidy"
 msgstr ""
 
@@ -1532,7 +1904,7 @@ msgstr ""
 
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:237
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:243
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:760
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:756
 msgid "API Public Key"
 msgstr ""
 
@@ -1547,7 +1919,7 @@ msgstr ""
 
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:249
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:255
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:771
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:767
 msgid "API Secret Key"
 msgstr ""
 
@@ -1610,167 +1982,167 @@ msgstr ""
 msgid "The webhooks set in the Paidy management screen are as follows. <br />"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:637
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:633
 msgid "This order has already been settled."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:639
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:635
 msgid "API Public key is not set. Please set an API public key in the admin page."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:725
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:721
 msgid "Once the customer interrupted the payment.. Order ID:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:728
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:724
 msgid "This Paidy payment has been declined. Please select another payment method."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:746
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:742
 msgid "Paidy Payment succeeds to authorize and move to thank you page. Get data is following."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:760
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:771
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:756
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:767
 msgid "Production environment"
 msgstr ""
 
 #. translators: 1) Field title 2) Environment 3) Paidy PR link
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:786
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:782
 #, php-format
 msgid "If you do not set %1$s, it will not work in the %2$s. Application is necessary for acquisition."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:822
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:818
 msgid "This order is success cancellation data at Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:825
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:821
 msgid "This order is already close data at Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:828
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:824
 msgid "Cancelled processing has not been completed due to a Paidy error. Please check Paidy admin."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:900
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:909
 msgid "This is capture data."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:908
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:917
 msgid "In the payment completion process, the amount and ID match were confirmed."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:911
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:920
 msgid "In the payment completion process, the amount and ID did not match. Check on the Paidy admin."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:926
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1027
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:935
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1036
 msgid "There was no status in the notification from Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:929
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:938
 msgid "Status Change from Processing to completed."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:945
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:954
 msgid "You have made a forbidden request."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:945
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:948
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:951
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:954
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:957
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:960
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:963
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:966
 msgid "Please go to your Paidy dashboard and check."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:948
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:957
 msgid "You have made an unauthorized request."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:951
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:960
 msgid "You have made a conflict request."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:954
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:963
 msgid "The requested resource could not be found."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:957
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:966
 msgid "The request failed."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:960
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:969
 msgid "I received a notification from Paidy stating that the status was unexpected."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:997
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1006
 msgid "Refund is not possible because Paidy has not completed processing."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1013
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1022
 msgid "Completion refunding has been completed at Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1065
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1074
 msgid "[WooCommerce] Notice of error occurrence in Paidy payment linkage"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1082
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1091
 msgid "An error has occurred in the Paidy payment linkage when changing the status of WooCommerce."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1083
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1092
 msgid "Please check the status of Paidy payment and respond accordingly."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1084
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1093
 msgid "Order number:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1085
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1094
 msgid "Order details URL:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1086
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1095
 msgid "Paidy payment ID:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1087
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1096
 msgid "Error occurrence time:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1088
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1090
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1097
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1099
 msgid "Error situation:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1092
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1101
 msgid "* This e-mail is for sending only, so you cannot reply directly to this e-mail."
 msgstr ""
 
 #. translators: %s: URL of the image.
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1148
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1157
 #, php-format
 msgid "Already using URL as image: %s"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1156
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1165
 msgid "Select a image to upload"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1157
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1166
 msgid "Use this image"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1158
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1161
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1167
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1170
 msgid "Add image"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1169
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1178
 msgid "Remove image"
 msgstr ""
 
@@ -1812,67 +2184,87 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-admin-wizard.php:76
+#: includes/gateways/paidy/class-wc-paidy-admin-wizard.php:77
 msgid "Paidy On Boarding"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:54
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:77
+msgid "Unauthorized access to Paidy webhook."
+msgstr ""
+
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:91
+msgid "Paidy secret key is not configured."
+msgstr ""
+
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:102
+msgid "Invalid signature for Paidy webhook."
+msgstr ""
+
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:141
 msgid "Paidy Webhook received. "
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:64
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:151
 msgid "This notification is a test request from Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:68
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:155
 msgid "Exist [payment_id] and [order_ref]"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:74
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:161
 msgid "The order with this order number does not exist in the store."
 msgstr ""
 
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:168
+msgid "Order payment method is not Paidy. Possible unauthorized access attempt."
+msgstr ""
+
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:172
+msgid "Invalid payment method for this order."
+msgstr ""
+
 #. translators: %s: status of the order.
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:94
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:105
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:114
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:123
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:132
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:193
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:204
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:213
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:222
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:231
 #, php-format
 msgid "It succeeded to check the %s of the order in Paidy Webhook."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:95
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:194
 msgid "authorization"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:99
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:198
 msgid "This order status is processing, this site received authorize_success from the Paidy webhook."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:106
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:205
 msgid "completed"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:115
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:214
 msgid "cancelled"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:124
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:223
 msgid "close"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:133
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:232
 msgid "refunded"
 msgstr ""
 
 #. translators: %s: status of the order.
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:138
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:237
 #, php-format
 msgid "The system received a notification for order %s via Paidy Webhook."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-endpoint.php:143
+#: includes/gateways/paidy/class-wc-paidy-endpoint.php:242
 msgid "Payment_id exist but order_id. Payment_id : "
 msgstr ""
 
@@ -2633,15 +3025,12 @@ msgstr ""
 #: includes/gateways/paypal/modules/ppcp-onboarding/src/Render/OnboardingOptionsRenderer.php:163
 #: includes/gateways/paypal/modules/ppcp-onboarding/src/Render/OnboardingOptionsRenderer.php:169
 #: includes/gateways/paypal/modules/ppcp-onboarding/src/Render/OnboardingOptionsRenderer.php:180
-#: assets/js/build/paidy/wizard/paidy.js:2200
-#: assets/js/build/paidy/wizard/paidy.js:2287
-#: assets/js/build/paidy/wizard/paidy.js:2304
-#: src/js/paidy/wizard/components/controls.jsx:157
-#: src/js/paidy/wizard/components/controls.jsx:249
-#: src/js/paidy/wizard/components/controls.jsx:269
-#: assets/js/build/paidy/wizard/paidy.js:2060
-#: assets/js/build/paidy/wizard/paidy.js:2152
-#: assets/js/build/paidy/wizard/paidy.js:2172
+#: assets/js/build/admin/settings.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:224
+#: src/js/paidy/wizard/components/controls.jsx:212
+#: src/js/paidy/wizard/components/controls.jsx:333
+#: src/js/paidy/wizard/components/controls.jsx:356
 msgid "Yes"
 msgstr ""
 
@@ -6734,14 +7123,6 @@ msgstr ""
 msgid "Awaiting Post Office BANK payment"
 msgstr ""
 
-#: includes/jp4wc-common-functions.php:26
-msgid "Not Required"
-msgstr ""
-
-#: includes/jp4wc-common-functions.php:27
-msgid "Standard"
-msgstr ""
-
 #. Translators: %s is the name of the feature to be checked.
 #: includes/jp4wc-framework/config-jp4wc-framework.php:23
 #, php-format
@@ -6857,7 +7238,6 @@ msgstr ""
 msgid "We have finished processing your order."
 msgstr ""
 
-#. translators: %1$s Site title, %2$s Order pay link
 #. translators: %1$s: Site title, %2$s: Order pay link
 #: templates/emails/customer-invoice.php:38
 #: templates/emails/plain/customer-invoice.php:31
@@ -6869,7 +7249,6 @@ msgstr ""
 msgid "Pay for this order"
 msgstr ""
 
-#. translators: %s Order date
 #. translators: %s: Order date
 #: templates/emails/customer-invoice.php:55
 #: templates/emails/plain/customer-invoice.php:39
@@ -6913,1262 +7292,1252 @@ msgstr ""
 msgid "Your order on %s has been refunded. There are more details below for your reference:"
 msgstr ""
 
-#: woocommerce-for-japan.php:59
+#: woocommerce-for-japan.php:85
 msgid "Japanized for WooCommerce is enabled but not effective. It requires WooCommerce in order to work."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1395
-#: src/js/jp4wc/admin/security/components/controls.jsx:15
-#: assets/js/build/admin/security.js:1357
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:16
 msgid "About Credit Card Security Guidelines"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1399
-#: src/js/jp4wc/admin/security/components/controls.jsx:18
-#: assets/js/build/admin/security.js:1360
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:23
 msgid "Ministry of Economy, Trade and Industry has established the \"Credit Card Security Guidelines\" to prevent unauthorized use of credit card information. This page provides a simple check to see if your site complies with these guidelines."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1402
-#: src/js/jp4wc/admin/security/components/controls.jsx:21
-#: assets/js/build/admin/security.js:1363
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:33
 msgid "Credit Card Security Guidelines[6.0](2025/3/5 updated)"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1406
-#: src/js/jp4wc/admin/security/components/controls.jsx:25
-#: assets/js/build/admin/security.js:1367
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:43
 msgid "Security Measures for E-Commerce Affiliates: Implementation Guide [Appendix 20][PDF]"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1410
-#: src/js/jp4wc/admin/security/components/controls.jsx:29
-#: assets/js/build/admin/security.js:1371
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:53
 msgid "[Appendix 20, Appendix c] Declaration of the status of security measures implemented by EC sites (example)[Excel]"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1414
-#: src/js/jp4wc/admin/security/components/controls.jsx:33
-#: assets/js/build/admin/security.js:1375
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:64
 msgid "Related Documents"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1429
-#: src/js/jp4wc/admin/security/components/controls.jsx:46
-#: assets/js/build/admin/security.js:1388
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:78
 msgid "Basic authentication or IP restrictions are not set for the administrator login URL."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1432
-#: assets/js/build/paidy/wizard/paidy.js:2509
-#: src/js/jp4wc/admin/security/components/controls.jsx:49
-#: src/js/paidy/wizard/components/first-main-page.jsx:231
-#: assets/js/build/admin/security.js:1391
-#: assets/js/build/paidy/wizard/paidy.js:2433
+#: assets/js/build/admin/security.js:1
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/jp4wc/admin/security/components/controls.jsx:85
+#: src/js/paidy/wizard/components/first-main-page.jsx:261
 msgid "Administrator screen access restrictions and administrator ID/PW management"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1435
-#: src/js/jp4wc/admin/security/components/controls.jsx:52
-#: assets/js/build/admin/security.js:1394
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:92
 msgid "Please check this box if you have implemented security measures for your admin screen."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1436
-#: assets/js/build/admin/security.js:1472
-#: src/js/jp4wc/admin/security/components/controls.jsx:53
-#: src/js/jp4wc/admin/security/components/controls.jsx:87
-#: assets/js/build/admin/security.js:1395
-#: assets/js/build/admin/security.js:1429
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:96
+#: src/js/jp4wc/admin/security/components/controls.jsx:156
 msgid "If a warning message appears below, it is possible that your security measures are not in line with the credit card security guidelines."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1445
-#: src/js/jp4wc/admin/security/components/controls.jsx:62
-#: assets/js/build/admin/security.js:1404
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:109
 msgid "Basic authentication or IP restrictions Check result"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1445
-#: assets/js/build/admin/security.js:1454
-#: assets/js/build/admin/security.js:1481
-#: assets/js/build/admin/security.js:1505
-#: assets/js/build/admin/security.js:1514
-#: src/js/jp4wc/admin/security/components/controls.jsx:62
-#: src/js/jp4wc/admin/security/components/controls.jsx:70
-#: src/js/jp4wc/admin/security/components/controls.jsx:96
-#: src/js/jp4wc/admin/security/components/controls.jsx:120
-#: src/js/jp4wc/admin/security/components/controls.jsx:128
-#: assets/js/build/admin/security.js:1404
-#: assets/js/build/admin/security.js:1412
-#: assets/js/build/admin/security.js:1438
-#: assets/js/build/admin/security.js:1462
-#: assets/js/build/admin/security.js:1470
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:112
+#: src/js/jp4wc/admin/security/components/controls.jsx:125
+#: src/js/jp4wc/admin/security/components/controls.jsx:172
+#: src/js/jp4wc/admin/security/components/controls.jsx:217
+#: src/js/jp4wc/admin/security/components/controls.jsx:230
 msgid "[Warning]"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1454
-#: src/js/jp4wc/admin/security/components/controls.jsx:70
-#: assets/js/build/admin/security.js:1412
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:122
 msgid "Two-factor authentication Check result"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1456
-#: src/js/jp4wc/admin/security/components/controls.jsx:71
-#: assets/js/build/admin/security.js:1413
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:128
 msgid "There is no two-step authentication plugin installed. You need to check whether other plugins support two-step authentication for administrator accounts."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1468
-#: src/js/jp4wc/admin/security/components/controls.jsx:83
-#: assets/js/build/admin/security.js:1425
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:145
 msgid "Security plugin installation"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1471
-#: src/js/jp4wc/admin/security/components/controls.jsx:86
-#: assets/js/build/admin/security.js:1428
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:152
 msgid "Please check this box if you have installed a security plugin."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1481
-#: src/js/jp4wc/admin/security/components/controls.jsx:96
-#: assets/js/build/admin/security.js:1438
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:169
 msgid "Security plugin Check result"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1483
-#: src/js/jp4wc/admin/security/components/controls.jsx:97
-#: assets/js/build/admin/security.js:1439
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:175
 msgid "There is no security plugin installed. You need to check whether other plugins support security measures."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1496
-#: src/js/jp4wc/admin/security/components/controls.jsx:113
-#: assets/js/build/admin/security.js:1455
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:200
 msgid "Vulnerability Assessment"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1499
-#: src/js/jp4wc/admin/security/components/controls.jsx:115
-#: assets/js/build/admin/security.js:1457
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:204
 msgid "If you see the following warning message, your system may not be protected from vulnerabilities. Please check the details."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1505
-#: src/js/jp4wc/admin/security/components/controls.jsx:120
-#: assets/js/build/admin/security.js:1462
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:214
 msgid "PHP version Check result"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1514
-#: src/js/jp4wc/admin/security/components/controls.jsx:128
-#: assets/js/build/admin/security.js:1470
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:227
 msgid "Update Check result"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1546
-#: src/js/jp4wc/admin/security/components/controls.jsx:161
-#: assets/js/build/admin/security.js:1503
-msgid "Scan start failed: "
-msgstr ""
-
-#: assets/js/build/admin/security.js:1565
-#: src/js/jp4wc/admin/security/components/controls.jsx:180
-#: assets/js/build/admin/security.js:1522
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:294
 msgid "Scan progress error: "
 msgstr ""
 
-#: assets/js/build/admin/security.js:1574
-#: src/js/jp4wc/admin/security/components/controls.jsx:190
-#: assets/js/build/admin/security.js:1532
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:307
 msgid "Malware security quick check (PHP files only)"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1577
-#: src/js/jp4wc/admin/security/components/controls.jsx:192
-#: assets/js/build/admin/security.js:1534
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:313
 msgid "Check for suspicious PHP files in the wp-content folder in WordPress."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1577
-#: src/js/jp4wc/admin/security/components/controls.jsx:193
-#: assets/js/build/admin/security.js:1535
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:318
 msgid "This is a simple test, but if you have never checked your server for malware before, please try it. It may take a few minutes to process, so please do not move away from the page."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1577
-#: src/js/jp4wc/admin/security/components/controls.jsx:194
-#: assets/js/build/admin/security.js:1536
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:323
 msgid "Suspicious files are judged based on whether the following codes are embedded in them: "
 msgstr ""
 
-#: assets/js/build/admin/security.js:1577
-#: src/js/jp4wc/admin/security/components/controls.jsx:196
-#: assets/js/build/admin/security.js:1538
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:329
 msgid "Note: Ideally, you should check all files, not just PHP files."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1588
-#: src/js/jp4wc/admin/security/components/controls.jsx:201
-#: assets/js/build/admin/security.js:1543
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:269
+msgid "Scan start failed: "
+msgstr ""
+
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:338
 msgid "Start Scan"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1591
-#: src/js/jp4wc/admin/security/components/controls.jsx:205
-#: assets/js/build/admin/security.js:1547
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:344
 msgid "Scanning: "
 msgstr ""
 
-#: assets/js/build/admin/security.js:1599
-#: src/js/jp4wc/admin/security/components/controls.jsx:212
-#: assets/js/build/admin/security.js:1554
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:356
 msgid "Scan Complete!"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1603
-#: src/js/jp4wc/admin/security/components/controls.jsx:215
-#: assets/js/build/admin/security.js:1557
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:365
 msgid "Suspicious files:"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1608
-#: src/js/jp4wc/admin/security/components/controls.jsx:221
-#: assets/js/build/admin/security.js:1563
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:379
 msgid "Detected pattern:"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1608
-#: src/js/jp4wc/admin/security/components/controls.jsx:222
-#: assets/js/build/admin/security.js:1564
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:385
 msgid "Line#:"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1608
-#: src/js/jp4wc/admin/security/components/controls.jsx:223
-#: assets/js/build/admin/security.js:1565
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:391
 msgid "Line:"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1612
-#: src/js/jp4wc/admin/security/components/controls.jsx:232
-#: assets/js/build/admin/security.js:1574
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:409
 msgid "The number and line number within the file will be displayed so you can verify that the contents are safe."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1612
-#: src/js/jp4wc/admin/security/components/controls.jsx:233
-#: assets/js/build/admin/security.js:1575
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:414
 msgid "If a line is longer than 100 characters, only the first 100 characters are displayed."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1612
-#: src/js/jp4wc/admin/security/components/controls.jsx:234
-#: assets/js/build/admin/security.js:1576
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:419
 msgid "If you have any questions, please contact the developer."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1616
-#: src/js/jp4wc/admin/security/components/controls.jsx:237
-#: assets/js/build/admin/security.js:1579
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:427
 msgid "No suspicious files were found."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1626
-#: src/js/jp4wc/admin/security/components/controls.jsx:249
-#: assets/js/build/admin/security.js:1591
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:446
 msgid "🚀✨[Limited time offer! Safe and secure professional support]✨🚀"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1629
-#: src/js/jp4wc/admin/security/components/controls.jsx:251
-#: assets/js/build/admin/security.js:1593
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:453
 msgid "🔒 If you're worried about security measures, this is a must-see!"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1629
-#: src/js/jp4wc/admin/security/components/controls.jsx:252
-#: assets/js/build/admin/security.js:1594
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:458
 msgid "Our experts will do their best to protect your business💼."
 msgstr ""
 
-#: assets/js/build/admin/security.js:1639
-#: src/js/jp4wc/admin/security/components/controls.jsx:262
-#: assets/js/build/admin/security.js:1604
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:481
 msgid "💰 Exclusive for stores aiming to achieve their dream of 1 million yen in monthly sales! 💰"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1640
-#: src/js/jp4wc/admin/security/components/controls.jsx:263
-#: assets/js/build/admin/security.js:1605
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:486
 msgid "🎉 In addition, this special service is only available on a limited number of sites! 🎉"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1640
-#: src/js/jp4wc/admin/security/components/controls.jsx:264
-#: assets/js/build/admin/security.js:1606
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:491
 msgid "🔮 As a smart investment for the future, you can achieve reliable security measures for only 1,000 yen per month for the first year 💪!"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1640
-#: src/js/jp4wc/admin/security/components/controls.jsx:265
-#: assets/js/build/admin/security.js:1607
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:496
 msgid "🔥 Don't miss this chance to take your store operations to the next level right now! 🔥"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1645
-#: src/js/jp4wc/admin/security/components/controls.jsx:267
-#: assets/js/build/admin/security.js:1609
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/controls.jsx:507
 msgid "Starter Plan: "
 msgstr ""
 
-#: assets/js/build/admin/security.js:1735
+#: assets/js/build/admin/security.js:1
 #: src/js/jp4wc/admin/security/components/security-page.jsx:22
-#: assets/js/build/admin/security.js:1668
 msgid "Credit Card Security Guidelines Check"
 msgstr ""
 
-#: assets/js/build/admin/security.js:1746
-#: src/js/jp4wc/admin/security/components/security-page.jsx:31
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/components/security-page.jsx:37
 #: src/js/paidy/wizard/button.js:14
-#: assets/js/build/admin/security.js:1677
 msgid "Save"
 msgstr ""
 
-#: assets/js/build/admin/security.js:2047
-#: src/js/jp4wc/admin/security/index.js:16
-#: assets/js/build/admin/security.js:1843
+#: assets/js/build/admin/security.js:1
+#: src/js/jp4wc/admin/security/index.js:15
 msgid "Simple check to comply with credit card security guidelines (established by the Ministry of Economy, Trade and Industry)"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1387
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:65
+msgid "Check it if you want to add Yomigana(furigana) input at cart, checkout and my account page."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:104
+msgid "Check it if you want to add honorific suffix(Sama) at cart, checkout and my account page."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:127
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:152
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:211
+msgid "(Classic Checkout only)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:132
+msgid "Check it if you want to add Company name input at cart, checkout and my account page."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:157
+msgid "Check it if you want to use automatic zip code entry."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:173
+msgid "If you use it a bit for testing, you do not need to enter it here. But if you want to use Automatic zip code entry, you must get and input Yahoo APP ID here."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:191
+msgid "Check it if you eliminate the order of addresses."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:216
+msgid "Check it if you want to display free shipping message."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:257
+msgid "Check to hide address input field in virtual orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:154
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:386
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:251
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:278
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:547
+msgid "Saving..."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:155
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js:387
+#: src/js/jp4wc/admin/settings/components/LawSettings.js:252
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:279
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:548
+msgid "Save Settings"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:91
+msgid "Check it if you want to use delivery date designation."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:109
+msgid "Check if delivery date is required field."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:129
+msgid "Number of days from today to start accepting orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:145
+msgid "Number of days to accept delivery date"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:165
+msgid "Text to display when date is not specified"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:216
+msgid "Time format: HH:MM:SS (e.g., 14:00:00)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:312
+msgid "Holiday start date"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:332
+msgid "Holiday end date"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:368
+msgid "Check it if you want to use delivery time zone."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:389
+msgid "Check if delivery time zone is required field."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:413
+msgid "Text to display when time is not specified"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:448
+msgid "Start Time"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:467
+msgid "End Time"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:490
+msgid "Remove"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:499
+msgid "Add Time Zone"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:521
+msgid "Email address to notify when required delivery fields are missing"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:64
+msgid "Enable bank payment method"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:82
+msgid "Enable postal transfer payment method"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:97
+msgid "Enable pay at store payment method"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:115
+msgid "Enable COD for subscription orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:130
+msgid "Enable PayPal payment method"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:155
+msgid "Name of the COD fee"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:174
+msgid "Amount to charge for COD"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:194
+msgid "Maximum cart value for COD fee application"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:220
+#: src/js/paidy/wizard/components/controls.jsx:216
+#: src/js/paidy/wizard/components/controls.jsx:337
+#: src/js/paidy/wizard/components/controls.jsx:360
+msgid "No"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:249
+msgid "Reduced rate"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:256
+msgid "Zero rate"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:59
+msgid "Enable A8.net"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:60
+msgid "Enable A8.net affiliate tracking"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:74
+msgid "Test Mode"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:75
+msgid "Enable test mode for A8.net"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:93
+msgid "A8.net PID"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:94
+msgid "Enter your A8.net PID"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:114
+msgid "Enable felmat"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:115
+msgid "Enable felmat affiliate tracking"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:133
+msgid "felmat PID"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:134
+msgid "Enter your felmat PID"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:85
+msgid "Failed to load settings"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:106
+msgid "Settings saved successfully."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:114
+msgid "Failed to save settings"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:132
+msgid "Loading settings..."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:140
+msgid "General Settings"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:145
+msgid "Shipment Settings"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:150
+msgid "Payment Settings"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:155
+msgid "Commercial Law"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:160
+msgid "Affiliate"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js:169
+msgid "Japanized for WooCommerce Settings"
+msgstr ""
+
+#: assets/js/build/blocks/delivery-block-editor.js:1
+#: src/js/blocks/delivery-block-editor.js:44
+#: src/js/blocks/delivery-block-editor.js:65
+msgid "This is a preview. The actual field will be shown on the frontend."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
 #: src/js/paidy/admin/components/index.js:9
-#: assets/js/build/paidy/admin/paidy.js:1351
 msgid "Easy Paidy payment setup"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1402
-#: src/js/paidy/admin/components/index.js:24
-#: assets/js/build/paidy/admin/paidy.js:1366
+#: assets/js/build/paidy/admin/paidy.js:1
+#: src/js/paidy/admin/components/index.js:27
 msgid "Start easy Paidy payment setup"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1410
-#: assets/js/build/paidy/admin/paidy.js:1656
-#: assets/js/build/paidy/wizard/paidy.js:1467
-#: src/js/paidy/admin/components/index.js:33
-#: src/js/paidy/main-hooks/form-info.jsx:60
-#: assets/js/build/paidy/admin/paidy.js:1375
-#: assets/js/build/paidy/admin/paidy.js:1553
-#: assets/js/build/paidy/wizard/paidy.js:1402
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:36
+#: src/js/paidy/main-hooks/form-info.jsx:137
 msgid "Status: Under review"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1412
-#: assets/js/build/paidy/admin/paidy.js:1658
-#: assets/js/build/paidy/wizard/paidy.js:1469
-#: src/js/paidy/admin/components/index.js:35
-#: src/js/paidy/main-hooks/form-info.jsx:62
-#: assets/js/build/paidy/admin/paidy.js:1377
-#: assets/js/build/paidy/admin/paidy.js:1555
-#: assets/js/build/paidy/wizard/paidy.js:1404
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:39
+#: src/js/paidy/main-hooks/form-info.jsx:140
 msgid "Thank you for your application. We will notify you of the results via email and dashboard."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1415
-#: assets/js/build/paidy/admin/paidy.js:1661
-#: assets/js/build/paidy/wizard/paidy.js:1472
-#: src/js/paidy/admin/components/index.js:37
-#: src/js/paidy/main-hooks/form-info.jsx:64
-#: assets/js/build/paidy/admin/paidy.js:1379
-#: assets/js/build/paidy/admin/paidy.js:1557
-#: assets/js/build/paidy/wizard/paidy.js:1406
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:46
+#: src/js/paidy/main-hooks/form-info.jsx:147
 msgid "The review process may take up to 5 business days."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1417
-#: assets/js/build/paidy/admin/paidy.js:1663
-#: assets/js/build/paidy/wizard/paidy.js:1474
-#: src/js/paidy/admin/components/index.js:38
-#: src/js/paidy/main-hooks/form-info.jsx:65
-#: assets/js/build/paidy/admin/paidy.js:1380
-#: assets/js/build/paidy/admin/paidy.js:1558
-#: assets/js/build/paidy/wizard/paidy.js:1407
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:52
+#: src/js/paidy/main-hooks/form-info.jsx:153
 msgid "Inquiries regarding screening: sales@paidy.com"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1428
-#: src/js/paidy/admin/components/index.js:49
-#: assets/js/build/paidy/admin/paidy.js:1391
-msgid "Status: Approved"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1430
-#: assets/js/build/paidy/admin/paidy.js:1840
-#: assets/js/build/paidy/wizard/paidy.js:1651
-#: src/js/paidy/admin/components/index.js:51
-#: src/js/paidy/main-hooks/form-info.jsx:250
-#: assets/js/build/paidy/admin/paidy.js:1393
-#: assets/js/build/paidy/admin/paidy.js:1743
-#: assets/js/build/paidy/wizard/paidy.js:1592
-msgid "The review has been completed and the merchant agreement has been concluded."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1432
-#: assets/js/build/paidy/admin/paidy.js:1840
-#: assets/js/build/paidy/wizard/paidy.js:1651
-#: src/js/paidy/admin/components/index.js:52
-#: src/js/paidy/main-hooks/form-info.jsx:251
-#: assets/js/build/paidy/admin/paidy.js:1394
-#: assets/js/build/paidy/admin/paidy.js:1744
-#: assets/js/build/paidy/wizard/paidy.js:1593
-msgid "For terms of use, please check the terms and conditions notification email sent by Paidy Inc."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1435
-#: assets/js/build/paidy/admin/paidy.js:1844
-#: assets/js/build/paidy/wizard/paidy.js:1655
-#: src/js/paidy/admin/components/index.js:54
-#: src/js/paidy/main-hooks/form-info.jsx:253
-#: assets/js/build/paidy/admin/paidy.js:1396
-#: assets/js/build/paidy/admin/paidy.js:1746
-#: assets/js/build/paidy/wizard/paidy.js:1595
-msgid "We recommend setting the Webhook URL in the Paidy merchant management screen before publishing in production mode. Set the Webhook URL to the following value."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1437
-#: assets/js/build/paidy/admin/paidy.js:1846
-#: assets/js/build/paidy/wizard/paidy.js:1657
-#: src/js/paidy/admin/components/index.js:55
-#: src/js/paidy/main-hooks/form-info.jsx:254
-#: assets/js/build/paidy/admin/paidy.js:1397
-#: assets/js/build/paidy/admin/paidy.js:1747
-#: assets/js/build/paidy/wizard/paidy.js:1596
-msgid "[Common for test and production]"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1439
-#: assets/js/build/paidy/admin/paidy.js:1850
-#: assets/js/build/paidy/wizard/paidy.js:1661
-#: src/js/paidy/admin/components/index.js:56
-#: src/js/paidy/main-hooks/form-info.jsx:256
-#: assets/js/build/paidy/admin/paidy.js:1398
-#: assets/js/build/paidy/admin/paidy.js:1749
-#: assets/js/build/paidy/wizard/paidy.js:1598
-msgid "Please refer to the manual for information on the Paidy merchant management screen."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1449
-#: src/js/paidy/admin/components/index.js:66
-#: assets/js/build/paidy/admin/paidy.js:1408
-msgid "Status: Rejected"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1452
-#: assets/js/build/paidy/admin/paidy.js:1676
-#: assets/js/build/paidy/wizard/paidy.js:1487
-#: src/js/paidy/admin/components/index.js:69
-#: src/js/paidy/main-hooks/form-info.jsx:78
-#: assets/js/build/paidy/admin/paidy.js:1411
-#: assets/js/build/paidy/admin/paidy.js:1571
-#: assets/js/build/paidy/wizard/paidy.js:1420
-msgid "After careful and repeated review, we regret to inform you that we have decided to postpone the transaction at this time."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1454
-#: assets/js/build/paidy/admin/paidy.js:1678
-#: assets/js/build/paidy/wizard/paidy.js:1489
-#: src/js/paidy/admin/components/index.js:70
-#: src/js/paidy/main-hooks/form-info.jsx:79
-#: assets/js/build/paidy/admin/paidy.js:1412
-#: assets/js/build/paidy/admin/paidy.js:1572
-#: assets/js/build/paidy/wizard/paidy.js:1421
-msgid "We sincerely apologize for not being able to meet your expectations."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1456
-#: assets/js/build/paidy/admin/paidy.js:1680
-#: assets/js/build/paidy/wizard/paidy.js:1491
-#: src/js/paidy/admin/components/index.js:71
-#: src/js/paidy/main-hooks/form-info.jsx:80
-#: assets/js/build/paidy/admin/paidy.js:1413
-#: assets/js/build/paidy/admin/paidy.js:1573
-#: assets/js/build/paidy/wizard/paidy.js:1422
-msgid "Please understand that we cannot provide details about the content of the review."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1533
-#: src/js/paidy/admin/onboarding-step/index.js:53
-#: assets/js/build/paidy/admin/paidy.js:1480
-msgid "Applying for and setting up Paidy is easy."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1539
-#: src/js/paidy/admin/onboarding-step/index.js:59
-#: assets/js/build/paidy/admin/paidy.js:1486
-msgid "There is no setup cost, payment fees start from 3.5%, and if you apply via this service, you will receive a one-month trial with no payment fees!"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1543
-#: assets/js/build/paidy/wizard/paidy.js:2624
-#: src/js/paidy/admin/onboarding-step/index.js:60
-#: src/js/paidy/wizard/components/first-main-page.jsx:362
-#: assets/js/build/paidy/admin/paidy.js:1487
-#: assets/js/build/paidy/wizard/paidy.js:2564
-msgid "Learn more about Paidy"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1593
-#: assets/js/build/paidy/wizard/paidy.js:1404
-#: src/js/paidy/main-hooks/form-info.jsx:16
-#: assets/js/build/paidy/admin/paidy.js:1509
-#: assets/js/build/paidy/wizard/paidy.js:1358
-msgid "Application flow"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1597
-#: assets/js/build/paidy/wizard/paidy.js:1408
-#: src/js/paidy/main-hooks/form-info.jsx:19
-#: assets/js/build/paidy/admin/paidy.js:1512
-#: assets/js/build/paidy/wizard/paidy.js:1361
-msgid "Please fill in all the fields on this application screen and click the \"Agree to the above and apply\" button at the bottom of the screen."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1599
-#: assets/js/build/paidy/wizard/paidy.js:1410
-#: src/js/paidy/main-hooks/form-info.jsx:20
-#: assets/js/build/paidy/admin/paidy.js:1513
-#: assets/js/build/paidy/wizard/paidy.js:1362
-msgid "Paidy Co., Ltd. will review your application information and may take up to 5 business days."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1601
-#: assets/js/build/paidy/wizard/paidy.js:1412
-#: src/js/paidy/main-hooks/form-info.jsx:21
-#: assets/js/build/paidy/admin/paidy.js:1514
-#: assets/js/build/paidy/wizard/paidy.js:1363
-msgid "The results will be notified via email and dashboard."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1603
-#: assets/js/build/paidy/wizard/paidy.js:1414
-#: src/js/paidy/main-hooks/form-info.jsx:22
-#: assets/js/build/paidy/admin/paidy.js:1515
-#: assets/js/build/paidy/wizard/paidy.js:1364
-msgid "If your application is approved, you will be able to activate Paidy from your dashboard."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1603
-#: assets/js/build/paidy/wizard/paidy.js:1414
-#: src/js/paidy/main-hooks/form-info.jsx:23
-#: assets/js/build/paidy/admin/paidy.js:1516
-#: assets/js/build/paidy/wizard/paidy.js:1365
-msgid "If your application is rejected, you will not be able to use Paidy."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1614
-#: assets/js/build/paidy/wizard/paidy.js:1425
-#: src/js/paidy/main-hooks/form-info.jsx:34
-#: assets/js/build/paidy/admin/paidy.js:1527
-#: assets/js/build/paidy/wizard/paidy.js:1376
-msgid "Agreement"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1620
-#: assets/js/build/paidy/wizard/paidy.js:1431
-#: src/js/paidy/main-hooks/form-info.jsx:39
-#: assets/js/build/paidy/admin/paidy.js:1532
-#: assets/js/build/paidy/wizard/paidy.js:1381
-msgid "Please confirm and agree to the following contents."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1626
-#: assets/js/build/paidy/wizard/paidy.js:1437
-#: src/js/paidy/main-hooks/form-info.jsx:42
-#: assets/js/build/paidy/admin/paidy.js:1535
-#: assets/js/build/paidy/wizard/paidy.js:1384
-msgid "Paidy Merchant Terms and Conditions"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1629
-#: assets/js/build/paidy/wizard/paidy.js:1440
-#: src/js/paidy/main-hooks/form-info.jsx:43
-#: assets/js/build/paidy/admin/paidy.js:1536
-#: assets/js/build/paidy/wizard/paidy.js:1385
-msgid "Agreement on handling of affiliated store information"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1631
-#: assets/js/build/paidy/wizard/paidy.js:1442
-#: src/js/paidy/main-hooks/form-info.jsx:44
-#: assets/js/build/paidy/admin/paidy.js:1537
-#: assets/js/build/paidy/wizard/paidy.js:1386
-msgid "Add the notation specified by our company to the notation based on the Specified Commercial Transactions Act."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1634
-#: assets/js/build/paidy/wizard/paidy.js:1445
-#: src/js/paidy/main-hooks/form-info.jsx:45
-#: assets/js/build/paidy/admin/paidy.js:1538
-#: assets/js/build/paidy/wizard/paidy.js:1387
-msgid "Display sample based on the Specified Commercial Transactions Act"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1637
-#: assets/js/build/paidy/wizard/paidy.js:1448
-#: src/js/paidy/main-hooks/form-info.jsx:46
-#: assets/js/build/paidy/admin/paidy.js:1539
-#: assets/js/build/paidy/wizard/paidy.js:1388
-msgid "Add the specified notation to the privacy policy page."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1640
-#: assets/js/build/paidy/wizard/paidy.js:1451
-#: src/js/paidy/main-hooks/form-info.jsx:47
-#: assets/js/build/paidy/admin/paidy.js:1540
-#: assets/js/build/paidy/wizard/paidy.js:1389
-msgid "Example of a privacy policy"
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1643
-#: assets/js/build/paidy/wizard/paidy.js:1454
-#: src/js/paidy/main-hooks/form-info.jsx:48
-#: assets/js/build/paidy/admin/paidy.js:1541
-#: assets/js/build/paidy/wizard/paidy.js:1390
-msgid "Paidy Inc. will set up the API key on your e-commerce site via WooCommerce on your behalf."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1645
-#: assets/js/build/paidy/wizard/paidy.js:1456
-#: src/js/paidy/main-hooks/form-info.jsx:49
-#: assets/js/build/paidy/admin/paidy.js:1542
-#: assets/js/build/paidy/wizard/paidy.js:1391
-msgid "Our company (Shokunin Kobo LLC) will provide personal information to third parties when disclosing such information for purposes such as member store screening by payment companies."
-msgstr ""
-
-#: assets/js/build/paidy/admin/paidy.js:1673
-#: assets/js/build/paidy/wizard/paidy.js:1484
-#: src/js/paidy/main-hooks/form-info.jsx:75
-#: assets/js/build/paidy/admin/paidy.js:1568
-#: assets/js/build/paidy/wizard/paidy.js:1417
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:167
 msgid "Status: The review was rejected"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1715
-#: assets/js/build/paidy/wizard/paidy.js:1526
-#: src/js/paidy/main-hooks/form-info.jsx:115
-#: assets/js/build/paidy/admin/paidy.js:1608
-#: assets/js/build/paidy/wizard/paidy.js:1457
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:114
+#: src/js/paidy/main-hooks/form-info.jsx:174
+msgid "After careful and repeated review, we regret to inform you that we have decided to postpone the transaction at this time."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:120
+#: src/js/paidy/main-hooks/form-info.jsx:180
+msgid "We sincerely apologize for not being able to meet your expectations."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:126
+#: src/js/paidy/main-hooks/form-info.jsx:186
+msgid "Please understand that we cannot provide details about the content of the review."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:230
 msgid "Now test mode"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1721
-#: assets/js/build/paidy/wizard/paidy.js:1532
-#: src/js/paidy/main-hooks/form-info.jsx:124
-#: assets/js/build/paidy/admin/paidy.js:1617
-#: assets/js/build/paidy/wizard/paidy.js:1466
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:236
 msgid "Enable test mode"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1791
-#: assets/js/build/paidy/admin/paidy.js:1812
-#: assets/js/build/paidy/wizard/paidy.js:1602
-#: assets/js/build/paidy/wizard/paidy.js:1623
-#: src/js/paidy/main-hooks/form-info.jsx:199
-#: src/js/paidy/main-hooks/form-info.jsx:221
-#: assets/js/build/paidy/admin/paidy.js:1692
-#: assets/js/build/paidy/admin/paidy.js:1714
-#: assets/js/build/paidy/wizard/paidy.js:1541
-#: assets/js/build/paidy/wizard/paidy.js:1563
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:328
+#: src/js/paidy/main-hooks/form-info.jsx:357
 msgid "Error enabling Paidy"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1827
-#: assets/js/build/paidy/admin/paidy.js:1862
-#: assets/js/build/paidy/wizard/paidy.js:1638
-#: assets/js/build/paidy/wizard/paidy.js:1673
-#: src/js/paidy/main-hooks/form-info.jsx:235
-#: src/js/paidy/main-hooks/form-info.jsx:267
-#: assets/js/build/paidy/admin/paidy.js:1728
-#: assets/js/build/paidy/admin/paidy.js:1760
-#: assets/js/build/paidy/wizard/paidy.js:1577
-#: assets/js/build/paidy/wizard/paidy.js:1609
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:376
+#: src/js/paidy/main-hooks/form-info.jsx:442
 msgid "Enable production mode"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1838
-#: assets/js/build/paidy/wizard/paidy.js:1649
-#: src/js/paidy/main-hooks/form-info.jsx:248
-#: assets/js/build/paidy/admin/paidy.js:1741
-#: assets/js/build/paidy/wizard/paidy.js:1590
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:390
 msgid "Status: The review approved"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1855
-#: assets/js/build/paidy/wizard/paidy.js:1666
-#: src/js/paidy/main-hooks/form-info.jsx:259
-#: assets/js/build/paidy/admin/paidy.js:1752
-#: assets/js/build/paidy/wizard/paidy.js:1601
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:70
+#: src/js/paidy/main-hooks/form-info.jsx:396
+msgid "The review has been completed and the merchant agreement has been concluded."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:76
+#: src/js/paidy/main-hooks/form-info.jsx:401
+msgid "For terms of use, please check the terms and conditions notification email sent by Paidy Inc."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:83
+#: src/js/paidy/main-hooks/form-info.jsx:408
+msgid "We recommend setting the Webhook URL in the Paidy merchant management screen before publishing in production mode. Set the Webhook URL to the following value."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:89
+#: src/js/paidy/main-hooks/form-info.jsx:414
+msgid "[Common for test and production]"
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/admin/components/index.js:96
+#: src/js/paidy/main-hooks/form-info.jsx:421
+msgid "Please refer to the manual for information on the Paidy merchant management screen."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:429
 msgid "Please click one of the buttons below."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1873
-#: assets/js/build/paidy/wizard/paidy.js:1684
-#: src/js/paidy/main-hooks/form-info.jsx:279
-#: assets/js/build/paidy/admin/paidy.js:1772
-#: assets/js/build/paidy/wizard/paidy.js:1621
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:457
 msgid "Paidy test payments enabled"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1875
-#: assets/js/build/paidy/wizard/paidy.js:1686
-#: src/js/paidy/main-hooks/form-info.jsx:282
-#: assets/js/build/paidy/admin/paidy.js:1775
-#: assets/js/build/paidy/wizard/paidy.js:1624
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:460
 msgid "You can now test Paidy payments."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1875
-#: assets/js/build/paidy/wizard/paidy.js:1686
-#: src/js/paidy/main-hooks/form-info.jsx:283
-#: assets/js/build/paidy/admin/paidy.js:1776
-#: assets/js/build/paidy/wizard/paidy.js:1625
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:465
 msgid "Please check the test payment flow."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1878
-#: assets/js/build/paidy/wizard/paidy.js:1689
-#: src/js/paidy/main-hooks/form-info.jsx:284
-#: assets/js/build/paidy/admin/paidy.js:1777
-#: assets/js/build/paidy/wizard/paidy.js:1626
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:474
 msgid "Paidy test payment flow"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1879
-#: assets/js/build/paidy/wizard/paidy.js:1690
-#: src/js/paidy/main-hooks/form-info.jsx:285
-#: assets/js/build/paidy/admin/paidy.js:1778
-#: assets/js/build/paidy/wizard/paidy.js:1627
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:477
 msgid "After confirming the test payment, please switch to production mode."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1888
-#: assets/js/build/paidy/wizard/paidy.js:1699
-#: src/js/paidy/main-hooks/form-info.jsx:295
-#: assets/js/build/paidy/admin/paidy.js:1788
-#: assets/js/build/paidy/wizard/paidy.js:1637
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:490
 msgid "Paidy Payments is now live"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1981
-#: assets/js/build/paidy/wizard/paidy.js:1792
-#: assets/js/build/paidy/wizard/paidy.js:2049
-#: src/js/paidy/main-hooks/on-boarding-settings.js:65
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:113
 #: src/js/paidy/wizard/components/controls.jsx:12
-#: assets/js/build/paidy/admin/paidy.js:1867
-#: assets/js/build/paidy/wizard/paidy.js:1716
-#: assets/js/build/paidy/wizard/paidy.js:1915
 msgid "Trade name / Store name"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1984
-#: assets/js/build/paidy/wizard/paidy.js:1795
-#: assets/js/build/paidy/wizard/paidy.js:2061
-#: src/js/paidy/main-hooks/on-boarding-settings.js:66
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:117
 #: src/js/paidy/wizard/components/controls.jsx:24
-#: assets/js/build/paidy/admin/paidy.js:1868
-#: assets/js/build/paidy/wizard/paidy.js:1717
-#: assets/js/build/paidy/wizard/paidy.js:1927
 msgid "Your EC site name"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1987
-#: assets/js/build/paidy/wizard/paidy.js:1798
-#: assets/js/build/paidy/wizard/paidy.js:2075
-#: src/js/paidy/main-hooks/on-boarding-settings.js:67
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:121
 #: src/js/paidy/wizard/components/controls.jsx:37
-#: assets/js/build/paidy/admin/paidy.js:1869
-#: assets/js/build/paidy/wizard/paidy.js:1718
-#: assets/js/build/paidy/wizard/paidy.js:1940
 msgid "Store URL"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1990
-#: assets/js/build/paidy/wizard/paidy.js:1801
-#: assets/js/build/paidy/wizard/paidy.js:2087
-#: src/js/paidy/main-hooks/on-boarding-settings.js:68
-#: src/js/paidy/wizard/components/controls.jsx:49
-#: assets/js/build/paidy/admin/paidy.js:1870
-#: assets/js/build/paidy/wizard/paidy.js:1719
-#: assets/js/build/paidy/wizard/paidy.js:1952
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:125
+#: src/js/paidy/wizard/components/controls.jsx:47
 msgid "Email address for registering Paidy"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1993
-#: assets/js/build/paidy/wizard/paidy.js:1804
-#: assets/js/build/paidy/wizard/paidy.js:2097
-#: src/js/paidy/main-hooks/on-boarding-settings.js:69
-#: src/js/paidy/wizard/components/controls.jsx:59
-#: assets/js/build/paidy/admin/paidy.js:1871
-#: assets/js/build/paidy/wizard/paidy.js:1720
-#: assets/js/build/paidy/wizard/paidy.js:1962
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:132
+#: src/js/paidy/wizard/components/controls.jsx:60
 msgid "Contact phone number"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1996
-#: assets/js/build/paidy/wizard/paidy.js:1807
-#: assets/js/build/paidy/wizard/paidy.js:2108
-#: src/js/paidy/main-hooks/on-boarding-settings.js:70
-#: src/js/paidy/wizard/components/controls.jsx:70
-#: assets/js/build/paidy/admin/paidy.js:1872
-#: assets/js/build/paidy/wizard/paidy.js:1721
-#: assets/js/build/paidy/wizard/paidy.js:1973
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:136
+#: src/js/paidy/wizard/components/controls.jsx:71
 msgid "Representative (last name)"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:1999
-#: assets/js/build/paidy/wizard/paidy.js:1810
-#: assets/js/build/paidy/wizard/paidy.js:2118
-#: src/js/paidy/main-hooks/on-boarding-settings.js:71
-#: src/js/paidy/wizard/components/controls.jsx:80
-#: assets/js/build/paidy/admin/paidy.js:1873
-#: assets/js/build/paidy/wizard/paidy.js:1722
-#: assets/js/build/paidy/wizard/paidy.js:1983
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:143
+#: src/js/paidy/wizard/components/controls.jsx:84
 msgid "Representative (first name)"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:2002
-#: assets/js/build/paidy/admin/paidy.js:2025
-#: assets/js/build/paidy/wizard/paidy.js:1813
-#: assets/js/build/paidy/wizard/paidy.js:1836
-#: assets/js/build/paidy/wizard/paidy.js:2128
-#: src/js/paidy/main-hooks/on-boarding-settings.js:72
-#: src/js/paidy/main-hooks/on-boarding-settings.js:90
-#: src/js/paidy/wizard/components/controls.jsx:90
-#: assets/js/build/paidy/admin/paidy.js:1874
-#: assets/js/build/paidy/admin/paidy.js:1892
-#: assets/js/build/paidy/wizard/paidy.js:1723
-#: assets/js/build/paidy/wizard/paidy.js:1741
-#: assets/js/build/paidy/wizard/paidy.js:1993
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/admin/paidy.js:2
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:2
+#: src/js/paidy/main-hooks/on-boarding-settings.js:150
+#: src/js/paidy/main-hooks/on-boarding-settings.js:196
+#: src/js/paidy/wizard/components/controls.jsx:97
 msgid "Representative (last name kana)"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:2005
-#: assets/js/build/paidy/admin/paidy.js:2028
-#: assets/js/build/paidy/wizard/paidy.js:1816
-#: assets/js/build/paidy/wizard/paidy.js:1839
-#: assets/js/build/paidy/wizard/paidy.js:2139
-#: src/js/paidy/main-hooks/on-boarding-settings.js:73
-#: src/js/paidy/main-hooks/on-boarding-settings.js:91
-#: src/js/paidy/wizard/components/controls.jsx:101
-#: assets/js/build/paidy/admin/paidy.js:1875
-#: assets/js/build/paidy/admin/paidy.js:1893
-#: assets/js/build/paidy/wizard/paidy.js:1724
-#: assets/js/build/paidy/wizard/paidy.js:1742
-#: assets/js/build/paidy/wizard/paidy.js:2004
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/admin/paidy.js:2
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:2
+#: src/js/paidy/main-hooks/on-boarding-settings.js:157
+#: src/js/paidy/main-hooks/on-boarding-settings.js:203
+#: src/js/paidy/wizard/components/controls.jsx:114
 msgid "Representative (first name kana)"
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:2008
-#: assets/js/build/paidy/wizard/paidy.js:1819
-#: assets/js/build/paidy/wizard/paidy.js:2150
-#: src/js/paidy/main-hooks/on-boarding-settings.js:74
-#: src/js/paidy/wizard/components/controls.jsx:112
-#: assets/js/build/paidy/admin/paidy.js:1876
-#: assets/js/build/paidy/wizard/paidy.js:1725
-#: assets/js/build/paidy/wizard/paidy.js:2015
+#: assets/js/build/paidy/admin/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/on-boarding-settings.js:164
+#: src/js/paidy/wizard/components/controls.jsx:131
 msgid "Representative's date of birth (Gregorian calendar)"
 msgstr ""
 
 #. translators: %s: field label name
-#: assets/js/build/paidy/admin/paidy.js:2013
-#: assets/js/build/paidy/wizard/paidy.js:1824
-#: src/js/paidy/main-hooks/on-boarding-settings.js:80
-#: assets/js/build/paidy/admin/paidy.js:1882
-#: assets/js/build/paidy/wizard/paidy.js:1731
+#: assets/js/build/paidy/admin/paidy.js:2
+#: assets/js/build/paidy/wizard/paidy.js:2
+#: src/js/paidy/main-hooks/on-boarding-settings.js:175
 #, js-format
 msgid "%s is a required field. Please enter it."
 msgstr ""
 
 #. translators: %s: field label name
-#: assets/js/build/paidy/admin/paidy.js:2033
-#: assets/js/build/paidy/wizard/paidy.js:1844
-#: src/js/paidy/main-hooks/on-boarding-settings.js:97
-#: assets/js/build/paidy/admin/paidy.js:1899
-#: assets/js/build/paidy/wizard/paidy.js:1748
+#: assets/js/build/paidy/admin/paidy.js:3
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/main-hooks/on-boarding-settings.js:214
 #, js-format
 msgid "%s must be in full-width katakana. Please confirm."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:2043
-#: assets/js/build/paidy/wizard/paidy.js:1854
-#: src/js/paidy/main-hooks/on-boarding-settings.js:107
-#: assets/js/build/paidy/admin/paidy.js:1909
-#: assets/js/build/paidy/wizard/paidy.js:1758
+#: assets/js/build/paidy/admin/paidy.js:3
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/main-hooks/on-boarding-settings.js:236
 msgid "When selecting \"No\" for the security survey question, please provide additional details in the text field."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:2052
-#: assets/js/build/paidy/wizard/paidy.js:1863
-#: src/js/paidy/main-hooks/on-boarding-settings.js:120
-#: assets/js/build/paidy/admin/paidy.js:1922
-#: assets/js/build/paidy/wizard/paidy.js:1771
+#: assets/js/build/paidy/admin/paidy.js:3
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/main-hooks/on-boarding-settings.js:253
 msgid "Since none of the security measures are implemented, please provide details about your security approach in the additional information field."
 msgstr ""
 
-#: assets/js/build/paidy/admin/paidy.js:2060
-#: assets/js/build/paidy/wizard/paidy.js:1871
-#: src/js/paidy/main-hooks/on-boarding-settings.js:128
-#: assets/js/build/paidy/admin/paidy.js:1930
-#: assets/js/build/paidy/wizard/paidy.js:1779
+#: assets/js/build/paidy/admin/paidy.js:3
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/main-hooks/on-boarding-settings.js:264
 msgid "Please fill in all the fields."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2129
-#: assets/js/build/paidy/wizard/paidy.js:2140
-#: src/js/paidy/wizard/components/controls.jsx:91
-#: src/js/paidy/wizard/components/controls.jsx:102
-#: assets/js/build/paidy/wizard/paidy.js:1994
-#: assets/js/build/paidy/wizard/paidy.js:2005
+#: assets/js/build/paidy/admin/paidy.js:3
+#: src/js/paidy/admin/onboarding-step/index.js:54
+msgid "Applying for and setting up Paidy is easy."
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:3
+#: src/js/paidy/admin/onboarding-step/index.js:64
+msgid "There is no setup cost, payment fees start from 3.5%, and if you apply via this service, you will receive a one-month trial with no payment fees!"
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:3
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/admin/onboarding-step/index.js:69
+#: src/js/paidy/wizard/components/first-main-page.jsx:462
+msgid "Learn more about Paidy"
+msgstr ""
+
+#: assets/js/build/paidy/admin/paidy.js:3
+#: src/js/paidy/admin/onboarding-step/index.js:77
+msgid "Enter the information manually without using the wizard."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:16
+msgid "Application flow"
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:20
+msgid "Please fill in all the fields on this application screen and click the \"Agree to the above and apply\" button at the bottom of the screen."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:26
+msgid "Paidy Co., Ltd. will review your application information and may take up to 5 business days."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:32
+msgid "The results will be notified via email and dashboard."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:38
+msgid "If your application is approved, you will be able to activate Paidy from your dashboard."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:43
+msgid "If your application is rejected, you will not be able to use Paidy."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:58
+msgid "Agreement"
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:63
+msgid "Please confirm and agree to the following contents."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:71
+msgid "Paidy Merchant Terms and Conditions"
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:78
+msgid "Agreement on handling of affiliated store information"
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:84
+msgid "Add the notation specified by our company to the notation based on the Specified Commercial Transactions Act."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:93
+msgid "Display sample based on the Specified Commercial Transactions Act"
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:100
+msgid "Add the specified notation to the privacy policy page."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:109
+msgid "Example of a privacy policy"
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:116
+msgid "Paidy Inc. will set up the API key on your e-commerce site via WooCommerce on your behalf."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/main-hooks/form-info.jsx:122
+msgid "Our company (Shokunin Kobo LLC) will provide personal information to third parties when disclosing such information for purposes such as member store screening by payment companies."
+msgstr ""
+
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:101
+#: src/js/paidy/wizard/components/controls.jsx:118
 msgid "Please enter in full-width katakana."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2151
-#: src/js/paidy/wizard/components/controls.jsx:113
-#: assets/js/build/paidy/wizard/paidy.js:2016
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:135
 msgid "Please select a date from the calendar icon on the far right."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2162
-#: src/js/paidy/wizard/components/controls.jsx:124
-#: assets/js/build/paidy/wizard/paidy.js:2027
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:149
 msgid "Annual gross merchandise value"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2165
-#: src/js/paidy/wizard/components/controls.jsx:127
-#: assets/js/build/paidy/wizard/paidy.js:2030
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:156
 msgid "Less than 10 million yen"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2168
-#: src/js/paidy/wizard/components/controls.jsx:128
-#: assets/js/build/paidy/wizard/paidy.js:2031
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:163
 msgid "10 million yen or more"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2179
-#: src/js/paidy/wizard/components/controls.jsx:138
-#: assets/js/build/paidy/wizard/paidy.js:2041
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:178
 msgid "Average purchase amount per order"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2182
-#: src/js/paidy/wizard/components/controls.jsx:141
-#: assets/js/build/paidy/wizard/paidy.js:2044
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:185
 msgid "Less than 50,000 yen"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2185
-#: src/js/paidy/wizard/components/controls.jsx:142
-#: assets/js/build/paidy/wizard/paidy.js:2045
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:192
 msgid "Over 50,000 yen"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2196
-#: src/js/paidy/wizard/components/controls.jsx:152
-#: assets/js/build/paidy/wizard/paidy.js:2055
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:204
 msgid "Do you use two-step or two-factor authentication to prevent compromised accounts?"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2203
-#: assets/js/build/paidy/wizard/paidy.js:2284
-#: assets/js/build/paidy/wizard/paidy.js:2301
-#: src/js/paidy/wizard/components/controls.jsx:161
-#: src/js/paidy/wizard/components/controls.jsx:245
-#: src/js/paidy/wizard/components/controls.jsx:265
-#: assets/js/build/paidy/wizard/paidy.js:2064
-#: assets/js/build/paidy/wizard/paidy.js:2148
-#: assets/js/build/paidy/wizard/paidy.js:2168
-msgid "No"
-msgstr ""
-
-#: assets/js/build/paidy/wizard/paidy.js:2206
-#: src/js/paidy/wizard/components/controls.jsx:165
-#: assets/js/build/paidy/wizard/paidy.js:2068
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:220
 msgid "Unknown"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2216
-#: src/js/paidy/wizard/components/controls.jsx:176
-#: assets/js/build/paidy/wizard/paidy.js:2079
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:231
 msgid "If the answer is \"no\", please provide an alternative."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2226
-#: src/js/paidy/wizard/components/controls.jsx:186
-#: assets/js/build/paidy/wizard/paidy.js:2089
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:244
 msgid "Restricting access from suspicious IP addresses"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2228
-#: src/js/paidy/wizard/components/controls.jsx:188
-#: assets/js/build/paidy/wizard/paidy.js:2091
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:249
 msgid "This refers to restricting access from suspicious IP addresses, such as those from overseas, using firewalls, WAFs, apps, etc."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2237
-#: src/js/paidy/wizard/components/controls.jsx:197
-#: assets/js/build/paidy/wizard/paidy.js:2100
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:261
 msgid "Identity verification using two-factor authentication, etc."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2239
-#: src/js/paidy/wizard/components/controls.jsx:199
-#: assets/js/build/paidy/wizard/paidy.js:2102
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:266
 msgid "This refers to increasing security strength by combining multiple levels or elements of authentication, such as biometric authentication using fingerprints or faces, or email or SMS authentication, in addition to ID and password."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2248
-#: src/js/paidy/wizard/components/controls.jsx:208
-#: assets/js/build/paidy/wizard/paidy.js:2111
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:278
 msgid "Fraud detection system (Fraud service)"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2250
-#: src/js/paidy/wizard/components/controls.jsx:210
-#: assets/js/build/paidy/wizard/paidy.js:2113
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:283
 msgid "It is a security technology that constantly monitors communications on the network and detects fraudulent transactions in advance, such as the use of credit cards by third parties or impersonation."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2259
-#: src/js/paidy/wizard/components/controls.jsx:219
-#: assets/js/build/paidy/wizard/paidy.js:2122
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:295
 msgid "Device fingerprinting, etc."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2260
-#: src/js/paidy/wizard/components/controls.jsx:220
-#: assets/js/build/paidy/wizard/paidy.js:2123
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:299
 msgid "This technology tracks online behavior by using the characteristics of the operating environment of the user's device as a kind of fingerprint."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2270
-#: src/js/paidy/wizard/components/controls.jsx:230
-#: assets/js/build/paidy/wizard/paidy.js:2133
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:312
 msgid "If there is more than one question with a \"yes\" answer, please provide an alternative solution."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2280
-#: src/js/paidy/wizard/components/controls.jsx:240
-#: assets/js/build/paidy/wizard/paidy.js:2143
-msgid "Have you received any administrative disposition under the Specified Commercial Transactions Act in the past five years?"
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:325
+msgid "We have not received any administrative penalties under the Specified Commercial Transactions Law in the past five years."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2297
-#: src/js/paidy/wizard/components/controls.jsx:260
-#: assets/js/build/paidy/wizard/paidy.js:2163
-msgid "Have you ever been sued in a civil lawsuit for violating the Consumer Contract Act and lost the case?"
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/controls.jsx:348
+msgid "I have never been sued in a civil lawsuit or received an unfavorable judgment based on actions that violated the Consumer Contract Act."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2345
-#: assets/js/build/paidy/wizard/paidy.js:2851
-#: src/js/paidy/wizard/components/first-main-page.jsx:50
-#: src/js/paidy/wizard/index.js:29
-#: assets/js/build/paidy/wizard/paidy.js:2252
-#: assets/js/build/paidy/wizard/paidy.js:2684
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: assets/js/build/paidy/wizard/paidy.js:5
+#: src/js/paidy/wizard/components/first-main-page.jsx:46
+#: src/js/paidy/wizard/index.js:30
 msgid "Easy setup for Paidy payment"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2351
-#: src/js/paidy/wizard/components/first-main-page.jsx:58
-#: assets/js/build/paidy/wizard/paidy.js:2260
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/first-main-page.jsx:54
 msgid "Paidy application"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2360
-#: src/js/paidy/wizard/components/first-main-page.jsx:66
-#: assets/js/build/paidy/wizard/paidy.js:2268
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/first-main-page.jsx:65
 msgid "Get started now"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2371
-#: src/js/paidy/wizard/components/first-main-page.jsx:75
-#: assets/js/build/paidy/wizard/paidy.js:2277
+#: assets/js/build/paidy/wizard/paidy.js:1
+#: src/js/paidy/wizard/components/first-main-page.jsx:77
 msgid "I agree to the above and apply"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2445
-#: src/js/paidy/wizard/components/first-main-page.jsx:149
-#: assets/js/build/paidy/wizard/paidy.js:2351
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:152
 msgid "Basic information"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2489
-#: src/js/paidy/wizard/components/first-main-page.jsx:203
-#: assets/js/build/paidy/wizard/paidy.js:2405
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:221
 msgid "Security survey"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2491
-#: src/js/paidy/wizard/components/first-main-page.jsx:206
-#: assets/js/build/paidy/wizard/paidy.js:2408
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:224
 msgid "Based on requests from the Ministry of Economy, Trade and Industry and the Japan Consumer Credit Association, all e-commerce affiliates are required to declare the status of their own security measures when joining. Please answer the following questions."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2493
-#: src/js/paidy/wizard/components/first-main-page.jsx:210
-#: assets/js/build/paidy/wizard/paidy.js:2412
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:231
 msgid "For details, please refer to <link>the Security Measures Status Declaration Form FAQ.</link>"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2501
-#: src/js/paidy/wizard/components/first-main-page.jsx:223
-#: assets/js/build/paidy/wizard/paidy.js:2425
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:247
 msgid "*If the system has not yet been built, please declare the check items for each security measure on the assumption that they will be satisfied once the system is built."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2507
-#: src/js/paidy/wizard/components/first-main-page.jsx:228
-#: assets/js/build/paidy/wizard/paidy.js:2430
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:255
 msgid "[Measures to prevent leakage of cardholder data]"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2518
-#: src/js/paidy/wizard/components/first-main-page.jsx:243
-#: assets/js/build/paidy/wizard/paidy.js:2445
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:280
 msgid "[Countermeasures against unauthorized logins]"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2520
-#: src/js/paidy/wizard/components/first-main-page.jsx:246
-#: assets/js/build/paidy/wizard/paidy.js:2448
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:286
 msgid "*At least one \"Yes\" is required. If any are missing, we will contact you."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2523
-#: src/js/paidy/wizard/components/first-main-page.jsx:249
-#: assets/js/build/paidy/wizard/paidy.js:2451
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:293
 msgid "Do you take the following measures to prevent unauthorized logins when changing a user's attributes?"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2541
-#: src/js/paidy/wizard/components/first-main-page.jsx:272
-#: assets/js/build/paidy/wizard/paidy.js:2474
+#: assets/js/build/paidy/wizard/paidy.js:3
+#: src/js/paidy/wizard/components/first-main-page.jsx:329
 msgid "Questionnaire"
 msgstr ""
 
 #. translators: %s: plugin name
-#: assets/js/build/paidy/wizard/paidy.js:2595
-#: src/js/paidy/wizard/components/first-main-page.jsx:341
-#: assets/js/build/paidy/wizard/paidy.js:2543
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:411
 #, js-format
 msgid "Easy Paidy setup now available with %s!"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2595
-#: src/js/paidy/wizard/components/first-main-page.jsx:343
-#: assets/js/build/paidy/wizard/paidy.js:2545
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:419
 msgid "Right now, we are offering a one-month trial with no payment fees!"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2620
-#: src/js/paidy/wizard/components/first-main-page.jsx:358
-#: assets/js/build/paidy/wizard/paidy.js:2560
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:440
 msgid "What is Paidy?"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2620
-#: src/js/paidy/wizard/components/first-main-page.jsx:359
-#: assets/js/build/paidy/wizard/paidy.js:2561
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:442
 msgid "Paidy is a deferred payment service that can be used without the need for a credit card."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2620
-#: src/js/paidy/wizard/components/first-main-page.jsx:360
-#: assets/js/build/paidy/wizard/paidy.js:2562
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:447
 msgid "Customers can make purchases with just their mobile phone number and email address."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2620
-#: src/js/paidy/wizard/components/first-main-page.jsx:361
-#: assets/js/build/paidy/wizard/paidy.js:2563
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:452
 msgid "Payment can be made from the following month onwards via convenience store, bank or direct debit."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2620
-#: src/js/paidy/wizard/components/first-main-page.jsx:362
-#: assets/js/build/paidy/wizard/paidy.js:2564
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:457
 msgid "We respond to the desire to \"buy now.\""
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2628
-#: src/js/paidy/wizard/components/first-main-page.jsx:365
-#: assets/js/build/paidy/wizard/paidy.js:2567
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:471
 msgid "Benefits of implementation (for EC businesses)"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2628
-#: src/js/paidy/wizard/components/first-main-page.jsx:366
-#: assets/js/build/paidy/wizard/paidy.js:2568
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:476
 msgid "No credit card registration is required, making it easy for new customers to make purchases with confidence."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2628
-#: src/js/paidy/wizard/components/first-main-page.jsx:367
-#: assets/js/build/paidy/wizard/paidy.js:2569
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:481
 msgid "Installment payments are also supported, which is expected to increase the success rate of high-priced products."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2628
-#: src/js/paidy/wizard/components/first-main-page.jsx:368
-#: assets/js/build/paidy/wizard/paidy.js:2570
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:486
 msgid "*Free installment fees only apply when paying by direct debit or bank transfer. Identity verification and app download required."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2628
-#: src/js/paidy/wizard/components/first-main-page.jsx:369
-#: assets/js/build/paidy/wizard/paidy.js:2571
+#: assets/js/build/paidy/wizard/paidy.js:4
+#: src/js/paidy/wizard/components/first-main-page.jsx:491
 msgid "Currently used on over 700,000 websites nationwide, including Amazon. Industry-leading track record."
 msgstr ""
 
 #. translators: %s: plugin name
-#: assets/js/build/paidy/wizard/paidy.js:2632
-#: src/js/paidy/wizard/components/first-main-page.jsx:374
-#: assets/js/build/paidy/wizard/paidy.js:2576
+#: assets/js/build/paidy/wizard/paidy.js:5
+#: src/js/paidy/wizard/components/first-main-page.jsx:502
 #, js-format
 msgid "%s * Paidy"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2632
-#: src/js/paidy/wizard/components/first-main-page.jsx:376
-#: assets/js/build/paidy/wizard/paidy.js:2578
+#: assets/js/build/paidy/wizard/paidy.js:5
+#: src/js/paidy/wizard/components/first-main-page.jsx:507
 msgid "With this update, Paidy can now be installed in as little as 30 seconds!"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2632
-#: src/js/paidy/wizard/components/first-main-page.jsx:377
-#: assets/js/build/paidy/wizard/paidy.js:2579
+#: assets/js/build/paidy/wizard/paidy.js:5
+#: src/js/paidy/wizard/components/first-main-page.jsx:512
 msgid "No initial or monthly fees."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2632
-#: src/js/paidy/wizard/components/first-main-page.jsx:378
-#: assets/js/build/paidy/wizard/paidy.js:2580
+#: assets/js/build/paidy/wizard/paidy.js:5
+#: src/js/paidy/wizard/components/first-main-page.jsx:517
 msgid "The review process is completed in as little as 1-2 days, and setup is easy."
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2643
-#: src/js/paidy/wizard/components/first-main-page.jsx:386
-#: assets/js/build/paidy/wizard/paidy.js:2588
+#: assets/js/build/paidy/wizard/paidy.js:5
+#: src/js/paidy/wizard/components/first-main-page.jsx:530
 msgid "pass this time"
 msgstr ""
 
-#: assets/js/build/paidy/wizard/paidy.js:2838
+#: assets/js/build/paidy/wizard/paidy.js:5
 #: src/js/paidy/wizard/index.js:10
-#: assets/js/build/paidy/wizard/paidy.js:2665
 msgid "Back to Paidy settings"
+msgstr ""
+
+#: src/js/paidy/admin/components/index.js:67
+msgid "Status: Approved"
+msgstr ""
+
+#: src/js/paidy/admin/components/index.js:110
+msgid "Status: Rejected"
 msgstr ""
 
 #: src/js/paidy/wizard/button.js:6
