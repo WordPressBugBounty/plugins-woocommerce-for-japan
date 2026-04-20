@@ -5,7 +5,7 @@
  * Description: Woocommerce toolkit for Japanese use.
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
- * Version: 2.9.4
+ * Version: 2.9.5
  * Requires PHP: 8.1
  * Requires Plugins: woocommerce
  * Requires at least: 6.7
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'JP4WC_VERSION', '2.9.4' );
+define( 'JP4WC_VERSION', '2.9.5' );
 
 require_once __DIR__ . '/class-jp4wc.php';
 
@@ -77,7 +77,7 @@ add_action( 'plugins_loaded', 'jp4wc_plugin', 10 );
  * @return void
  */
 function jp4wc_plugin() {
-	if ( is_woocommerce_active() && class_exists( 'WooCommerce' ) ) {
+	if ( class_exists( 'WooCommerce' ) ) {
 		JP4WC::instance();
 	} else {
 		add_action( 'admin_notices', 'jp4wc_fallback_notice' );
@@ -149,7 +149,7 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 	 * Initialize the Paidy plugin.
 	 */
 	function wc_paidy_plugin() {
-		if ( is_woocommerce_active() && class_exists( 'WooCommerce' ) ) {
+		if ( class_exists( 'WooCommerce' ) ) {
 			WC_Paidy::get_instance();
 		}
 		if ( class_exists( 'Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType' ) ) {
@@ -196,6 +196,9 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 	 * Redirects to the Paidy wizard after plugin activation.
 	 */
 	function paidy_redirect_to_wizard() {
+		if ( ! class_exists( 'WC_Gateway_Paidy' ) ) {
+			return;
+		}
 		$paidy_payment_method = new WC_Gateway_Paidy();
 		if ( get_option( 'paidy_do_activation_redirect', false ) ) {
 			if ( 'yes' !== $paidy_payment_method->enabled && jp4wc_has_orders_in_last_5_days() ) {
