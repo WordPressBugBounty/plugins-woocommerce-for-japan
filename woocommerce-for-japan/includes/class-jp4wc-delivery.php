@@ -44,14 +44,16 @@ class JP4WC_Delivery {
 		add_action( 'woocommerce_order_details_after_order_table', array( $this, 'frontend_order_timedate' ) );
 		// Show on order detail email (frontend).
 		add_filter( 'woocommerce_email_order_meta', array( $this, 'email_order_delivery_details' ), 10, 3 );
-		// Shop Order functions.
+		// Shop Order functions — legacy post list and HPOS order list.
 		add_filter( 'manage_edit-shop_order_columns', array( $this, 'shop_order_columns' ) );
 		add_action( 'manage_shop_order_posts_custom_column', array( $this, 'render_shop_order_columns' ), 2 );
+		add_filter( 'manage_woocommerce_page_wc-orders_columns', array( $this, 'shop_order_columns' ) );
+		add_action( 'manage_woocommerce_page_wc-orders_custom_column', array( $this, 'render_hpos_shop_order_columns' ), 2, 2 );
 		// display in Order meta box ship date and time (admin).
 		add_action( 'add_meta_boxes', array( $this, 'add_meta_box' ) );
 		add_action( 'woocommerce_process_shop_order_meta', array( $this, 'save_meta_box' ), 0, 1 );
 
-		add_filter( 'woocommerce_payment_successful_result', array( $this, 'jp4wc_delivery_check_data' ), 10, 1 );
+		add_filter( 'woocommerce_payment_successful_result', array( $this, 'jp4wc_delivery_check_data' ), 10, 2 );
 	}
 
 	/**
@@ -768,13 +770,15 @@ class JP4WC_Delivery {
 		}
 	}
 	/**
-	 * Admin: Display date and timeslot on the admin order page
+	 * Admin: Output delivery column on HPOS order list.
 	 *
-	 * @param object $order WP_Order.
+	 * @param string   $column Column ID.
+	 * @param WC_Order $order  Order object passed by HPOS action.
 	 */
-	public function display_admin_order_meta( $order ) {
-
-		$this->display_date_and_time_zone( $order );
+	public function render_hpos_shop_order_columns( $column, $order ) {
+		if ( 'wc4jp_delivery' === $column ) {
+			$this->display_date_and_time_zone( $order );
+		}
 	}
 
 	/**
@@ -922,12 +926,15 @@ class JP4WC_Delivery {
 	/**
 	 * Check delivery date data after successful payment and send admin notification if required date is missing.
 	 *
-	 * @param array $result Payment successful result.
+	 * @param array $result   Payment successful result.
+	 * @param int   $order_id Order ID passed by WooCommerce as the second filter argument.
 	 * @return array Modified payment result.
 	 */
-	public function jp4wc_delivery_check_data( $result ) {
-		$order_id = $result['order_id'];
-		$order    = wc_get_order( $order_id );
+	public function jp4wc_delivery_check_data( $result, $order_id ) {
+		$order = wc_get_order( $order_id );
+		if ( ! $order ) {
+			return $result;
+		}
 
 		// Check both shortcode and Checkout Block meta keys for delivery date.
 		$date = $order->get_meta( 'wc4jp-delivery-date', true );

@@ -161,7 +161,7 @@ class JP4WC_Delivery_Blocks_Integration implements IntegrationInterface {
 				$this->log_info( 'ERROR registering delivery date field: ' . $e->getMessage() );
 			}
 		} else {
-			$this->log_info( 'Delivery date field NOT registered. Option: ' . get_option( 'wc4jp-delivery-date' ) . ', Dates: ' . count( $delivery_dates ) );
+			$this->log_debug( 'Delivery date field NOT registered. Option: ' . get_option( 'wc4jp-delivery-date' ) . ', Dates: ' . count( $delivery_dates ) );
 		}
 
 		// Register delivery time field as select.
@@ -187,7 +187,7 @@ class JP4WC_Delivery_Blocks_Integration implements IntegrationInterface {
 				$this->log_info( 'ERROR registering delivery time field: ' . $e->getMessage() );
 			}
 		} else {
-			$this->log_info( 'Delivery time field NOT registered. Option: ' . get_option( 'wc4jp-delivery-time-zone' ) . ', Zones: ' . count( $time_zones ) );
+			$this->log_debug( 'Delivery time field NOT registered. Option: ' . get_option( 'wc4jp-delivery-time-zone' ) . ', Zones: ' . count( $time_zones ) );
 		}
 
 		// Flag already set at the beginning of this method.
@@ -486,6 +486,21 @@ class JP4WC_Delivery_Blocks_Integration implements IntegrationInterface {
 		if ( function_exists( 'wc_get_logger' ) ) {
 			$logger = wc_get_logger();
 			$logger->info(
+				'[JP4WC Delivery Blocks] ' . $message,
+				array( 'source' => 'jp4wc_delivery_block' )
+			);
+		}
+	}
+
+	/**
+	 * Log debug message — only outputs when WP_DEBUG is enabled.
+	 *
+	 * @param string $message Message to log.
+	 */
+	private function log_debug( $message ) {
+		if ( defined( 'WP_DEBUG' ) && WP_DEBUG && function_exists( 'wc_get_logger' ) ) {
+			$logger = wc_get_logger();
+			$logger->debug(
 				'[JP4WC Delivery Blocks] ' . $message,
 				array( 'source' => 'jp4wc_delivery_block' )
 			);
