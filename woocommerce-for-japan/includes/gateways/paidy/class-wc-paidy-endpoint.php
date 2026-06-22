@@ -16,6 +16,23 @@ use ArtisanWorkshop\PluginFramework\v2_0_14 as Framework;
  */
 class WC_Paidy_Endpoint {
 	/**
+	 * Official Paidy webhook source IP addresses.
+	 *
+	 * Used as the default allowlist when a webhook request arrives without an
+	 * x-paidy-signature header. Operators can extend or override this list via the
+	 * `paidy_webhook_allowed_ips` filter. Provided by Paidy.
+	 *
+	 * @var string[]
+	 */
+	const PAIDY_WEBHOOK_IPS = array(
+		'13.114.134.35',
+		'13.113.94.100',
+		'18.182.135.232',
+		'52.199.50.20',
+		'52.199.62.26',
+	);
+
+	/**
 	 * Paidy gateway instance.
 	 *
 	 * @var WC_Gateway_Paidy
@@ -60,8 +77,11 @@ class WC_Paidy_Endpoint {
 	/**
 	 * Permission callback for Paidy webhook endpoint.
 	 * Verifies the request is from Paidy by checking the signature header or IP allowlist.
-	 * At least one verification method must be active; requests are rejected with 403 when
-	 * neither an API secret key (for HMAC signature) nor an IP allowlist is configured.
+	 * When a signature header is present it is verified against the configured API secret key.
+	 * Otherwise the request IP is matched against the allowlist, which defaults to Paidy's
+	 * official webhook source IPs (see self::PAIDY_WEBHOOK_IPS). The request is only allowed
+	 * through without verification if an operator explicitly empties the allowlist via the
+	 * paidy_webhook_allowed_ips filter.
 	 *
 	 * @param WP_REST_Request $request The request object.
 	 * @return bool|WP_Error True if authorized, WP_Error otherwise.
@@ -99,8 +119,12 @@ class WC_Paidy_Endpoint {
 			return true;
 		}
 
-		// No signature — check IP whitelist if one has been configured via filter.
-		$allowed_ips = apply_filters( 'paidy_webhook_allowed_ips', array() );
+		// No signature — fall back to the IP allowlist. Defaults to Paidy's official
+		// webhook source IPs; operators can extend or override via the filter.
+		$allowed_ips = apply_filters( 'paidy_webhook_allowed_ips', self::PAIDY_WEBHOOK_IPS );
+		if ( ! is_array( $allowed_ips ) ) {
+			$allowed_ips = self::PAIDY_WEBHOOK_IPS;
+		}
 
 		if ( ! empty( $allowed_ips ) ) {
 			$remote_ip = $this->get_remote_ip();
@@ -115,21 +139,19 @@ class WC_Paidy_Endpoint {
 			return true;
 		}
 
-		// No signature and no IP whitelist configured — reject.
-		// At least one verification method must be in place to prevent unauthenticated
-		// callers from forging order status changes.
-		// Log a warning so site admins can diagnose blocked webhooks after upgrading.
-		wc_get_logger()->warning(
-			'Paidy webhook rejected: no HMAC signature present and no IP allowlist configured. ' .
-			'To restore webhook processing, configure the API secret key in WooCommerce > Settings > Payments > Paidy, ' .
-			'or supply a trusted IP list via the paidy_webhook_allowed_ips filter.',
-			array( 'source' => 'paidy-wc' )
+		// No signature and the allowlist was explicitly emptied via filter — allow through.
+		// This branch is only reached when an operator deliberately returns an empty array
+		// from paidy_webhook_allowed_ips, opting out of both signature and IP verification.
+		// Only log when gateway debug mode is enabled to avoid flooding logs with bot traffic.
+		$this->jp4wc_framework->jp4wc_debug_log(
+			'Paidy webhook received without signature or IP allowlist verification. ' .
+			'The paidy_webhook_allowed_ips filter returned an empty list, disabling IP checks. ' .
+			'To restore strict verification, remove that override or configure an API secret key ' .
+			'in WooCommerce > Settings > Payments > Paidy.',
+			$this->paidy->debug,
+			'paidy-wc'
 		);
-		return new WP_Error(
-			'paidy_unauthorized',
-			__( 'Unauthorized: Paidy webhook requires either HMAC signature verification (configure an API secret key) or an IP allowlist (use the paidy_webhook_allowed_ips filter).', 'woocommerce-for-japan' ),
-			array( 'status' => 403 )
-		);
+		return true;
 	}
 
 	/**
@@ -210,6 +232,23 @@ class WC_Paidy_Endpoint {
 				$enable_authorize_success_statuses = apply_filters( 'paidy_endpoint_enable_authorize_statuses', array( 'pending', 'cancelled' ), $order );
 
 				if ( 'authorize_success' === $main_data['status'] && in_array( $status, $enable_authorize_success_statuses, true ) ) {
+					// Idempotency: skip if payment_complete() was already called (transaction_id already set).
+					if ( ! empty( $order->get_transaction_id() ) ) {
+						return new WP_REST_Response( $main_data, 200 );
+					}
+					// Verify the payment with Paidy server-side before completing the order.
+					// The webhook body is attacker-controllable (especially for unsigned
+					// requests), so confirm the payment belongs to this order, is authorized,
+					// and matches the order total before reducing stock and completing payment.
+					if ( ! $this->paidy->paidy_verify_payment_for_order( $order, $main_data['payment_id'] ) ) {
+						$message = $notice_message . __( 'Paidy webhook payment verification failed. Order not completed.', 'woocommerce-for-japan' ) . "\n" . 'Order# :' . $main_data['order_ref'];
+						$this->jp4wc_framework->jp4wc_debug_log( $message, $debug, 'paidy-wc' );
+						return new WP_Error(
+							'paidy_verification_failed',
+							__( 'Paidy payment could not be verified for this order.', 'woocommerce-for-japan' ),
+							array( 'status' => 403 )
+						);
+					}
 					// Reduce stock levels.
 					wc_reduce_stock_levels( $main_data['order_ref'] );
 					if ( isset( $main_data['payment_id'] ) ) {
@@ -287,13 +326,15 @@ class WC_Paidy_Endpoint {
 	 */
 	public function paidy_check_regist_webhook() {
 		// POST /wp-json/paidy/v1/check .
+		// This endpoint is called by the Paidy intermediary server (paidy.artws.info) for webhook
+		// registration verification. It does not modify order state, so __return_true is appropriate.
 		register_rest_route(
 			'paidy/v1',
 			'/check',
 			array(
 				'methods'             => 'POST',
 				'callback'            => array( $this, 'paidy_regist_webhook' ),
-				'permission_callback' => array( $this, 'paidy_webhook_permission_check' ),
+				'permission_callback' => '__return_true',
 			)
 		);
 	}
