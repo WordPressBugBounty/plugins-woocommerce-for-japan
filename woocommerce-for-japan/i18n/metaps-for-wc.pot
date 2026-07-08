@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Japanized for WooCommerce plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Japanized for WooCommerce 2.9.14\n"
+"Project-Id-Version: Japanized for WooCommerce 2.9.15\n"
 "Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-22T04:49:47+00:00\n"
+"POT-Creation-Date: 2026-07-08T05:50:14+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "language-team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -241,148 +241,163 @@ msgstr ""
 msgid "Not specified"
 msgstr ""
 
-#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:152
-#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:334
-#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:362
-#: includes/class-jp4wc-address-fields.php:92
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:165
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:354
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:382
+#: includes/class-jp4wc-address-fields.php:97
 msgid "Last Name ( Yomigana )"
 msgstr ""
 
-#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:172
-#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:335
-#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:363
-#: includes/class-jp4wc-address-fields.php:98
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:185
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:355
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:383
+#: includes/class-jp4wc-address-fields.php:103
 msgid "First Name ( Yomigana )"
 msgstr ""
 
-#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:265
+#: includes/blocks/class-jp4wc-yomigana-blocks-integration.php:278
 msgid "Please enter the name reading."
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:122
-#: includes/class-jp4wc-address-fields.php:157
+#: includes/class-jp4wc-address-fields.php:127
+#: includes/class-jp4wc-address-fields.php:162
 #: src/js/jp4wc/admin/settings/components/GeneralSettings.js:193
 msgid "Company Name"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:148
-#: includes/class-jp4wc-address-fields.php:411
+#: includes/class-jp4wc-address-fields.php:153
+#: includes/class-jp4wc-address-fields.php:416
 msgid "Shipping Phone"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:597
-#: includes/class-jp4wc-address-fields.php:667
-#: includes/class-jp4wc-address-fields.php:735
-#: includes/class-jp4wc-address-fields.php:758
+#: includes/class-jp4wc-address-fields.php:602
+#: includes/class-jp4wc-address-fields.php:672
+#: includes/class-jp4wc-address-fields.php:840
+#: includes/class-jp4wc-address-fields.php:863
 msgid "Last Name Yomigana"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:603
-#: includes/class-jp4wc-address-fields.php:673
-#: includes/class-jp4wc-address-fields.php:739
-#: includes/class-jp4wc-address-fields.php:762
+#: includes/class-jp4wc-address-fields.php:608
+#: includes/class-jp4wc-address-fields.php:678
+#: includes/class-jp4wc-address-fields.php:844
+#: includes/class-jp4wc-address-fields.php:867
 msgid "First Name Yomigana"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:681
-#: includes/class-jp4wc-address-fields.php:773
+#: includes/class-jp4wc-address-fields.php:686
+#: includes/class-jp4wc-address-fields.php:878
 #: src/js/jp4wc/admin/settings/components/GeneralSettings.js:368
 msgid "Phone"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:809
+#: includes/class-jp4wc-address-fields.php:914
 msgid "Taro"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:810
+#: includes/class-jp4wc-address-fields.php:915
 msgid "Yamada"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:811
+#: includes/class-jp4wc-address-fields.php:916
 msgid "Company"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:814
+#: includes/class-jp4wc-address-fields.php:919
 msgid "2-1 Dougenzaka"
 msgstr ""
 
-#: includes/class-jp4wc-address-fields.php:815
+#: includes/class-jp4wc-address-fields.php:920
 msgid "Shibuya Ku"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:104
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:129
+#: includes/class-jp4wc-cod-fee.php:105
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:130
 msgid "Extra charge for COD method"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:108
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:140
+#: includes/class-jp4wc-cod-fee.php:109
+#: includes/gateways/cod/class-wc-gateway-cod2.php:152
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:169
 msgid "Fee name"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:111
+#: includes/class-jp4wc-cod-fee.php:112
+#: includes/gateways/cod/class-wc-gateway-cod2.php:154
 msgid "COD Payment method fee"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:114
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:156
+#: includes/class-jp4wc-cod-fee.php:115
+#: includes/gateways/cod/class-wc-gateway-cod2.php:157
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:185
 msgid "Extra charge amount"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:119
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:176
+#: includes/class-jp4wc-cod-fee.php:120
+#: includes/gateways/cod/class-wc-gateway-cod2.php:162
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:205
 msgid "Maximum cart value to which adding fee"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:122
+#: includes/class-jp4wc-cod-fee.php:123
 msgid "If you dont need this setting, please set empty, 0."
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:125
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:199
+#: includes/class-jp4wc-cod-fee.php:126
+#: includes/gateways/cod/class-wc-gateway-cod2.php:168
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:228
 msgid "Includes taxes"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:128
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:211
+#: includes/class-jp4wc-cod-fee.php:129
+#: includes/gateways/cod/class-wc-gateway-cod2.php:171
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:240
 msgid "Do not calculate taxes"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:129
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:215
+#: includes/class-jp4wc-cod-fee.php:130
+#: includes/gateways/cod/class-wc-gateway-cod2.php:172
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:244
 msgid "The fee is taxes included"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:130
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:219
+#: includes/class-jp4wc-cod-fee.php:131
+#: includes/gateways/cod/class-wc-gateway-cod2.php:173
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:248
 msgid "The fee is taxes excluded"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:152
+#: includes/class-jp4wc-cod-fee.php:153
+#: includes/gateways/cod/class-wc-gateway-cod2.php:421
 msgid "Tax Class:"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:162
+#: includes/class-jp4wc-cod-fee.php:163
+#: includes/gateways/cod/class-wc-gateway-cod2.php:431
 msgid "Charge amount of details:"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:169
-msgid "Charge amount of COD"
-msgstr ""
-
 #: includes/class-jp4wc-cod-fee.php:170
-msgid "Max"
+#: includes/gateways/cod/class-wc-gateway-cod2.php:438
+msgid "Min order amount (¥)"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:191
+#: includes/class-jp4wc-cod-fee.php:171
+#: includes/gateways/cod/class-wc-gateway-cod2.php:439
+msgid "COD fee (¥)"
+msgstr ""
+
+#: includes/class-jp4wc-cod-fee.php:192
+#: includes/gateways/cod/class-wc-gateway-cod2.php:457
 msgid "+ Add Charge amount"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:191
+#: includes/class-jp4wc-cod-fee.php:192
+#: includes/gateways/cod/class-wc-gateway-cod2.php:457
 msgid "Remove selected Charge amount(s)"
 msgstr ""
 
-#: includes/class-jp4wc-cod-fee.php:212
+#: includes/class-jp4wc-cod-fee.php:213
+#: includes/gateways/cod/class-wc-gateway-cod2.php:475
 msgid "Note : This function is only available to PRO purchasers."
 msgstr ""
 
@@ -637,7 +652,7 @@ msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:84
 #: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:156
-#: includes/gateways/cod/class-wc-gateway-cod2.php:107
+#: includes/gateways/cod/class-wc-gateway-cod2.php:108
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:197
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:141
 msgid "Title"
@@ -657,7 +672,7 @@ msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:91
 #: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:163
-#: includes/gateways/cod/class-wc-gateway-cod2.php:114
+#: includes/gateways/cod/class-wc-gateway-cod2.php:115
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:204
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:148
 msgid "Description"
@@ -665,7 +680,7 @@ msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:93
 #: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:165
-#: includes/gateways/cod/class-wc-gateway-cod2.php:109
+#: includes/gateways/cod/class-wc-gateway-cod2.php:110
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:206
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:150
 msgid "Payment method description that the customer will see on your checkout."
@@ -677,7 +692,7 @@ msgstr ""
 
 #: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:98
 #: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:170
-#: includes/gateways/cod/class-wc-gateway-cod2.php:121
+#: includes/gateways/cod/class-wc-gateway-cod2.php:122
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:155
 msgid "Instructions"
 msgstr ""
@@ -694,7 +709,7 @@ msgid "At Store payment"
 msgstr ""
 
 #: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:95
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:60
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:61
 #: src/js/jp4wc/frontend/blocks/bank-jp/index.js:8
 msgid "BANK PAYMENT IN JAPAN"
 msgstr ""
@@ -794,7 +809,7 @@ msgid "Awaiting BANK payment"
 msgstr ""
 
 #: includes/gateways/cod/class-wc-addons-gateway-cod2.php:119
-#: includes/gateways/cod/class-wc-gateway-cod2.php:307
+#: includes/gateways/cod/class-wc-gateway-cod2.php:351
 msgid "Payment to be made upon delivery."
 msgstr ""
 
@@ -812,50 +827,72 @@ msgstr ""
 msgid "Have your customers pay with cash (or by other means) upon delivery."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:100
+#: includes/gateways/cod/class-wc-gateway-cod2.php:101
 msgid "Enable COD"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:101
+#: includes/gateways/cod/class-wc-gateway-cod2.php:102
 msgid "Enable Cash on Delivery"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:110
+#: includes/gateways/cod/class-wc-gateway-cod2.php:111
 #: src/js/jp4wc/frontend/blocks/cod2/index.js:8
 msgid "Cash on Delivery"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:116
+#: includes/gateways/cod/class-wc-gateway-cod2.php:117
 msgid "Payment method description that the customer will see on your website."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:117
-#: includes/gateways/cod/class-wc-gateway-cod2.php:124
+#: includes/gateways/cod/class-wc-gateway-cod2.php:118
+#: includes/gateways/cod/class-wc-gateway-cod2.php:125
 msgid "Pay with cash upon delivery."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:123
+#: includes/gateways/cod/class-wc-gateway-cod2.php:124
 msgid "Instructions that will be added to the thank you page."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:128
+#: includes/gateways/cod/class-wc-gateway-cod2.php:129
 msgid "Enable for shipping methods"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:133
+#: includes/gateways/cod/class-wc-gateway-cod2.php:134
 msgid "If COD is only available for certain methods, set it up here. Leave blank to enable for all methods."
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:137
+#: includes/gateways/cod/class-wc-gateway-cod2.php:138
 msgid "Select shipping methods"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:141
+#: includes/gateways/cod/class-wc-gateway-cod2.php:142
 msgid "Accept for virtual orders"
 msgstr ""
 
-#: includes/gateways/cod/class-wc-gateway-cod2.php:142
+#: includes/gateways/cod/class-wc-gateway-cod2.php:143
 msgid "Accept COD if the order is virtual"
+msgstr ""
+
+#: includes/gateways/cod/class-wc-gateway-cod2.php:148
+msgid "Extra charge for COD2 method"
+msgstr ""
+
+#: includes/gateways/cod/class-wc-gateway-cod2.php:165
+msgid "If you don't need this setting, please leave it empty or set to 0."
+msgstr ""
+
+#: includes/gateways/cod/class-wc-gateway-cod2.php:180
+msgid "Debug mode"
+msgstr ""
+
+#: includes/gateways/cod/class-wc-gateway-cod2.php:181
+msgid "Enable debug logging for COD2 fee calculation"
+msgstr ""
+
+#. translators: %s: WooCommerce logs URL
+#: includes/gateways/cod/class-wc-gateway-cod2.php:185
+#, php-format
+msgid "Logs fee calculation details to <a href=\"%s\">WooCommerce > Status > Logs</a> (source: <code>jp4wc-cod2-fee</code>). Disable after investigation."
 msgstr ""
 
 #. translators: %s: Payment method name.
@@ -920,7 +957,7 @@ msgstr ""
 
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:237
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:243
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:775
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:805
 msgid "API Public Key"
 msgstr ""
 
@@ -935,7 +972,7 @@ msgstr ""
 
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:249
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:255
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:786
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:816
 msgid "API Secret Key"
 msgstr ""
 
@@ -997,176 +1034,176 @@ msgstr ""
 msgid "The webhooks set in the Paidy management screen are as follows. <br />"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:633
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:663
 msgid "This order has already been settled."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:635
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:665
 msgid "API Public key is not set. Please set an API public key in the admin page."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:721
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:751
 msgid "Once the customer interrupted the payment.. Order ID:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:724
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:754
 msgid "This Paidy payment has been declined. Please select another payment method."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:761
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:791
 msgid "Paidy Payment succeeds to authorize and move to thank you page. Get data is following."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:775
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:786
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:805
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:816
 msgid "Production environment"
 msgstr ""
 
 #. translators: 1) Field title 2) Environment 3) Paidy PR link
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:801
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:831
 #, php-format
 msgid "If you do not set %1$s, it will not work in the %2$s. Application is necessary for acquisition."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:837
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:867
 msgid "This order is success cancellation data at Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:840
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:870
 msgid "This order is already close data at Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:843
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:873
 msgid "Cancelled processing has not been completed due to a Paidy error. Please check Paidy admin."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:933
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:950
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:963
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:980
 msgid "This is capture data."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:941
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:971
 msgid "In the payment completion process, the amount and ID match were confirmed."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:944
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:974
 msgid "In the payment completion process, the amount and ID did not match. Check on the Paidy admin."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:959
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1067
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:989
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1097
 msgid "There was no status in the notification from Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:962
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:992
 msgid "Status Change from Processing to completed."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:978
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1008
 msgid "You have made a forbidden request."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:978
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:981
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:984
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:987
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:990
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1008
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1011
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1014
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1017
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1020
 msgid "Please go to your Paidy dashboard and check."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:981
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1011
 msgid "You have made an unauthorized request."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:984
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1014
 msgid "You have made a conflict request."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:987
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1017
 msgid "The requested resource could not be found."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:990
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1020
 msgid "The request failed."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:993
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1023
 msgid "I received a notification from Paidy and the status was successful."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:995
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1025
 msgid "I received a notification from Paidy stating that the status was unexpected."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1037
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1067
 msgid "Refund is not possible because Paidy has not completed processing."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1053
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1083
 msgid "Completion refunding has been completed at Paidy."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1056
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1086
 msgid "This is refund data."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1224
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1254
 msgid "[WooCommerce] Notice of error occurrence in Paidy payment linkage"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1241
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1271
 msgid "An error has occurred in the Paidy payment linkage when changing the status of WooCommerce."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1242
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1272
 msgid "Please check the status of Paidy payment and respond accordingly."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1243
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1273
 msgid "Order number:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1244
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1274
 msgid "Order details URL:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1245
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1275
 msgid "Paidy payment ID:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1246
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1276
 msgid "Error occurrence time:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1247
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1249
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1277
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1279
 msgid "Error situation:"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1251
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1281
 msgid "* This e-mail is for sending only, so you cannot reply directly to this e-mail."
 msgstr ""
 
 #. translators: %s: URL of the image.
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1307
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1337
 #, php-format
 msgid "Already using URL as image: %s"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1315
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1345
 msgid "Select a image to upload"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1316
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1346
 msgid "Use this image"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1317
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1320
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1347
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1350
 msgid "Add image"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-gateway-paidy.php:1328
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1358
 msgid "Remove image"
 msgstr ""
 
@@ -1212,32 +1249,32 @@ msgstr ""
 msgid "Paidy On Boarding"
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:59
+#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:202
 msgid "Paidy onboarding is not configured."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:69
+#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:212
 msgid "Invalid application ID format."
 msgstr ""
 
-#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:87
+#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:228
 msgid "Invalid or missing state token for Paidy onboarding."
 msgstr ""
 
 #. translators: %s: API key field name
-#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:170
+#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:311
 #, php-format
 msgid "Invalid base64 encoding for field: %s"
 msgstr ""
 
 #. translators: %s: API key field name
-#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:183
+#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:324
 #, php-format
 msgid "Decryption failed for field: %s"
 msgstr ""
 
 #. translators: %s: API key field name
-#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:222
+#: includes/gateways/paidy/class-wc-paidy-apply-receiver.php:363
 #, php-format
 msgid "Approved response is missing a required API key field: %s"
 msgstr ""
@@ -1332,7 +1369,7 @@ msgstr ""
 
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:88
 #: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:144
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:78
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:79
 #: src/js/jp4wc/frontend/blocks/postofficebank/index.js:8
 msgid "Postal transfer"
 msgstr ""
@@ -1371,7 +1408,7 @@ msgid "Not Required"
 msgstr ""
 
 #: includes/jp4wc-common-functions.php:27
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:237
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:266
 msgid "Standard"
 msgstr ""
 
@@ -1527,7 +1564,7 @@ msgstr ""
 #: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:154
 #: src/js/jp4wc/admin/settings/components/GeneralSettings.js:411
 #: src/js/jp4wc/admin/settings/components/LawSettings.js:251
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:273
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:302
 #: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:547
 msgid "Saving..."
 msgstr ""
@@ -1535,7 +1572,7 @@ msgstr ""
 #: src/js/jp4wc/admin/settings/components/AffiliateSettings.js:155
 #: src/js/jp4wc/admin/settings/components/GeneralSettings.js:412
 #: src/js/jp4wc/admin/settings/components/LawSettings.js:252
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:274
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:303
 #: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:548
 msgid "Save Settings"
 msgstr ""
@@ -1668,55 +1705,67 @@ msgstr ""
 msgid "Specified Commercial Transaction Law"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:53
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:54
 msgid "Payment Method"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:64
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:65
 msgid "Enable bank payment method"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:82
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:83
 msgid "Enable postal transfer payment method"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:96
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:97
 msgid "Pay at store"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:97
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:98
 msgid "Enable pay at store payment method"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:111
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:112
 msgid "COD for Subscriptions"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:115
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:116
 msgid "Enable COD for subscription orders"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:141
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:142
+msgid "These settings apply to the standard WooCommerce \"Cash on Delivery\" payment method."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:148
+msgid "To configure the COD fee for \"Cash on Delivery for Subscriptions\", please go to:"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:158
+msgid "WooCommerce → Settings → Payments → Cash on Delivery for Subscriptions"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:170
 msgid "Name of the COD fee"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:160
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:189
 msgid "Amount to charge for COD"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:180
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:209
 msgid "Maximum cart value for COD fee application"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:233
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:262
 msgid "Tax Class"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:244
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:273
 msgid "Reduced rate"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:251
+#: src/js/jp4wc/admin/settings/components/PaymentSettings.js:280
 msgid "Zero rate"
 msgstr ""
 

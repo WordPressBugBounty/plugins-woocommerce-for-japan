@@ -70,6 +70,7 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts_frontend' ) );
 		add_action( 'woocommerce_update_options_payment_gateways_cod', array( $this, 'save_account_details' ) );
 		add_filter( 'woocommerce_cart_calculate_fees', array( $this, 'jp4wc_calculate_order_totals' ), 1001 );
+		add_filter( 'woocommerce_cart_totals_fee_html', array( $this, 'jp4wc_add_tax_label_to_fee_html' ), 10, 2 );
 	}
 
 	/**
@@ -166,8 +167,8 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 						<thead>
 						<tr>
 							<th class="sort">&nbsp;</th>
-							<th><?php esc_html_e( 'Charge amount of COD', 'woocommerce-for-japan' ); ?></th>
-							<th><?php esc_html_e( 'Max', 'woocommerce-for-japan' ); ?></th>
+							<th><?php esc_html_e( 'Min order amount (¥)', 'woocommerce-for-japan' ); ?></th>
+							<th><?php esc_html_e( 'COD fee (¥)', 'woocommerce-for-japan' ); ?></th>
 						</tr>
 						</thead>
 						<tbody class="accounts">
@@ -179,8 +180,8 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 
 								echo '<tr class="account">
 										<td class="sort"></td>
-										<td><input type="text" value="' . esc_attr( wp_unslash( $cod_fee['cod_fee'] ) ) . '" name="cod_fee[' . esc_attr( $i ) . ']" /></td>
 										<td><input type="text" value="' . esc_attr( wp_unslash( $cod_fee['cod_max'] ) ) . '" name="cod_max[' . esc_attr( $i ) . ']" /></td>
+										<td><input type="text" value="' . esc_attr( wp_unslash( $cod_fee['cod_fee'] ) ) . '" name="cod_fee[' . esc_attr( $i ) . ']" /></td>
 									</tr>';
 							}
 						}
@@ -201,8 +202,8 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 
 							jQuery('<tr class="account">\
 									<td class="sort"></td>\
-									<td><input type="text" name="cod_fee[' + size + ']" /></td>\
 									<td><input type="text" name="cod_max[' + size + ']" /></td>\
+									<td><input type="text" name="cod_fee[' + size + ']" /></td>\
 								</tr>').appendTo('#bacs_accounts table tbody');
 
 							return false;
@@ -273,6 +274,51 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 	}
 
 	/**
+	 * Get COD2 fee settings from the gateway options.
+	 *
+	 * @return array
+	 */
+	private static function get_cod2_fee_settings() {
+		$cod2_setting = get_option( 'woocommerce_cod2_settings', array() );
+		return is_array( $cod2_setting ) ? $cod2_setting : array();
+	}
+
+	/**
+	 * Write a debug log entry when COD2 debug mode is enabled.
+	 *
+	 * @param string $message Log message.
+	 * @param array  $context Optional key-value context data.
+	 */
+	private static function cod2_log( $message, array $context = array() ) {
+		$settings = get_option( 'woocommerce_cod2_settings', array() );
+		if ( empty( $settings['debug_mode'] ) || 'yes' !== $settings['debug_mode'] ) {
+			return;
+		}
+		$logger = wc_get_logger();
+		if ( ! empty( $context ) ) {
+			$pairs = array();
+			foreach ( $context as $k => $v ) {
+				$pairs[] = $k . '=' . ( is_array( $v ) || is_object( $v ) ? wp_json_encode( $v ) : $v );
+			}
+			$message .= ' | ' . implode( ', ', $pairs );
+		}
+		$logger->debug( $message, array( 'source' => 'jp4wc-cod2-fee' ) );
+	}
+
+	/**
+	 * Remove the JP4WC gateway fee from the cart by its fixed fee ID.
+	 */
+	private static function remove_fee_by_id() {
+		$fees = WC()->cart->get_fees();
+		foreach ( $fees as $key => $fee ) {
+			if ( 'jp4wc_gateway_fee' === $fee->id ) {
+				unset( $fees[ $key ] );
+			}
+		}
+		WC()->cart->fees_api()->set_fees( $fees );
+	}
+
+	/**
 	 * Add extra charge to cart totals
 	 *
 	 * @param object $cart Cart object.
@@ -303,18 +349,53 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 			return;
 		}
 
-		// Get COD fee settings — JP4WC admin values (wc4jp- prefix) override WC gateway settings.
-		$cod_setting = self::get_cod_fee_settings();
+		// Load settings for cod or cod2; remove any fee and bail for other gateways.
+		if ( 'cod' === $current_gateway_id ) {
+			$cod_setting = self::get_cod_fee_settings();
+		} elseif ( 'cod2' === $current_gateway_id ) {
+			$cod_setting = self::get_cod2_fee_settings();
+			self::cod2_log(
+				'[START] jp4wc_calculate_order_totals called',
+				array(
+					'gateway'                => $current_gateway_id,
+					'is_ajax'                => wp_doing_ajax() ? 'yes' : 'no',
+					'is_rest'                => ( defined( 'REST_REQUEST' ) && REST_REQUEST ) ? 'yes' : 'no',
+					'cart_contents_total'    => $cart->cart_contents_total,
+					'cart_subtotal'          => $cart->subtotal,
+					'cart_subtotal_ex_tax'   => $cart->subtotal_ex_tax,
+					'cart_contents_count'    => $cart->get_cart_contents_count(),
+					'chosen_payment_session' => WC()->session->get( 'chosen_payment_method' ),
+					'jp4wc_gateway_session'  => WC()->session->get( 'jp4wc_gateway_id' ),
+					'shipping_total'         => $cart->get_shipping_total(),
+					'extra_charge_amount'    => isset( $cod_setting['extra_charge_amount'] ) ? $cod_setting['extra_charge_amount'] : '(not set)',
+					'extra_charge_max'       => isset( $cod_setting['extra_charge_max_cart_value'] ) ? $cod_setting['extra_charge_max_cart_value'] : '(not set)',
+					'calc_taxes'             => isset( $cod_setting['extra_charge_calc_taxes'] ) ? $cod_setting['extra_charge_calc_taxes'] : '(not set)',
+				)
+			);
+		} else {
+			self::remove_fee_by_id();
+			return;
+		}
 
 		/**
-		 * Filter the COD fee settings array.
+		 * Filter the COD/COD2 fee settings array.
 		 * PRO version can use this to inject tiered fee tables or other advanced settings.
 		 *
 		 * @since 2.9.7
-		 * @param array  $cod_setting        The woocommerce_cod_settings option array.
-		 * @param string $current_gateway_id The currently selected payment method ID.
+		 * @param array  $cod_setting        The gateway settings option array.
+		 * @param string $current_gateway_id The currently selected payment method ID ('cod' or 'cod2').
 		 */
 		$cod_setting = apply_filters( 'jp4wc_cod_fee_settings', $cod_setting, $current_gateway_id );
+
+		if ( 'cod2' === $current_gateway_id ) {
+			self::cod2_log(
+				'[SETTINGS-FILTER] After jp4wc_cod_fee_settings filter (PRO may have modified these)',
+				array(
+					'extra_charge_amount'         => isset( $cod_setting['extra_charge_amount'] ) ? $cod_setting['extra_charge_amount'] : '(not set)',
+					'extra_charge_max_cart_value' => isset( $cod_setting['extra_charge_max_cart_value'] ) ? $cod_setting['extra_charge_max_cart_value'] : '(not set)',
+				)
+			);
+		}
 
 		$extra_charge_name           = isset( $cod_setting['extra_charge_name'] ) ? $cod_setting['extra_charge_name'] : '';
 		$extra_charge_amount         = isset( $cod_setting['extra_charge_amount'] ) ? floatval( $cod_setting['extra_charge_amount'] ) : 0;
@@ -328,21 +409,46 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 			$calc_taxes = 'no-tax';
 		}
 
-		// Remove fee and bail if payment method is not COD.
-		if ( 'cod' !== $current_gateway_id ) {
-			self::remove_fee( $extra_charge_name );
-			return;
-		}
-
-		$subtotal = $cart->cart_contents_total;
+		// Use the subtotal that matches what is displayed at checkout so the
+		// threshold setting behaves as the shop admin expects.
+		// display_prices_including_tax() checks woocommerce_tax_display_cart (the
+		// cart/checkout display setting), not woocommerce_prices_include_tax (the
+		// price-entry setting) — these can differ, so using the display setting is correct.
+		$subtotal = $cart->display_prices_including_tax() ? $cart->subtotal : $cart->subtotal_ex_tax;
 
 		// Remove fee and bail if cart total exceeds the max value threshold.
 		if ( ! empty( $extra_charge_max_cart_value ) && floatval( $extra_charge_max_cart_value ) < $subtotal ) {
+			if ( 'cod2' === $current_gateway_id ) {
+				self::cod2_log(
+					'[MAX] Cart subtotal exceeds max → fee removed (free)',
+					array(
+						'subtotal'                    => $subtotal,
+						'display_prices_incl_tax'     => $cart->display_prices_including_tax() ? 'yes' : 'no',
+						'extra_charge_max_cart_value' => floatval( $extra_charge_max_cart_value ),
+						'comparison'                  => floatval( $extra_charge_max_cart_value ) . ' < ' . $subtotal . ' = true',
+					)
+				);
+			}
 			self::remove_fee( $extra_charge_name );
 			return;
 		}
 
+		if ( 'cod2' === $current_gateway_id ) {
+			self::cod2_log(
+				'[MAX] Max cart value check passed → fee will be applied',
+				array(
+					'subtotal'                    => $subtotal,
+					'display_prices_incl_tax'     => $cart->display_prices_including_tax() ? 'yes' : 'no',
+					'extra_charge_max_cart_value' => '' === $extra_charge_max_cart_value ? '(empty/disabled)' : floatval( $extra_charge_max_cart_value ),
+					'extra_charge_amount'         => $extra_charge_amount,
+				)
+			);
+		}
+
 		if ( 0.0 === $extra_charge_amount ) {
+			if ( 'cod2' === $current_gateway_id ) {
+				self::cod2_log( '[SKIP] extra_charge_amount is 0.0 → no fee added' );
+			}
 			return;
 		}
 
@@ -390,6 +496,15 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 		$extra_charge_amount = apply_filters( 'jp4wc_cod_amount', $extra_charge_amount, $subtotal, $current_gateway );
 		$extra_charge_amount = apply_filters( 'jp4wc_' . $current_gateway_id . '_amount', $extra_charge_amount, $subtotal, $current_gateway );
 
+		if ( 'cod2' === $current_gateway_id ) {
+			self::cod2_log(
+				'[FILTER] After amount filters',
+				array(
+					'extra_charge_amount_after_filters' => $extra_charge_amount,
+				)
+			);
+		}
+
 		$do_apply = 0 !== floatval( $extra_charge_amount );
 
 		/**
@@ -408,15 +523,29 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 		$do_apply = apply_filters( 'jp4wc_apply', $do_apply, $extra_charge_amount, $subtotal, $current_gateway, $cart );
 		$do_apply = apply_filters( 'jp4wc_apply_for_' . $current_gateway_id, $do_apply, $extra_charge_amount, $subtotal, $current_gateway );
 
+		if ( 'cod2' === $current_gateway_id ) {
+			self::cod2_log(
+				'[APPLY] Final applicability after all filters (jp4wc_cod_fee_is_applicable, jp4wc_apply, jp4wc_apply_for_cod2)',
+				array(
+					'do_apply'            => $do_apply ? 'true' : 'false',
+					'extra_charge_amount' => $extra_charge_amount,
+				)
+			);
+		}
+
 		if ( ! $do_apply ) {
 			self::remove_fee( $extra_charge_name );
 			return;
 		}
 
-		// Tax class.
-		$tax_class = get_option( 'jp4wc_tax_class_for_cod' );
-		if ( false === $tax_class ) {
-			$tax_class = get_option( 'wc4jp-extra_charge_tax_class' );
+		// Tax class — use gateway-specific option so COD2 uses its own setting.
+		if ( 'cod2' === $current_gateway_id ) {
+			$tax_class = get_option( 'jp4wc_tax_class_for_cod2' );
+		} else {
+			$tax_class = get_option( 'jp4wc_tax_class_for_cod' );
+			if ( false === $tax_class ) {
+				$tax_class = get_option( 'wc4jp-extra_charge_tax_class' );
+			}
 		}
 		$tax_class = empty( $tax_class ) ? 'standard' : $tax_class;
 
@@ -434,8 +563,24 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 		// Prevent duplicate fees.
 		foreach ( $cart->get_fees() as $fee ) {
 			if ( 'jp4wc_gateway_fee' === $fee->id ) {
+				if ( 'cod2' === $current_gateway_id ) {
+					self::cod2_log( '[SKIP] Fee jp4wc_gateway_fee already exists → skip duplicate' );
+				}
 				return;
 			}
+		}
+
+		if ( 'cod2' === $current_gateway_id ) {
+			self::cod2_log(
+				'[ADD] Adding fee to cart',
+				array(
+					'id'        => 'jp4wc_gateway_fee',
+					'name'      => $extra_charge_name,
+					'amount'    => $extra_charge_amount,
+					'taxable'   => $taxable ? 'true' : 'false',
+					'tax_class' => $tax_class,
+				)
+			);
 		}
 
 		$cart->fees_api()->add_fee(
@@ -472,19 +617,46 @@ class JP4WC_COD_Fee extends WC_Gateway_COD {
 			return $fee_value;
 		}
 
-		$cod_setting = self::get_cod_fee_settings();
-		$value       = isset( $cod_setting['extra_charge_amount'] ) ? $cod_setting['extra_charge_amount'] : 0;
-		$fee_text    = isset( $cod_setting['extra_charge_name'] ) ? $cod_setting['extra_charge_name'] : '';
-
-		if ( 'cod' !== $gateway_id ) {
-			self::remove_fee( $fee_text );
+		if ( 'cod' === $gateway_id ) {
+			$cod_setting = self::get_cod_fee_settings();
+		} elseif ( 'cod2' === $gateway_id ) {
+			$cod_setting = self::get_cod2_fee_settings();
+		} else {
+			self::remove_fee_by_id();
 			return $fee_value;
 		}
+
+		$value    = isset( $cod_setting['extra_charge_amount'] ) ? $cod_setting['extra_charge_amount'] : 0;
+		$fee_text = isset( $cod_setting['extra_charge_name'] ) ? $cod_setting['extra_charge_name'] : '';
 
 		return array(
 			'fee_value' => $value,
 			'fee_text'  => $fee_text,
 		);
+	}
+
+	/**
+	 * Add "(incl. tax)" or "(excl. tax)" label to the COD fee in cart/checkout totals.
+	 *
+	 * Mirrors the label logic used by WC_Cart::get_cart_subtotal() and
+	 * get_cart_shipping_total() in WooCommerce core.
+	 *
+	 * @param string   $fee_html Fee HTML string.
+	 * @param stdClass $fee      Fee object with id, total, tax properties.
+	 * @return string
+	 */
+	public function jp4wc_add_tax_label_to_fee_html( $fee_html, $fee ) {
+		if ( 'jp4wc_gateway_fee' !== $fee->id || ! wc_tax_enabled() || $fee->tax <= 0 ) {
+			return $fee_html;
+		}
+
+		if ( WC()->cart->display_prices_including_tax() && ! wc_prices_include_tax() ) {
+			$fee_html .= ' <small class="tax_label">' . WC()->countries->inc_tax_or_vat() . '</small>';
+		} elseif ( ! WC()->cart->display_prices_including_tax() && wc_prices_include_tax() ) {
+			$fee_html .= ' <small class="tax_label">' . WC()->countries->ex_tax_or_vat() . '</small>';
+		}
+
+		return $fee_html;
 	}
 
 	/**
