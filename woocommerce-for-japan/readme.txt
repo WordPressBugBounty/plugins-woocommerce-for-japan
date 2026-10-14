@@ -5,7 +5,7 @@ Tags: woocommerce, ecommerce, e-commerce, Japanese
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 2.9.16
+Stable tag: 2.9.17
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -83,7 +83,6 @@ This plugin connects to the following third-party services:
 * **Paidy payment API** (api.paidy.com) — used by the Paidy (Buy Now, Pay Later) payment gateway to process and verify payments. Only active when the Paidy gateway is enabled. See Paidy's own site for their terms of service and privacy policy.
 * **Artisan Workshop Paidy onboarding intermediary** (paidy.artws.info) — used only while applying for a Paidy merchant account through this plugin's setup wizard (available even before the gateway is enabled, since onboarding is how it becomes eligible to be enabled). Submitting the application form sends the store's site name and URL, the merchant's contact details (email, phone), the representative's name and date of birth, the submitted screening survey answers, and a site-specific verification hash, to this Artisan Workshop-operated intermediary, which relays the application to Paidy and later delivers the issued API credentials back to the site.
 * **Artisan Workshop promotion service** (wc.artws.info) — the plugin's own first-party service. It is contacted automatically (no setting to disable it) to fetch promotional notice content shown in the WordPress admin dashboard to users who can manage WooCommerce, on stores with at least one order placed in the last 5 days. No order, customer, or site-configuration data is sent or received beyond the request itself.
-* **Artisan Workshop usage tracking service** (wc.artws.info) — the plugin's own first-party service. When "Allow usage tracking" is enabled in Japan Settings, it sends a site/store profile (site URL, admin email, WordPress/server info, active and inactive plugin list, user/product/order/review/category counts, active payment gateway and shipping method configuration, and WooCommerce settings values — no API keys or payment credentials) on a weekly schedule. Independently of that setting, the same profile is also sent once whenever the plugin is first installed and once after each update to a new version, including this one.
 
 == Installation ==
 
@@ -106,7 +105,7 @@ The manual installation method involves downloading and uploading our plugin to 
 
 == Screenshots ==
 
-1. General Settings - Configure name reading (Yomigana) fields, address display options, honorific titles, and usage tracking preferences.
+1. General Settings - Configure name reading (Yomigana) fields, address display options, and honorific titles.
 2. Shipment Settings - Set up delivery date designation, delivery time zones, holidays, and shipping notification options.
 3. Payment Settings - Enable and configure Japanese payment methods including bank transfer, postal transfer, pay at store, and extra charge settings.
 4. Law Settings - Configure Specified Commercial Transaction Law (特定商取引法) information including shop name, company details, owner information, and legal notices.
@@ -157,6 +156,23 @@ For support, please visit the [plugin support forum](https://wordpress.org/suppo
 Yes, Japanized for WooCommerce is completely free and open source under the GPLv3 license.
 
 == Changelog ==
+
+= 2.9.17 - 2026-10-13 =
+* **Added** - A "Morning" (午前中) option can be shown as the first delivery time zone: enable it under Delivery settings → Delivery time settings (off by default) and customise its label; it is offered on both the classic and the block checkout and works even when no hourly time zone is registered (which previously caused a TypeError on the classic checkout); the Yamato B2 export of Japanized for WooCommerce Pro does not support it yet, so keep it off if you use that export until a Pro update adds it
+* **Fixed** - Paidy payments whose payment ID contains a hyphen (`-`) were rejected by the payment ID format check and never marked as paid, leaving the order pending until the stock hold cancelled it even though the customer had paid; the check now accepts the base64url alphabet Paidy actually uses (`pay_[A-Za-z0-9_-]+`) while keeping the URL injection protection (#223)
+* **Fixed** - In the Checkout block the Cash on Delivery fee could get out of step with the selected payment method on slower servers (a fee left behind after switching to another method, or missing after switching to COD); the fee is now calculated from WooCommerce's own `chosen_payment_method` and from the payment method submitted with the order (#215)
+* **Fixed** - Saving any tab of the Japanized for WooCommerce settings screen wiped a Cash on Delivery fee that had been configured on the COD gateway's own settings page; the settings screen now reports the values actually in force so they are preserved (#218)
+* **Fixed** - The delivery date, delivery time zone and shipping date entered on the classic checkout were stored HTML-encoded (`&amp;`, `&#039;`, `&quot;`), so a time zone label containing `&`, `'` or `"` was saved differently from the block checkout and showed up encoded in plain-text order emails; the values are now stored as entered, like the block checkout and the admin meta box, and escaped only where they are displayed (#224)
+* **Fixed** - Paidy Checkout failed to open on the payment page (a JavaScript syntax error) for orders with a zero-discount coupon such as a free-shipping coupon, a line item whose product had been deleted, or a fee whose name contains a line break or backslash, so the customer could not pay with Paidy and the order was left pending; the order items are now passed to Paidy as JSON, which also stops `&` and similar characters in product and coupon names from showing up as `&amp;` on the Paidy screen (#232)
+* **Fixed** - A connection error or timeout on a Paidy cancel, capture or refund request caused a fatal error ("Cannot use object of type WP_Error as array"), which for a refund left behind a WooCommerce refund that Paidy never made, and a refund answered without a status (for example a 502 error page) was also recorded as refunded; these requests now count as successful only when Paidy returns the payment as closed, and otherwise fail with an order note that includes the HTTP status (#231)
+* **Fixed** - Applying for Paidy again through the onboarding wizard after a cancelled review or a plugin reinstall sent the application without the site hash that encrypts the delivered API keys and signs the key-delivery callback (and logged a PHP "Undefined variable" warning), so the API keys could not be delivered automatically; the application now always sends the hash the site has stored, creating and storing one when none is saved (#234)
+* **Fixed** - Changing a Paidy order from Processing to Cancelled sent the cancel (close) request to Paidy up to three times, so the requests after the first one failed with HTTP 409 and left "cancellation not completed" order notes on an order that Paidy had in fact cancelled; a failed capture or refund was likewise sent and reported more than once. The capture, cancel and refund callbacks now run once per order status change, and the bundled Japanese translation of that order note, which said the opposite of the original, has been corrected (#241)
+* **Fixed** - A second partial refund of a Paidy order failed ("An error occurred while attempting to create the refund using the payment gateway API."), and changing a partly refunded Paidy order from Completed to Cancelled did not refund the rest, because only the first refund of an order was ever sent to Paidy; every refund is now sent, and the automatic refund on cancellation refunds only the remaining amount and is recorded as a WooCommerce refund, so the customer also receives the "refunded" e-mail for it (the order stays Cancelled) (#243)
+* **Security** - A Checkout block draft order could be paid by Cash on Delivery through the Store API pay-for-order route or the classic order-pay page without the COD fee being applied; both paths now refuse COD/COD2 for draft orders and direct the customer to the checkout page
+* **Security** - The order's transaction ID is now validated against the Paidy payment ID format and `rawurlencode()`-escaped before it is put into the cancel, capture and refund API URLs, as the payment lookup has been since 2.9.14; for an ID that does not match, no request is sent to Paidy and an order note is added (a capture also e-mails the shop's notice address) (#233)
+* **Removed** - The usage tracking feature has been removed in preparation for a new feature that will replace it; no usage data is sent from this version on, and its setting, scheduled event and stored options are cleaned up on update (#239)
+* **Changed** - The notification e-mail sent when a required delivery date or time zone is missing now goes only to the shop's notification address (#239)
+* **Changed** - Tested up to WordPress 7.1 and WooCommerce 11.2.1
 
 = 2.9.16 - 2026-09-07 =
 * **Added** - Paidy onboarding callbacks can now be authenticated via an HMAC-SHA256 signature shared at application time, in addition to the one-time state token; this restores automatic API key delivery for merchants whose token had already expired or was never issued

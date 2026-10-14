@@ -5,13 +5,13 @@
  * Description: Woocommerce toolkit for Japanese use.
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
- * Version: 2.9.16
+ * Version: 2.9.17
  * Requires PHP: 8.3
  * Requires Plugins: woocommerce
  * Requires at least: 6.7
  * Tested up to: 7.1
  * WC requires at least: 8.0
- * WC tested up to: 11.1.0
+ * WC tested up to: 11.2.1
  *
  * Text Domain: woocommerce-for-japan
  * Domain Path: /i18n/
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'JP4WC_VERSION', '2.9.16' );
+define( 'JP4WC_VERSION', '2.9.17' );
 
 require_once __DIR__ . '/class-jp4wc.php';
 
@@ -199,9 +199,11 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 		if ( ! class_exists( 'WC_Gateway_Paidy' ) ) {
 			return;
 		}
-		$paidy_payment_method = new WC_Gateway_Paidy();
 		if ( get_option( 'paidy_do_activation_redirect', false ) ) {
-			if ( 'yes' !== $paidy_payment_method->enabled && jp4wc_has_orders_in_last_5_days() ) {
+			// Read the setting rather than create a gateway, whose constructor adds its hooks again.
+			$settings = get_option( 'woocommerce_paidy_settings', array() );
+			$enabled  = is_array( $settings ) && isset( $settings['enabled'] ) ? $settings['enabled'] : 'no';
+			if ( 'yes' !== $enabled && jp4wc_has_orders_in_last_5_days() ) {
 				delete_option( 'paidy_do_activation_redirect' );
 				wp_safe_redirect( admin_url( 'admin.php?page=wc-admin&path=%2Fpaidy-on-boarding' ) );
 				exit;

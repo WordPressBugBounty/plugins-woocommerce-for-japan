@@ -503,6 +503,10 @@ msgstr "渋谷区"
 msgid "Your selected payment method changed. Please refresh and try again."
 msgstr "お支払い方法が変更されました。ページを再読み込みしてやり直してください。"
 
+#: includes/class-jp4wc-cod-fee-handler.php
+msgid "To pay by cash on delivery, please place this order from the checkout page."
+msgstr "代金引換でお支払いになるには、この注文をチェックアウトページから確定してください。"
+
 #: includes/class-jp4wc-cod-fee.php:104 assets/js/build/admin/settings.js:1
 #: src/js/jp4wc/admin/settings/components/PaymentSettings.js:129
 msgid "Extra charge for COD method"
@@ -1333,8 +1337,12 @@ msgid ""
 "Cancelled processing has not been completed due to a Paidy error. Please "
 "check Paidy admin."
 msgstr ""
-"支払済みエラーが発生したため、処理がキャンセルされました。 Paidy 管理者を確認"
-"してください。"
+"Paidy でエラーが発生したため、キャンセル処理が完了していません。Paidy の管理画"
+"面を確認してください。"
+
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1056
+msgid "The remaining amount was not refunded at Paidy when the order was cancelled. Please check Paidy admin."
+msgstr "注文のキャンセル時に、残額を Paidy で返金できませんでした。Paidy の管理画面を確認してください。"
 
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:914
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:931
@@ -1358,6 +1366,10 @@ msgstr ""
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:1048
 msgid "There was no status in the notification from Paidy."
 msgstr "Paidy からの通知にはステータスがありませんでした。"
+
+#: includes/gateways/paidy/class-wc-gateway-paidy.php
+msgid "The Paidy payment ID of this order is not in the expected format, so no request was sent to Paidy. Please check the transaction ID and your Paidy dashboard."
+msgstr "この注文の Paidy 決済 ID が想定した形式ではないため、Paidy へリクエストを送信しませんでした。取引 ID と Paidy の管理画面を確認してください。"
 
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:943
 msgid "Status Change from Processing to completed."
@@ -2517,6 +2529,32 @@ msgstr "指定されていない時間の説明"
 #: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:413
 msgid "Text to display when time is not specified"
 msgstr "時間が指定されていない場合に表示するテキスト"
+
+#: includes/jp4wc-common-functions.php assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Morning"
+msgstr "午前中"
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Show \"Morning\" as the first time zone"
+msgstr "「午前中」を最初の時間帯として表示"
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Adds a \"Morning\" option ahead of the time zones below."
+msgstr "下の時間帯より前に「午前中」の選択肢を追加します。"
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "\"Morning\" option label"
+msgstr "「午前中」の表示名"
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Text shown for the \"Morning\" option and saved to the order. Saved as \"Morning\" when left empty."
+msgstr "「午前中」の選択肢に表示され、注文に保存される文字列です。空欄のまま保存すると「午前中」になります。"
 
 #: assets/js/build/admin/settings.js:1
 #: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:427

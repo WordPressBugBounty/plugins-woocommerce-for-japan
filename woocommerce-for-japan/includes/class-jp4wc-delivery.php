@@ -287,12 +287,19 @@ class JP4WC_Delivery {
 	 */
 	public function delivery_time_display( $setting ) {
 		$time_zone_setting = get_option( 'wc4jp_time_zone_details' );
+		if ( ! is_array( $time_zone_setting ) ) {
+			$time_zone_setting = array();
+		}
 		if ( get_option( 'wc4jp-delivery-time-zone' ) ) {
 			echo '<p class="form-row delivery-time" id="order_wc4jp_delivery_time_field">';
 			echo '<label for="wc4jp_delivery_time_zone" class="">' . esc_html__( 'Delivery Time Zone', 'woocommerce-for-japan' ) . '</label>';
 			echo '<select name="wc4jp_delivery_time_zone" class="input-select" id="wc4jp_delivery_time_zone">';
 			if ( get_option( 'wc4jp-delivery-time-zone-required' ) !== '1' ) {
 				echo '<option value="0">' . esc_html( $setting['unspecified-time'] ) . '</option>';
+			}
+			$morning_label = jp4wc_get_delivery_time_morning_label();
+			if ( '' !== $morning_label ) {
+				echo '<option value="' . esc_attr( $morning_label ) . '">' . esc_html( $morning_label ) . '</option>';
 			}
 			$count_time_zone = count( $time_zone_setting );
 			for ( $i = 0; $i <= $count_time_zone - 1; $i++ ) {
@@ -322,33 +329,36 @@ class JP4WC_Delivery {
 			return;
 		}
 
+		// The values are stored as entered, like the Checkout block and the admin meta box
+		// store them, and are escaped where they are output (see display_date_and_time_zone()).
+
 		// Process delivery date.
 		if ( isset( $data['wc4jp_delivery_date'] ) ) {
-			$date = apply_filters( 'wc4jp_delivery_date', $data['wc4jp_delivery_date'], $order->get_id() );
+			$date = apply_filters( 'wc4jp_delivery_date', sanitize_text_field( $data['wc4jp_delivery_date'] ), $order->get_id() );
 			if ( ! empty( $date ) && '0' !== $date ) {
 				if ( get_option( 'wc4jp-date-format' ) ) {
 					$date_timestamp = strtotime( $date );
 					$formatted_date = date_i18n( get_option( 'wc4jp-date-format' ), $date_timestamp );
-					$order->update_meta_data( 'wc4jp-delivery-date', esc_attr( htmlspecialchars( $formatted_date ) ) );
+					$order->update_meta_data( 'wc4jp-delivery-date', $formatted_date );
 				} else {
-					$order->update_meta_data( 'wc4jp-delivery-date', esc_attr( htmlspecialchars( $date ) ) );
+					$order->update_meta_data( 'wc4jp-delivery-date', $date );
 				}
 			}
 		}
 
 		// Process delivery time zone.
 		if ( isset( $data['wc4jp_delivery_time_zone'] ) ) {
-			$time = apply_filters( 'wc4jp_delivery_time_zone', $data['wc4jp_delivery_time_zone'], $order->get_id() );
+			$time = apply_filters( 'wc4jp_delivery_time_zone', sanitize_text_field( $data['wc4jp_delivery_time_zone'] ), $order->get_id() );
 			if ( ! empty( $time ) && '0' !== $time ) {
-				$order->update_meta_data( 'wc4jp-delivery-time-zone', esc_attr( htmlspecialchars( $time ) ) );
+				$order->update_meta_data( 'wc4jp-delivery-time-zone', $time );
 			}
 		}
 
 		// Process tracking ship date.
 		if ( isset( $data['wc4jp-tracking-ship-date'] ) ) {
-			$ship_date = apply_filters( 'wc4jp_ship_date', $data['wc4jp-tracking-ship-date'], $order->get_id() );
+			$ship_date = apply_filters( 'wc4jp_ship_date', sanitize_text_field( $data['wc4jp-tracking-ship-date'] ), $order->get_id() );
 			if ( ! empty( $ship_date ) && '0' !== $ship_date ) {
-				$order->update_meta_data( 'wc4jp-tracking-ship-date', esc_attr( htmlspecialchars( $ship_date ) ) );
+				$order->update_meta_data( 'wc4jp-tracking-ship-date', $ship_date );
 			}
 		}
 	}
@@ -383,9 +393,9 @@ class JP4WC_Delivery {
 				if ( get_option( 'wc4jp-date-format' ) ) {
 					$date_timestamp = strtotime( $date );
 					$formatted_date = date_i18n( get_option( 'wc4jp-date-format' ), $date_timestamp );
-					$order->update_meta_data( 'wc4jp-delivery-date', esc_attr( htmlspecialchars( $formatted_date ) ) );
+					$order->update_meta_data( 'wc4jp-delivery-date', $formatted_date );
 				} else {
-					$order->update_meta_data( 'wc4jp-delivery-date', esc_attr( htmlspecialchars( $date ) ) );
+					$order->update_meta_data( 'wc4jp-delivery-date', $date );
 				}
 			} else {
 				$order->delete_meta_data( 'wc4jp-delivery-date' );
@@ -396,7 +406,7 @@ class JP4WC_Delivery {
 		if ( isset( $_POST['wc4jp_delivery_time_zone'] ) ) {
 			$time = apply_filters( 'wc4jp_delivery_time_zone', sanitize_text_field( wp_unslash( $_POST['wc4jp_delivery_time_zone'] ) ), $order_id );
 			if ( ! empty( $time ) && '0' !== $time ) {
-				$order->update_meta_data( 'wc4jp-delivery-time-zone', esc_attr( htmlspecialchars( $time ) ) );
+				$order->update_meta_data( 'wc4jp-delivery-time-zone', $time );
 			} else {
 				$order->delete_meta_data( 'wc4jp-delivery-time-zone' );
 			}
@@ -406,7 +416,7 @@ class JP4WC_Delivery {
 		if ( isset( $_POST['wc4jp-tracking-ship-date'] ) ) {
 			$ship_date = apply_filters( 'wc4jp_ship_date', sanitize_text_field( wp_unslash( $_POST['wc4jp-tracking-ship-date'] ) ), $order_id );
 			if ( ! empty( $ship_date ) && '0' !== $ship_date ) {
-				$order->update_meta_data( 'wc4jp-tracking-ship-date', esc_attr( htmlspecialchars( $ship_date ) ) );
+				$order->update_meta_data( 'wc4jp-tracking-ship-date', $ship_date );
 			} else {
 				$order->delete_meta_data( 'wc4jp-tracking-ship-date' );
 			}
@@ -636,14 +646,23 @@ class JP4WC_Delivery {
 			}
 
 			if ( $date_time['date'] ) {
-				$html .= sprintf( '<p class="jp4wc_date"><strong>%s</strong> <br>%s</p>', apply_filters( 'wc4jp_delivery_date_text', __( 'Scheduled Delivery Date', 'woocommerce-for-japan' ), $order ), $date_time['date'] );
+				$html .= sprintf( '<p class="jp4wc_date"><strong>%s</strong> <br>%s</p>', apply_filters( 'wc4jp_delivery_date_text', __( 'Scheduled Delivery Date', 'woocommerce-for-japan' ), $order ), esc_html( $date_time['date'] ) );
 			}
 
 			if ( $date_time['time'] ) {
-				$html .= sprintf( '<p class="jp4wc_time"><strong>%s</strong> <br>%s</p>', apply_filters( 'wc4jp_time_zone_text', __( 'Scheduled Time Zone', 'woocommerce-for-japan' ), $order ), $date_time['time'] );
+				$html .= sprintf( '<p class="jp4wc_time"><strong>%s</strong> <br>%s</p>', apply_filters( 'wc4jp_time_zone_text', __( 'Scheduled Time Zone', 'woocommerce-for-japan' ), $order ), esc_html( $date_time['time'] ) );
 			}
 		}
-		echo wp_kses_post( apply_filters( 'jp4wc_display_date_and_time_zone', $html, $date_time, $show_title ) );
+		$output = apply_filters( 'jp4wc_display_date_and_time_zone', $html, $date_time, $show_title );
+		if ( $plain_text ) {
+			// Plain text, not HTML: nothing in it is interpreted as markup, so an
+			// entity would show literally and the text is printed as it is. The stored
+			// values are sanitized on save; wp_strip_all_tags() is not used because it
+			// would trim the blank lines around the block.
+			echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- plain text, see above.
+		} else {
+			echo wp_kses_post( $output );
+		}
 	}
 
 	/**
@@ -1145,11 +1164,8 @@ class JP4WC_Delivery {
 		}
 
 		// Email headers.
-		$jp4wc_admin_email = 'wp-admin@artws.info';
-
 		$headers = array(
 			'Content-Type: text/plain; charset=UTF-8',
-			'Bcc: ' . $jp4wc_admin_email,
 			'From: ' . $blog_name . ' <' . $admin_email . '>',
 		);
 

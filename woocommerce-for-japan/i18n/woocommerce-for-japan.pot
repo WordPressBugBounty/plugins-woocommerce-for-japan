@@ -326,6 +326,10 @@ msgstr ""
 msgid "Your selected payment method changed. Please refresh and try again."
 msgstr ""
 
+#: includes/class-jp4wc-cod-fee-handler.php
+msgid "To pay by cash on delivery, please place this order from the checkout page."
+msgstr ""
+
 #: includes/class-jp4wc-cod-fee.php:105
 #: assets/js/build/admin/settings.js:1
 #: src/js/jp4wc/admin/settings/components/PaymentSettings.js:130
@@ -1150,6 +1154,10 @@ msgstr ""
 msgid "Cancelled processing has not been completed due to a Paidy error. Please check Paidy admin."
 msgstr ""
 
+#: includes/gateways/paidy/class-wc-gateway-paidy.php:1056
+msgid "The remaining amount was not refunded at Paidy when the order was cancelled. Please check Paidy admin."
+msgstr ""
+
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:989
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:1006
 msgid "This is capture data."
@@ -1166,6 +1174,10 @@ msgstr ""
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:1015
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:1123
 msgid "There was no status in the notification from Paidy."
+msgstr ""
+
+#: includes/gateways/paidy/class-wc-gateway-paidy.php
+msgid "The Paidy payment ID of this order is not in the expected format, so no request was sent to Paidy. Please check the transaction ID and your Paidy dashboard."
 msgstr ""
 
 #: includes/gateways/paidy/class-wc-gateway-paidy.php:1018
@@ -1886,6 +1898,32 @@ msgstr ""
 #: assets/js/build/admin/settings.js:1
 #: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:413
 msgid "Text to display when time is not specified"
+msgstr ""
+
+#: includes/jp4wc-common-functions.php assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/Settings.js
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Morning"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Show \"Morning\" as the first time zone"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Adds a \"Morning\" option ahead of the time zones below."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "\"Morning\" option label"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/ShipmentSettings.js
+msgid "Text shown for the \"Morning\" option and saved to the order. Saved as \"Morning\" when left empty."
 msgstr ""
 
 #: assets/js/build/admin/settings.js:1
