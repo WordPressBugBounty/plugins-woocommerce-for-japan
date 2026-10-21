@@ -86,10 +86,15 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 			require_once __DIR__ . '/includes/gateways/paidy/class-wc-gateway-paidy.php';
 			// Capture, cancel and refund at Paidy once per order status change.
 			WC_Gateway_Paidy::register_order_status_hooks();
+			// Show the "declined" notice when the buyer returns from Paidy Checkout, and complete
+			// the order on the thank-you page, each once.
+			WC_Gateway_Paidy::register_checkout_return_hooks();
 
 			// Endpoints.
-			// Instantiated at init priority 11 (after load_plugin_textdomain at priority 1)
-			// to avoid _load_textdomain_just_in_time warning from WC_Gateway_Paidy::__construct().
+			// The endpoint registers its REST routes, so it must exist before rest_api_init, and
+			// takes the gateway from WooCommerce's list when a request needs it. Its framework
+			// instance loads translated strings at once when created during init, so keep it
+			// after load_plugin_textdomain (init priority 1); init priority 11 is kept as it was.
 			if ( ! class_exists( 'WC_Paidy_Endpoint' ) ) {
 				require_once __DIR__ . '/includes/gateways/paidy/class-wc-paidy-endpoint.php';
 				if ( did_action( 'init' ) || doing_action( 'init' ) ) {
