@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Japanized for WooCommerce plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Japanized for WooCommerce 2.9.19\n"
+"Project-Id-Version: Japanized for WooCommerce 2.9.20\n"
 "Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-22T04:17:48+00:00\n"
+"POT-Creation-Date: 2026-10-22T10:19:50+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "language-team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -1555,7 +1555,49 @@ msgstr ""
 msgid "WooCommerce Doc in Japanese"
 msgstr ""
 
-#: woocommerce-for-japan.php:96
+#: woocommerce-for-japan.php:56
+msgid "Update PHP now: critical security vulnerabilities"
+msgstr ""
+
+#. translators: 1: PHP version of this site, 2: first fixed PHP version, 3: vulnerability IDs
+#: woocommerce-for-japan.php:58
+#, php-format
+msgid "The PHP version of this site (%1$s) has critical vulnerabilities (%3$s) that let an attacker run code on the server with a single request. Update PHP to %2$s or later right away."
+msgstr ""
+
+#: woocommerce-for-japan.php:59
+msgid "Security support for PHP 8.2 ends at the end of 2026, so we recommend updating to PHP 8.3 or later."
+msgstr ""
+
+#: woocommerce-for-japan.php:60
+msgid "Your hosting company may have applied the fix without changing the PHP version number. Please check with your hosting company."
+msgstr ""
+
+#. translators: 1: PHP version of this site, 2: vulnerability IDs
+#: woocommerce-for-japan.php:62
+#, php-format
+msgid "The PHP version of this site (%1$s) has critical vulnerabilities (%2$s). Official support for this PHP version has ended, and no fixed version has been released for it. Some hosting companies apply their own security patches, but update to PHP 8.3 or later, which is supported longer, as soon as possible."
+msgstr ""
+
+#. translators: 1: PHP version of this site, 2: first fixed PHP version, 3: vulnerability IDs
+#: woocommerce-for-japan.php:64
+#, php-format
+msgid "This site runs a pre-release of PHP (%1$s) that has critical vulnerabilities (%3$s). Update it to %2$s or later."
+msgstr ""
+
+#: woocommerce-for-japan.php:65
+msgid "Learn more"
+msgstr ""
+
+#: woocommerce-for-japan.php:66
+msgid "Don't show again"
+msgstr ""
+
+#: woocommerce-for-japan.php:67
+msgid "Close"
+msgstr ""
+
+#: woocommerce-for-japan.php:163
 msgid "Japanized for WooCommerce is enabled but not effective. It requires WooCommerce in order to work."
 msgstr ""
 
