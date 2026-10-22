@@ -5,7 +5,7 @@
  * Description: Woocommerce toolkit for Japanese use.
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
- * Version: 2.9.18
+ * Version: 2.9.19
  * Requires PHP: 8.3
  * Requires Plugins: woocommerce
  * Requires at least: 6.7
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'JP4WC_VERSION', '2.9.18' );
+define( 'JP4WC_VERSION', '2.9.19' );
 
 require_once __DIR__ . '/class-jp4wc.php';
 
@@ -156,8 +156,9 @@ if ( ! class_exists( 'WC_Paidy' ) ) :
 			add_action(
 				'woocommerce_blocks_payment_method_type_registration',
 				function ( Automattic\WooCommerce\Blocks\Payments\PaymentMethodRegistry $payment_method_registry ) {
-					require_once 'includes/gateways/paidy/class-wc-payments-paidy-blocks-support.php';
-					$payment_method_registry->register( new WC_Payments_Paidy_Blocks_Support() );
+					if ( class_exists( 'WC_Payments_Paidy_Blocks_Support', false ) ) {
+						$payment_method_registry->register( new WC_Payments_Paidy_Blocks_Support() );
+					}
 				}
 			);
 		}

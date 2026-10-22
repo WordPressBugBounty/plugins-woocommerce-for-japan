@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Japanized for WooCommerce plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Japanized for WooCommerce 2.9.18\n"
+"Project-Id-Version: Japanized for WooCommerce 2.9.19\n"
 "Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-21T04:02:46+00:00\n"
+"POT-Creation-Date: 2026-10-22T04:17:48+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "language-team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -41,17 +41,17 @@ msgid "https://wc.artws.info/"
 msgstr ""
 
 #. translators: %1$s and %2$s are HTML tags for a link that wraps around the five-star rating. %1$s opens the link and %2$s closes it. The &#9733; characters represent star symbols that will be displayed in the rating.
-#: class-jp4wc.php:225
+#: class-jp4wc.php:238
 #, php-format
 msgid "If you like <strong>Japanized for WooCommerce</strong> please leave us a %1$s&#9733;&#9733;&#9733;&#9733;&#9733;%2$s rating. A huge thanks in advance!"
 msgstr ""
 
 #. translators: %1$s and %2$s are HTML tags for a link that wraps around the five-star rating. %1$s opens the link and %2$s closes it. The &#9733; characters represent star symbols that will be displayed in the rating.
-#: class-jp4wc.php:225
+#: class-jp4wc.php:238
 msgid "Thanks :)"
 msgstr ""
 
-#: class-jp4wc.php:235
+#: class-jp4wc.php:248
 msgid "Thank you for installing with Japanized for WooCommerce."
 msgstr ""
 
@@ -90,11 +90,11 @@ msgctxt "example price string"
 msgid "e.g. 5.90 per month"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-settings.php:39
+#: includes/admin/class-jp4wc-admin-settings.php:46
 msgid "JP4WC Settings (Block)"
 msgstr ""
 
-#: includes/admin/class-jp4wc-admin-settings.php:40
+#: includes/admin/class-jp4wc-admin-settings.php:47
 msgid "JP4WC Settings"
 msgstr ""
 

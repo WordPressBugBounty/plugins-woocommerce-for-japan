@@ -10,6 +10,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+// Classes created by the hooks below. Loaded with this file, at plugins_loaded:
+// a plugin update can remove the plugin directory before the hooks run (#268).
+// Loaded here rather than in JP4WC::includes(), because during an update the
+// previous version's includes() can load this file.
+require_once __DIR__ . '/class-jp4wc-settings-api.php';
+require_once __DIR__ . '/class-jp4wc-admin-php-notice.php';
+
 /**
  * JP4WC Admin Settings Class by block.
  *
@@ -114,7 +121,6 @@ class JP4WC_Admin_Settings {
 	 * Register REST API routes.
 	 */
 	public function register_rest_routes() {
-		require_once JP4WC_INCLUDES_PATH . 'admin/class-jp4wc-settings-api.php';
 		$controller = new JP4WC_Settings_API();
 		$controller->register_routes();
 	}
@@ -132,7 +138,7 @@ class JP4WC_Admin_Settings {
 		switch ( $screen->id ) {
 			case 'dashboard':
 			case 'dashboard-network':
-				include __DIR__ . '/class-jp4wc-admin-php-notice.php';
+				new JP4WC_Admin_PHP_Notice();
 				break;
 		}
 	}
