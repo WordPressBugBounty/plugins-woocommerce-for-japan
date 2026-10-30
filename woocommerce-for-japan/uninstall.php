@@ -36,6 +36,28 @@ wp_clear_scheduled_hook( 'wc4jp_tracker_send_event' );
 delete_option( 'wc4jp-tracking' );
 delete_option( 'jp4wc_tracker_last_send' );
 
+// The security check: its WP-Cron events, options and downloaded files on every site, and closed notices.
+require_once __DIR__ . '/includes/admin/class-jp4wc-security-notice.php';
+JP4WC_Security_Feed::uninstall();
+delete_metadata( 'user', 0, JP4WC_Security_Notice::DISMISSED_META, '', true );
+
+// The free security check: a deletion request to wc.artws.info for each site that has a
+// token for its URL (the terms of use promise it), then its consent, token and report.
+require_once __DIR__ . '/includes/class-jp4wc-security-scan.php';
+JP4WC_Security_Scan::uninstall();
+
+// The login attempt limiter: its counts and settings on every site.
+require_once __DIR__ . '/includes/class-jp4wc-login-limiter.php';
+JP4WC_Login_Limiter::uninstall();
+
+// The hardening options on every site.
+require_once __DIR__ . '/includes/class-jp4wc-security-hardening.php';
+JP4WC_Security_Hardening::uninstall();
+
+// The XML-RPC setting, its allow list and the record of the calls on every site.
+require_once __DIR__ . '/includes/class-jp4wc-xmlrpc-guard.php';
+JP4WC_XMLRPC_Guard::uninstall();
+
 /**
  * Deletes the Paidy plugin options from the database.
  */

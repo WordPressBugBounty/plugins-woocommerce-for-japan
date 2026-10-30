@@ -5,7 +5,7 @@ Tags: woocommerce, ecommerce, e-commerce, Japanese
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 2.9.20
+Stable tag: 3.0.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,6 +65,16 @@ Works smoothly with WooCommerce core features and popular extensions. Fully comp
 * Shortcode support for legal information display
 * Customizable legal notice templates
 
+**Security Check**
+* Checks the installed plugins, themes and WordPress against known vulnerabilities once a day (data from Wordfence Intelligence, delivered by wc.artws.info)
+* 17 checks in all, including HTTPS on the checkout and My Account pages, two-factor authentication, file editing in the admin, and backups or logs left in public directories
+* A score for each of the four requirements of Japan's Credit Card Security Guidelines (クレジットカード・セキュリティガイドライン), with the items that need action and how to fix them; it shows what needs attention and does not guarantee compliance
+* "Re-check now" on the Security tab; on by default and can be turned off there
+* Login attempt limiter (off by default): counts failed logins per IP address and per user name on the WordPress and WooCommerce login forms, and stays out of the way when a security plugin, Jetpack or the server already protects the login page
+* More hardening options (off by default): hide the user list of the REST API from visitors who are not logged in, forbid file editing in the admin screens (DISALLOW_FILE_EDIT), and turn XML-RPC off except for the methods you allow (Jetpack keeps working)
+* Free security check by wc.artws.info (optional, only after you agree on the Security tab): sends the list of plugins and themes and the results of the checks, shows a report with the items that need action and how to fix them, and its data can be deleted from the same tab
+* A record of the XML-RPC calls of the last 30 days, kept on the site, that shows which methods are used, by which client and whether they log in, so that you can tell integrations from password guessing before turning XML-RPC off
+
 **Additional Features**
 * Email template optimization for Japanese format
 * Address validation for Japanese postal codes
@@ -83,6 +93,8 @@ This plugin connects to the following third-party services:
 * **Paidy payment API** (api.paidy.com) — used by the Paidy (Buy Now, Pay Later) payment gateway to process and verify payments. Only active when the Paidy gateway is enabled. See Paidy's own site for their terms of service and privacy policy.
 * **Artisan Workshop Paidy onboarding intermediary** (paidy.artws.info) — used only while applying for a Paidy merchant account through this plugin's setup wizard (available even before the gateway is enabled, since onboarding is how it becomes eligible to be enabled). Submitting the application form sends the store's site name and URL, the merchant's contact details (email, phone), the representative's name and date of birth, the submitted screening survey answers, and a site-specific verification hash, to this Artisan Workshop-operated intermediary, which relays the application to Paidy and later delivers the issued API credentials back to the site.
 * **Artisan Workshop promotion service** (wc.artws.info) — the plugin's own first-party service. It is contacted automatically (no setting to disable it) to fetch promotional notice content shown in the WordPress admin dashboard to users who can manage WooCommerce, on stores with at least one order placed in the last 5 days. No order, customer, or site-configuration data is sent or received beyond the request itself.
+* **Artisan Workshop vulnerability feed** (wc.artws.info) — used by the security check (WooCommerce → JP4WC Settings → Security), which is on by default, including on sites updated from an earlier version. Shortly after the plugin is installed or updated, and then once a day, WP-Cron downloads the list of known vulnerabilities in WordPress plugins, themes and core from `https://wc.artws.info/feed/v1/` (data from Wordfence Intelligence) and compares it with the installed software on the site itself; "Re-check now" on the Security tab also downloads it at once when no list is stored yet. The requests are plain downloads: they carry only a User-Agent header with the versions of this plugin, WordPress, WooCommerce and PHP, and like any request they reveal the server's IP address. These downloads do not send the site URL, the list of installed plugins and themes or the results of the check (only the free security check below sends them, after consent); the other checks on the Security tab run on the site and send requests only to the site's own address. Turning the security check off on the Security tab stops the requests and deletes the downloaded data and the results. Terms of use: https://wc.artws.info/security-assessment-term/ Privacy policy: https://wc.artws.info/privacy-policy/
+* **Artisan Workshop free security check** (wc.artws.info, operated by 職人工房 合同会社) — optional, and nothing is sent until it is used. Only when a store manager agrees to the terms of use and the privacy policy on the Security tab and clicks "Agree and run the check" (later "Run the check again"), the plugin sends `POST https://wc.artws.info/wp-json/artws-sec/v1/scan` with: `schema_version`, `site_url` (the site address), `wp_ver`, `wc_ver`, `php_ver` and `jp4wc_ver` (the versions of WordPress, WooCommerce, PHP and this plugin), `locale`, `software` (the `type`, `slug`, `version` and `active` state of every installed plugin and theme), `local_findings` (the `check_id` and `status` of each check on the Security tab, never the settings behind them), `consent_version` and, only when a separate box is ticked (off by default, offered only to stores in Japanese yen), `revenue_band` and `order_band` (the revenue and the number of paid orders of the last 12 months as band codes, never the amounts). The consent screen shows every value before it is sent. The administrator's e-mail address, customer data, order amounts, API keys, the contents of wp-config.php and server paths are not sent. The response is a report shown on the Security tab and, on the first check, a site identification token issued by wc.artws.info, which the plugin keeps without showing it and sends with later checks and with the deletion. wc.artws.info keeps the data for 180 days. "Delete check data" on the Security tab sends `DELETE https://wc.artws.info/wp-json/artws-sec/v1/site` and removes the consent, the token and the report from the site; deleting the plugin from the Plugins screen sends the same request. Nothing is sent by WP-Cron. Terms of use: https://wc.artws.info/security-assessment-term/ Privacy policy: https://wc.artws.info/privacy-policy/
 
 == Installation ==
 
@@ -112,6 +124,7 @@ The manual installation method involves downloading and uploading our plugin to 
 5. Affiliate Settings - Set up affiliate tracking for Japanese affiliate networks including A8.net, Felmat (ValueCommerce), and Access Trade.
 6. Checkout Block - WooCommerce Blocks checkout page displaying Japanese address format, name reading fields, and delivery date/time selection.
 7. Classic Checkout - Traditional WooCommerce checkout page with Japanese localization features including address fields and delivery options.
+8. Security - Check installed plugins, themes and WordPress against known vulnerabilities, see a score for each of the four requirements of the Credit Card Security Guidelines with the items that need action and how to fix them, turn on the login attempt limiter and the hardening options, and see what uses XML-RPC.
 
 == Frequently Asked Questions ==
 
@@ -156,6 +169,16 @@ For support, please visit the [plugin support forum](https://wordpress.org/suppo
 Yes, Japanized for WooCommerce is completely free and open source under the GPLv3 license.
 
 == Changelog ==
+
+= 3.0.0 - 2026-10-30 =
+* **Added** - A security check for the site, on a new Security tab (WooCommerce → JP4WC Settings → Security). Once a day it downloads a list of known vulnerabilities from wc.artws.info (data from Wordfence Intelligence) and checks the installed plugins, themes and WordPress against it; only the versions of this plugin, WordPress, WooCommerce and PHP are sent, in the User-Agent header. Users who can manage WooCommerce see an admin notice when an installed version is affected, and dismissing it hides it until the findings change. The check is on by default, including on sites updated from an earlier version; turning it off on the Security tab stops the downloads and deletes the downloaded data and the results (#257)
+* **Added** - The security check also runs the other 16 of its 17 checks on the site's own setup, such as HTTPS on the checkout and My account pages, two-factor authentication, a user named "admin", file editing in the admin, and backups, database dumps or logs left in public directories, and scores each of the four requirements of Japan's Credit Card Security Guidelines (クレジットカード・セキュリティガイドライン) out of 100; the checks that request the site's own pages send those requests only to the site's own address, and a check that cannot tell is shown as unconfirmed instead of being counted as a failure (#258)
+* **Added** - The Security tab shows the total score (the lowest of the four requirements) and a card for each requirement, the items that need action with the fixed version and how to fix each one, a list of all checks, and "Re-check now", which runs the check again in the background (WP-Cron) and shows the results when it finishes; it shows what needs attention and does not guarantee compliance with the guidelines (#259)
+* **Added** - The Security tab links to the terms of use of wc.artws.info, which apply to the vulnerability data (#286)
+* **Added** - A login attempt limiter on the Security tab (off by default): failed logins are counted per IP address and per user name on the WordPress login page, the WooCommerce My account and checkout login forms and XML-RPC, and once the limit is reached further attempts for that address or name are refused for a while, even with the right password (default 10 per address, 5 per name, 15 minutes; all adjustable). It stays out of the way when a known security plugin, Jetpack's brute force protection (with Jetpack connected) or the server already protects the login page, and `define( 'JP4WC_LOGIN_LIMIT_DISABLE', true )` in wp-config.php turns it off from outside (#289)
+* **Added** - Two hardening options on the Security tab (off by default) for the items the security check finds open: hide the user list of the REST API (`/wp-json/wp/v2/users`) from visitors who are not logged in, and forbid file editing in the admin screens (`DISALLOW_FILE_EDIT`, unless wp-config.php already defines it) (#291)
+* **Added** - XML-RPC on the Security tab: a record of the XML-RPC calls of the last 30 days, kept on the site whatever the setting (which methods were called, how often, by which client and whether their logins worked), and an option (off by default) that refuses every XML-RPC method except the ones you allow, so that no password can be tried and no pingback sent through XML-RPC. Requests handled by Jetpack's connection are left alone, so Jetpack keeps working (#293)
+* **Added** - A free security check by wc.artws.info on the Security tab, optional: nothing is sent until a store manager agrees to the terms of use and the privacy policy and clicks the button. It sends the site address, the versions of WordPress, WooCommerce, PHP and this plugin, the language, the installed plugins and themes, and the results of the checks on the tab (and, only when a separate box is ticked, which is offered only to stores in Japanese yen, the revenue and order bands of the last 12 months, never the amounts), and shows the report that comes back: the installed software checked against the latest vulnerability data, a score for each requirement and what to do first. The consent screen shows every value before it is sent; "Delete check data" deletes the data on wc.artws.info and on the site, and deleting the plugin sends the same request (#260)
 
 = 2.9.20 - 2026-10-22 =
 * **Added** - Administrators now see a dialog on admin screens when the site's PHP is older than the fix for the critical PHP2Shell vulnerabilities (CVE-2026-109618 / CVE-2026-109619): PHP 8.2.35, 8.3.36, 8.4.27 or 8.5.12, with no fixed release for PHP 8.1 and older. It links to an article on updating PHP and notes that a hosting company may have patched PHP without changing its version number; "Don't show again" hides it for that user until the PHP version changes. It is shown only to users who can manage the site's options (super admins on multisite), and not in the block editor or the Customizer (#271)
@@ -293,6 +316,9 @@ Yes, Japanized for WooCommerce is completely free and open source under the GPLv
 [View complete changelog](https://wc.artws.info/doc/detail-woocommerce-for-japan/wc4jp-change-log/)
 
 == Upgrade Notice ==
+
+= 3.0.0 =
+3.0.0 adds a security check on a new Security tab, on by default: once a day it downloads a list of known vulnerabilities from wc.artws.info, sending only the versions of this plugin, WordPress, WooCommerce and PHP. You can turn it off on that tab. Make a full site backup before updating.
 
 = 2.9 =
 2.9 is a minor update, but delete PayPal Payment Gateway. Make a full site backup, update your theme and extensions.

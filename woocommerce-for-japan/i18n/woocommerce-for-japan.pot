@@ -618,10 +618,6 @@ msgstr ""
 msgid "%1$sAn empty notification email has been sent. Order ID: %2$d"
 msgstr ""
 
-#: includes/class-jp4wc-security.php:61
-msgid "<strong>ERROR</strong>: This user has reached the maximum number of login attempts. Please try again later."
-msgstr ""
-
 #: includes/class-jp4wc-shortcodes.php:66
 #: assets/js/build/admin/settings.js:1
 #: src/js/jp4wc/admin/settings/components/LawSettings.js:57
@@ -2222,6 +2218,1026 @@ msgstr ""
 msgid "有料相談に申し込む"
 msgstr ""
 
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js
+msgid "Security"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js
+msgid "Vulnerability check"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/GeneralSettings.js
+msgid "Once a day, download the list of known vulnerabilities from wc.artws.info (Artisan Workshop) and check the installed plugins, themes and WordPress against it. Only the versions of this plugin, WordPress, WooCommerce and PHP are sent, in the User-Agent header."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "No fixed version yet. Deactivate and delete it, or replace it with another plugin or theme."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Update it to the latest version."
+msgstr ""
+
+#. translators: 1: plugin, theme or WordPress name, 2: comma-separated versions that fix the vulnerability
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, js-format
+msgid "Update %1$s to a fixed version (%2$s) or later."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Satisfied"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Action needed"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Unconfirmed"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Total score"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The lowest score of the four requirements."
+msgstr ""
+
+#. translators: 1: checks passed, 2: checks that need action, 3: checks that could not be run
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, js-format
+msgid "Passed %1$d / Action needed %2$d / Unconfirmed %3$d"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "No items need action."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Some checks could not be run (see \"All checks\" below)."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Severity"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Item"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Fixed version"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "How to fix"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Reference"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "None"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Details"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "All checks"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Passed"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "\"Unconfirmed\" means the check could not be run on this site, for example because the server cannot send requests to itself. It costs no points."
+msgstr ""
+
+#. translators: %s: host name of the vulnerability feed, e.g. wc.artws.info
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, js-format
+msgid "The vulnerability data could not be downloaded for several days, so the installed software is not checked for known vulnerabilities. Make sure this server can connect to %s."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The vulnerability data has not been downloaded yet, so known vulnerabilities are not checked. It is downloaded once a day."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The result of the security check could not be loaded."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The re-check could not be started."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The security check is off. Turn it on below and save the settings to check this site."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "This check shows what needs attention. It does not guarantee compliance with the Credit Card Security Guidelines."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "This site has not been checked yet. The first check runs shortly in WP-Cron, or start it with \"Re-check now\"."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Re-checking…"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Re-check now"
+msgstr ""
+
+#. translators: %s: date and time of the last check
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, js-format
+msgid "Last checked: %s"
+msgstr ""
+
+#. translators: %s: date and time the vulnerability data was generated
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, js-format
+msgid "Vulnerability data: %s"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The re-check runs in the background. The results appear here when it finishes."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The re-check has finished."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The re-check has not finished yet. It runs with WP-Cron, so reload this page later to see the results."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Items that need action"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Settings"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Security check"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Turning it off also stops the checks on this tab and deletes their results."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The vulnerability data comes from wc.artws.info and is subject to its <a>Terms of Use</a>."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Vulnerability management"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Admin access control"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Data directory exposure"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Malware protection"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Known vulnerabilities in the installed software"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Plugin updates left uninstalled for 180 days or more"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Update the plugins on the Plugins screen, and delete the plugins you no longer use."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "PHP, WordPress or WooCommerce version that is no longer supported"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Update WordPress and WooCommerce, and ask your hosting provider how to switch to a supported PHP version."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Automatic updates of WordPress security releases and plugins"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Turn on automatic updates for every plugin on the Plugins screen, and do not turn off the automatic security updates of WordPress (WP_AUTO_UPDATE_CORE or a filter)."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "User named \"admin\""
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Create an administrator with another user name, then delete the admin user and attribute its content to the new one."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Login page protection"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Two-factor authentication"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Install a two-factor authentication plugin and turn it on for administrators."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "XML-RPC open to anyone"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Turn on \"Disable XML-RPC\" under Settings on this tab: Jetpack keeps working, and the XML-RPC usage list shows what else still uses it so that you can allow those methods. Or block xmlrpc.php with a security plugin or the server configuration if nothing uses XML-RPC."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "User list in the REST API"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "File listing of the uploads directory"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Turn off directory listing in the server configuration (on Apache, add Options -Indexes to .htaccess)."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Backups, database dumps and logs in public directories"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Move or delete the backups, archives, database dumps and log files in the WordPress, wp-content and uploads directories, or block them in the server configuration."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Error messages shown on the site"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Set WP_DEBUG_DISPLAY (or WP_DEBUG) to false in wp-config.php."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "WooCommerce log files that can be downloaded"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Block wp-content/uploads/wc-logs/ in the server configuration (nginx does not read the .htaccess file WooCommerce puts there)."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "HTTPS on the checkout and My account pages"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Install an SSL certificate and change the WordPress Address and Site Address in Settings > General to https://."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "File editing in the admin screens"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Malware scanning or a web application firewall"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Install a security plugin that scans for malware or filters attacks."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "PHP files in the uploads directory"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Check the PHP files in the uploads directory and delete the ones you do not know, which may be malware. Also stop PHP from running there in the server configuration."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "No fixed version yet. Update WordPress as soon as its security release is out."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Turn on the login attempt limiter under Settings on this tab, limit login attempts with a security plugin, or restrict wp-login.php to your IP addresses or a password in the server configuration."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Failures allowed per IP address"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Behind a proxy or CDN that hides the visitor address, every visitor shares one address: keep this one the looser limit."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Failures allowed per user name"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Lockout time (minutes)"
+msgstr ""
+
+#. translators: %s: plugin slug
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, php-format
+msgid "The plugin \"%s\" already protects the login page, so this limiter does nothing while it is active."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Jetpack's brute force protection already protects the login page, so this limiter does nothing while it is on."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The server configuration (.htaccess) already restricts the login page, so this limiter does nothing while it does."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Login attempt limiter"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Count failed logins per IP address and per user name, and refuse logins for a while once a limit is reached. Covers the WordPress login page, the WooCommerce My Account and checkout login forms and XML-RPC."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "It does nothing while a security plugin, Jetpack or the server configuration already protects the login page. If you lock yourself out, define JP4WC_LOGIN_LIMIT_DISABLE as true in wp-config.php."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "An e-mail address used to log in counts against the same name as the user name."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The limiter is turned off by JP4WC_LOGIN_LIMIT_DISABLE in wp-config.php or by a filter."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "A failure counts for this long. Logins are refused while the failures that still count reach a limit."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Turn on \"Hide the user list from the REST API\" under Settings on this tab, or stop the users REST route (/wp-json/wp/v2/users) from listing users to visitors who are not logged in with a security plugin."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/security-labels.js
+msgid "Turn on \"Forbid file editing in the admin screens\" under Settings on this tab, or add define( 'DISALLOW_FILE_EDIT', true ); to wp-config.php."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Hide the user list from the REST API"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Forbid file editing in the admin screens"
+msgstr ""
+
+#. translators: %s: file or directory of a must-use plugin
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, js-format
+msgid "%s (must-use plugin)"
+msgstr ""
+
+#. translators: %s: theme name
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#, js-format
+msgid "%s (theme)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Unknown source"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Answered whatever the setting (no login)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Jetpack: keeps working when XML-RPC is off"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Allowed"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Refused"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Logs in: stops when XML-RPC is off unless allowed"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Only failed logins: likely password guessing"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "No login"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Method"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Added by"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Calls"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Logins (worked / failed)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Last call"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Client"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Status"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Added"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Allow"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "XML-RPC usage (last 30 days)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The XML-RPC calls this site answered, by method. Methods that log in are used by an integration (the WordPress mobile apps, an offline editor, a service): allow them before turning XML-RPC off. Methods with only failed logins are usually password guessing."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The record of the XML-RPC calls could not be read."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "No XML-RPC calls were recorded in the last 30 days."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Allow list"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Disable XML-RPC"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Refuse every XML-RPC method except the allowed ones, so that no password can be tried and no pingback sent through XML-RPC. Jetpack keeps working: it checks its own signature. The WordPress mobile apps, offline editors and services that log in through XML-RPC stop unless their methods are allowed. The REST API, with the application passwords used for it, is not affected."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Allowed methods"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "One method per line, such as wp.getUsersBlogs. A name ending in * allows every method that starts with it, such as metaWeblog.*. \"Allow\" in the XML-RPC usage list above adds a method. Leave it empty to refuse every method."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "The allowed methods still accept a password, and what protects the login page does not cover XML-RPC (the login attempt limiter stays asleep behind it): use a security plugin that limits login attempts, or leave the allow list empty."
+msgstr ""
+
+msgid "The allowed methods still accept a password, and nothing limits login attempts through XML-RPC: turn on the login attempt limiter or use a security plugin that limits login attempts."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Define DISALLOW_FILE_EDIT when the plugin loads, so the theme and plugin file editors are gone from the admin screens. Updates and installs still work."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "File editing is already forbidden by wp-config.php or another plugin (DISALLOW_FILE_EDIT or DISALLOW_FILE_MODS), so this setting changes nothing while that stays."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "Do not answer the users REST route (/wp-json/wp/v2/users) for visitors who are not logged in. Logged-in users keep their WordPress permissions (a browser tab opened on the route without a nonce counts as a visitor). Turn it off if a public page of this site lists authors through the REST API."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js
+msgid "wp-config.php defines DISALLOW_FILE_EDIT as false, so this setting cannot forbid file editing until that line is removed."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "No revenue"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Up to 1 million yen"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Up to 10 million yen"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Up to 50 million yen"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Up to 100 million yen"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Over 100 million yen"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "No orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Up to 100 orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Up to 1,000 orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Up to 10,000 orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Over 10,000 orders"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Not sent"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Counting…"
+msgstr ""
+
+#. translators: 1: revenue band code, 2: its label, 3: order band code, 4: its label
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+#, php-format
+msgid "%1$s (%2$s), %3$s (%4$s)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Could not be counted, so they are not sent"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Site address"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "WordPress version"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "WooCommerce version"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "PHP version"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Version of this plugin"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Language"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Plugins and themes"
+msgstr ""
+
+#. translators: %d: number of plugins and themes
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+#, php-format
+msgid "%d installed, active or not: type, slug, version and whether it is active"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Type"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Slug"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Version"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Active"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Theme"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Plugin"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Results of the checks"
+msgstr ""
+
+#. translators: %d: number of checks
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+#, php-format
+msgid "%d checks: ID and result only, never the settings behind them"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Revenue and order bands"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Version of the consent text"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Format of the data"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Site identification token"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Sent: the token wc.artws.info issued to this site on its first check. Its value is not shown."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Not sent with the first check: wc.artws.info issues it then, and it is sent with later checks and with the deletion. Its value is not shown."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Report of the free security check"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Save as PDF"
+msgstr ""
+
+#. translators: %s: date and time of the check
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+#, php-format
+msgid "Checked: %s"
+msgstr ""
+
+#. translators: %s: date and time the report was made
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+#, php-format
+msgid "Report made: %s"
+msgstr ""
+
+#. translators: %s: what can happen
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+#, php-format
+msgid "Impact: %s"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Next steps"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The free check could not be loaded."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The check could not be run."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The check data could not be deleted."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Free security check by wc.artws.info"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Send the information below to wc.artws.info, operated by 職人工房 合同会社, and get a report on this site: the installed software checked against the latest vulnerability data on the server, the results of the checks above, and what to do first. Nothing is sent until you agree and click the button."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Running the check on wc.artws.info…"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The check has finished. The report is below."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "This site was registered with wc.artws.info again, so earlier results can no longer be shown. wc.artws.info deletes them after 180 days."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The check data was deleted from wc.artws.info and from this site."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Information sent to wc.artws.info"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The administrator e-mail address, customer information, order amounts, API keys, the contents of wp-config.php and server paths are not sent. wc.artws.info keeps the data for 180 days."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Also send the revenue and order bands of the last 12 months (optional)"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Used to show which measures to take first for the size of the store. Only the band codes are sent, never the amounts."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The free check sends the results of the security check: turn the security check on and save the settings to use it."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "The free check sends the results of the security check, which has not run yet. It can be used once the results appear above."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Read the <terms>Terms of Use</terms> and the <privacy>Privacy Policy</privacy> of the free check."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Run the check again"
+msgstr ""
+
+#. translators: %s: date and time of the consent
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+#, php-format
+msgid "You agreed to the Terms of Use and the Privacy Policy on %s."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "I agree to the Terms of Use and the Privacy Policy, and send the information above."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Agree and run the check"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "This deletes this site's data on wc.artws.info, and the consent and the report kept on this site."
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Delete"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Cancel"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "Delete check data"
+msgstr ""
+
+#: assets/js/build/admin/settings.js:1
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js
+msgid "wc.artws.info no longer accepts the earlier registration of this site, so earlier results can no longer be shown. The next check registers this site again. wc.artws.info deletes the earlier results after 180 days."
+msgstr ""
+
 #: assets/js/build/blocks/delivery-block-editor.js:1
 #: src/js/blocks/delivery-block-editor.js:44
 #: src/js/blocks/delivery-block-editor.js:65
@@ -2947,4 +3963,179 @@ msgstr ""
 
 #: src/js/paidy/wizard/button.js:14
 msgid "Save"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:165
+msgid "Japanized for WooCommerce security check"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:171
+msgid "The vulnerability data has not been updated for a while, so vulnerabilities disclosed since then are not checked."
+msgstr ""
+
+#. translators: %d: number of vulnerabilities
+#: includes/admin/class-jp4wc-security-notice.php:189
+#, php-format
+msgid "%d known vulnerability was found in the software installed on this site."
+msgid_plural "%d known vulnerabilities were found in the software installed on this site."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: host name of the vulnerability feed, e.g. wc.artws.info
+#: includes/admin/class-jp4wc-security-notice.php:192
+#, php-format
+msgid "The vulnerability data could not be downloaded, so the installed plugins, themes and WordPress are not being checked. Make sure this server can connect to %s, or turn the vulnerability check off in the JP4WC settings."
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:198
+msgid "Update the affected plugins, themes or WordPress to a fixed version, or remove the ones that have no fix."
+msgstr ""
+
+#. translators: %d: number of vulnerabilities not listed
+#: includes/admin/class-jp4wc-security-notice.php:235
+#, php-format
+msgid "and %d more"
+msgid_plural "and %d more"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-jp4wc-security-notice.php:252
+msgctxt "vulnerability severity"
+msgid "Critical"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:253
+msgctxt "vulnerability severity"
+msgid "High"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:254
+msgctxt "vulnerability severity"
+msgid "Medium"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:255
+msgctxt "vulnerability severity"
+msgid "Low"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:256
+msgctxt "vulnerability severity"
+msgid "None"
+msgstr ""
+
+#. translators: %s: severity of a vulnerability, e.g. High
+#: includes/admin/class-jp4wc-security-notice.php:260
+#, php-format
+msgid "Severity: %s"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:264
+msgid "No fixed version yet"
+msgstr ""
+
+#. translators: %s: comma-separated versions that fix the vulnerability
+#: includes/admin/class-jp4wc-security-notice.php:267
+#, php-format
+msgid "Fixed in %s"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:311
+msgid "License"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-notice.php:330
+msgid "Open the Security tab"
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-api.php:85
+msgid "Sorry, you are not allowed to view the security check."
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-api.php:106
+msgid "Sorry, you are not allowed to run the security check."
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-api.php:114
+msgid "The page has expired. Reload it and try again."
+msgstr ""
+
+#: includes/admin/class-jp4wc-security-api.php:141
+msgid "The security check is off."
+msgstr ""
+
+#. translators: %d: seconds to wait
+#: includes/admin/class-jp4wc-security-api.php:152
+#, php-format
+msgid "A re-check was asked for a moment ago. Try again in %d second."
+msgid_plural "A re-check was asked for a moment ago. Try again in %d seconds."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-jp4wc-security-api.php:166
+msgid "The re-check could not be scheduled in WP-Cron. Try again later."
+msgstr ""
+
+#. translators: %d: minutes until logins are accepted again
+#: includes/class-jp4wc-login-limiter.php:181
+#, php-format
+msgid "<strong>Error:</strong> Too many login attempts. Please try again in %d minute."
+msgid_plural "<strong>Error:</strong> Too many login attempts. Please try again in %d minutes."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-jp4wc-xmlrpc-guard.php:272
+msgid "XML-RPC services are disabled on this site."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:630
+msgid "Agree to the terms of use and the privacy policy to run the check."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:737
+msgid "The check data was deleted while the check ran, so its result was not kept."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:860
+msgid "This site cannot be checked: its address or a version of WordPress, WooCommerce, PHP or this plugin cannot be sent as the check requires."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:887
+msgid "wc.artws.info sent a response that could not be read. Try again later."
+msgstr ""
+
+#. translators: %s: date and time
+#: includes/class-jp4wc-security-scan.php:1009
+#, php-format
+msgid "The check can run once an hour. Try again after %s."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:1012
+msgid "The check can run once an hour. Try again later."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:1022
+msgid "wc.artws.info did not accept the information sent. Update this plugin to the latest version and try again."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:1028
+msgid "The check of wc.artws.info is not ready yet. Try again later."
+msgstr ""
+
+#. translators: %d: HTTP status code
+#: includes/class-jp4wc-security-scan.php:1036
+#, php-format
+msgid "wc.artws.info answered with an error (HTTP %d). Try again later."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:1070
+msgid "Could not connect to wc.artws.info. Make sure this server can connect to it, and try again later."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:1083
+msgid "The free check sends the results of the security check: turn the security check on and wait for its first results."
+msgstr ""
+
+#: includes/class-jp4wc-security-scan.php:1096
+msgid "Another request to wc.artws.info is running. Try again in a few minutes."
 msgstr ""
