@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Japanized for WooCommerce plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Japanized for WooCommerce 3.0.0\n"
+"Project-Id-Version: Japanized for WooCommerce 3.0.1\n"
 "Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-30T02:57:47+00:00\n"
+"POT-Creation-Date: 2026-10-31T05:55:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "language-team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -1841,7 +1841,7 @@ msgstr ""
 #: src/js/jp4wc/admin/settings/components/GeneralSettings.js:389
 #: src/js/jp4wc/admin/settings/components/LawSettings.js:251
 #: src/js/jp4wc/admin/settings/components/PaymentSettings.js:302
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1296
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1298
 #: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:607
 msgid "Saving..."
 msgstr ""
@@ -1850,7 +1850,7 @@ msgstr ""
 #: src/js/jp4wc/admin/settings/components/GeneralSettings.js:390
 #: src/js/jp4wc/admin/settings/components/LawSettings.js:252
 #: src/js/jp4wc/admin/settings/components/PaymentSettings.js:303
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1297
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1299
 #: src/js/jp4wc/admin/settings/components/ShipmentSettings.js:608
 msgid "Save Settings"
 msgstr ""
@@ -2183,338 +2183,387 @@ msgstr ""
 msgid "Check the PHP files in the uploads directory and delete the ones you do not know, which may be malware. Also stop PHP from running there in the server configuration."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:60
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:61
 msgid "No revenue"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:61
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:62
 msgid "Up to 1 million yen"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:62
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:63
 msgid "Up to 10 million yen"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:63
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:64
 msgid "Up to 50 million yen"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:64
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:65
 msgid "Up to 100 million yen"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:65
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:66
 msgid "Over 100 million yen"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:76
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:77
 msgid "No orders"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:77
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:78
 msgid "Up to 100 orders"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:78
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:79
 msgid "Up to 1,000 orders"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:79
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:80
 msgid "Up to 10,000 orders"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:80
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:81
 msgid "Over 10,000 orders"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:92
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:93
 #: src/js/jp4wc/admin/settings/components/SecuritySettings.js:461
 msgid "Passed"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:94
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:95
 #: src/js/jp4wc/admin/settings/components/SecuritySettings.js:233
 msgid "Action needed"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:96
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:97
 #: src/js/jp4wc/admin/settings/components/SecuritySettings.js:235
 msgid "Unconfirmed"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:112
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:113
 msgid "Not sent"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:114
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:115
 msgid "Counting…"
 msgstr ""
 
 #. translators: 1: revenue band code, 2: its label, 3: order band code, 4: its label
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:118
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:119
 #, js-format
 msgid "%1$s (%2$s), %3$s (%4$s)"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:125
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:126
 msgid "Could not be counted, so they are not sent"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:132
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:133
 msgid "Site address"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:133
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:134
 msgid "WordPress version"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:135
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:136
 msgid "WooCommerce version"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:138
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:139
 msgid "PHP version"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:140
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:141
 msgid "Version of this plugin"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:143
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:144
 msgid "Language"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:159
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:160
 msgid "Plugins and themes"
 msgstr ""
 
 #. translators: %d: number of plugins and themes
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:166
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:167
 #, js-format
 msgid "%d installed, active or not: type, slug, version and whether it is active"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:177
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:178
 msgid "Type"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:183
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:184
 msgid "Slug"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:189
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:190
 msgid "Version"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:195
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:196
 msgid "Active"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:208
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:209
 msgid "Theme"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:212
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:213
 msgid "Plugin"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:229
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:230
 #: src/js/paidy/wizard/components/controls.jsx:212
 #: src/js/paidy/wizard/components/controls.jsx:333
 #: src/js/paidy/wizard/components/controls.jsx:356
 msgid "Yes"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:233
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:234
 #: src/js/paidy/wizard/components/controls.jsx:216
 #: src/js/paidy/wizard/components/controls.jsx:337
 #: src/js/paidy/wizard/components/controls.jsx:360
 msgid "No"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:248
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:249
 msgid "Results of the checks"
 msgstr ""
 
 #. translators: %d: number of checks
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:258
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:259
 #, js-format
 msgid "%d checks: ID and result only, never the settings behind them"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:278
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:279
 msgid "Revenue and order bands"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:287
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:288
 msgid "Version of the consent text"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:298
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:299
 msgid "Format of the data"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:306
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:307
 msgid "Site identification token"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:313
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:314
 msgid "Sent: the token wc.artws.info issued to this site on its first check. Its value is not shown."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:317
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:318
 msgid "Not sent with the first check: wc.artws.info issues it then, and it is sent with later checks and with the deletion. Its value is not shown."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:353
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:354
 msgid "Report of the free security check"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:363
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:364
 msgid "Save as PDF"
 msgstr ""
 
 #. translators: %s: date and time of the check
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:369
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:370
 #, js-format
 msgid "Checked: %s"
 msgstr ""
 
 #. translators: %s: date and time the report was made
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:376
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:377
 #, js-format
 msgid "Report made: %s"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:384
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:385
 #: src/js/jp4wc/admin/settings/components/SecuritySettings.js:252
 msgid "Total score"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:406
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:407
 #: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1089
 msgid "Items that need action"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:409
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:410
 #: src/js/jp4wc/admin/settings/components/SecuritySettings.js:324
 msgid "No items need action."
 msgstr ""
 
 #. translators: %s: what can happen
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:435
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:436
 #, js-format
 msgid "Impact: %s"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:457
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:458
 #: src/js/jp4wc/admin/settings/components/SecuritySettings.js:400
 msgid "Details"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:471
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:472
 msgid "Next steps"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:524
+#. translators: 1: plugin, theme or WordPress name, 2: its version
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:541
+#, js-format
+msgid "Known vulnerabilities in %1$s %2$s"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:600
+msgid "Compared with the checks above"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:608
+msgid "Checked again against the latest vulnerability data on wc.artws.info, the result is the same as the checks above. The report below adds what each item means, what can happen and how to fix it, and can be saved as a PDF."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:612
+msgid "Apart from the items the checks above could not confirm, the result checked again against the latest vulnerability data on wc.artws.info is the same as the checks above. The report below adds what each item means, what can happen and how to fix it, and can be saved as a PDF."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:623
+msgid "Found only by wc.artws.info"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:640
+msgid "Found only by the checks above"
+msgstr ""
+
+#. translators: 1: date and time of the checks above, 2: date and time of the free check
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:657
+#, js-format
+msgid "The checks above are from %1$s and this check from %2$s. Updates and setting changes made in between also show as differences."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:672
+msgid "Could not be confirmed by the checks above"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:733
 msgid "The free check could not be loaded."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:627
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:837
 msgid "The check could not be run."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:661
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:872
 msgid "The check data could not be deleted."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:679
-msgid "Free security check by wc.artws.info"
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:687
-msgid "Send the information below to wc.artws.info, operated by 職人工房 合同会社, and get a report on this site: the installed software checked against the latest vulnerability data on the server, the results of the checks above, and what to do first. Nothing is sent until you agree and click the button."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:702
-msgid "Running the check on wc.artws.info…"
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:710
-msgid "The check has finished. The report is below."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:718
-msgid "This site was registered with wc.artws.info again, so earlier results can no longer be shown. wc.artws.info deletes them after 180 days."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:726
-msgid "The check data was deleted from wc.artws.info and from this site."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:739
-msgid "wc.artws.info no longer accepts the earlier registration of this site, so earlier results can no longer be shown. The next check registers this site again. wc.artws.info deletes the earlier results after 180 days."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:756
-msgid "Information sent to wc.artws.info"
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:768
-msgid "The administrator e-mail address, customer information, order amounts, API keys, the contents of wp-config.php and server paths are not sent. wc.artws.info keeps the data for 180 days."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:777
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:888
 msgid "Also send the revenue and order bands of the last 12 months (optional)"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:781
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:892
 msgid "Used to show which measures to take first for the size of the store. Only the band codes are sent, never the amounts."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:793
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:908
+msgid "Free security check by wc.artws.info"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:916
+msgid "Send the information below to wc.artws.info, operated by 職人工房 合同会社, and get a report on this site: the installed software checked against the latest vulnerability data on the server, the results of the checks above, and what to do first. Nothing is sent until you agree and click the button."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:931
+msgid "Running the check on wc.artws.info…"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:939
+msgid "The check has finished. The report is below."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:947
+msgid "This site was registered with wc.artws.info again, so earlier results can no longer be shown. wc.artws.info deletes them after 180 days."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:955
+msgid "The check data was deleted from wc.artws.info and from this site."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:968
+msgid "wc.artws.info no longer accepts the earlier registration of this site, so earlier results can no longer be shown. The next check registers this site again. wc.artws.info deletes the earlier results after 180 days."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:991
 msgid "The free check sends the results of the security check: turn the security check on and save the settings to use it."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:801
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:999
 msgid "The free check sends the results of the security check, which has not run yet. It can be used once the results appear above."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:810
-msgid "Read the <terms>Terms of Use</terms> and the <privacy>Privacy Policy</privacy> of the free check."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:845
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1016
 msgid "Run the check again"
 msgstr ""
 
 #. translators: %s: date and time of the consent
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:853
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1024
 #, js-format
 msgid "You agreed to the Terms of Use and the Privacy Policy on %s."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:865
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1038
+msgid "Hide the information sent"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1042
+msgid "Show the information sent"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1057
+msgid "Get the free check"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1065
+msgid "Information sent to wc.artws.info"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1077
+msgid "The administrator e-mail address, customer information, order amounts, API keys, the contents of wp-config.php and server paths are not sent. wc.artws.info keeps the data for 180 days."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1087
+msgid "Read the <terms>Terms of Use</terms> and the <privacy>Privacy Policy</privacy> of the free check."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1116
 msgid "I agree to the Terms of Use and the Privacy Policy, and send the information above."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:885
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1136
 msgid "Agree and run the check"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:901
-msgid "This deletes this site's data on wc.artws.info, and the consent and the report kept on this site."
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:911
-msgid "Delete"
-msgstr ""
-
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:914
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1149
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1175
 msgid "Cancel"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecurityScan.js:927
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1162
+msgid "This deletes this site's data on wc.artws.info, and the consent and the report kept on this site."
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1172
+msgid "Delete"
+msgstr ""
+
+#: src/js/jp4wc/admin/settings/components/SecurityScan.js:1188
 msgid "Delete check data"
 msgstr ""
 
@@ -2806,67 +2855,67 @@ msgstr ""
 msgid "The re-check has not finished yet. It runs with WP-Cron, so reload this page later to see the results."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1112
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1114
 msgid "Settings"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1118
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1120
 msgid "Security check"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1123
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1125
 msgid "Once a day, download the list of known vulnerabilities from wc.artws.info (Artisan Workshop) and check the installed plugins, themes and WordPress against it. Only the versions of this plugin, WordPress, WooCommerce and PHP are sent, in the User-Agent header."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1128
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1130
 msgid "Turning it off also stops the checks on this tab and deletes their results."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1142
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1144
 msgid "Login attempt limiter"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1147
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1149
 msgid "Count failed logins per IP address and per user name, and refuse logins for a while once a limit is reached. Covers the WordPress login page, the WooCommerce My Account and checkout login forms and XML-RPC."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1152
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1154
 msgid "It does nothing while a security plugin, Jetpack or the server configuration already protects the login page. If you lock yourself out, define JP4WC_LOGIN_LIMIT_DISABLE as true in wp-config.php."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1189
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1191
 msgid "Hide the user list from the REST API"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1193
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1195
 msgid "Do not answer the users REST route (/wp-json/wp/v2/users) for visitors who are not logged in. Logged-in users keep their WordPress permissions (a browser tab opened on the route without a nonce counts as a visitor). Turn it off if a public page of this site lists authors through the REST API."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1206
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1208
 msgid "Forbid file editing in the admin screens"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1211
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1213
 msgid "Define DISALLOW_FILE_EDIT when the plugin loads, so the theme and plugin file editors are gone from the admin screens. Updates and installs still work."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1229
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1231
 msgid "Disable XML-RPC"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1233
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1235
 msgid "Refuse every XML-RPC method except the allowed ones, so that no password can be tried and no pingback sent through XML-RPC. Jetpack keeps working: it checks its own signature. The WordPress mobile apps, offline editors and services that log in through XML-RPC stop unless their methods are allowed. The REST API, with the application passwords used for it, is not affected."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1247
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1249
 msgid "Allowed methods"
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1252
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1254
 msgid "One method per line, such as wp.getUsersBlogs. A name ending in * allows every method that starts with it, such as metaWeblog.*. \"Allow\" in the XML-RPC usage list above adds a method. Leave it empty to refuse every method."
 msgstr ""
 
-#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1268
+#: src/js/jp4wc/admin/settings/components/SecuritySettings.js:1270
 msgid "The vulnerability data comes from wc.artws.info and is subject to its <a>Terms of Use</a>."
 msgstr ""
 
